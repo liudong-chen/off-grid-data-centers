@@ -1,4 +1,4 @@
-# Off-grid speed to power for data centers brings costly overbuild and fossil-fuel reliance
+# Off-grid speed to power for data centers
 
 Code and data for comparing grid-connected, off-grid and hybrid electricity
 supply for data centers. The analyses cover ERCOT in 2030 and 2035, Georgia Power,
