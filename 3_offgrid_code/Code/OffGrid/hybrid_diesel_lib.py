@@ -1,11 +1,11 @@
 """Shared machinery for the diesel-bridge sensitivity (ERCOT 2030, 17 campuses).
 
 Adds a diesel genset to the off-grid machine catalogue at run time, so the existing
-Monte Carlo (OffGridBYONG.lole_batch / lole_storage) and the exact merit-order fuel
-integral (OffGridBYONG.merit_fuel_vec) score gas+diesel portfolios on exactly the same
+Monte Carlo (offgrid_model.lole_batch / lole_storage) and the exact merit-order fuel
+integral (offgrid_model.merit_fuel_vec) score gas+diesel portfolios on exactly the same
 random streams and the same load-duration machinery as the published designs.
 
-Nothing in OffGridBYONG.py or offgrid_mip.py is edited: the catalogue is extended in
+Nothing in offgrid_model.py or offgrid_mip.py is edited: the catalogue is extended in
 memory (og.CAT.append) and the module-level arrays that depend on it are rebuilt.
 
 DIESEL PARAMETERS (base; every one overridable by environment variable)

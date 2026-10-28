@@ -38,7 +38,7 @@ REPS = int(sys.argv[1]) if len(sys.argv) > 1 else 210      # 30 per weather year
 TARGET = 0.1
 H = 8760
 
-os.environ['BYONG_MC_CACHE'] = B
+os.environ['OFFGRID_MC_CACHE'] = B
 spec = importlib.util.spec_from_file_location('mc', os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'Code', 'HOPE', '11_mc_portfolio.py'))
 mc = importlib.util.module_from_spec(spec); spec.loader.exec_module(mc)
 

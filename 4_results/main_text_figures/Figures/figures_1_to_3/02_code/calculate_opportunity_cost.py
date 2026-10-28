@@ -88,7 +88,7 @@ a like-for-like magnitude and not a units trick.  There is no break-even left to
 the earlier file swept the waiting-time difference because the value of time was unknown
 and had to be inferred.  It is no longer unknown, so the sweep and the bound are gone.
 
-    python 87_opportunity_cost.py
+    python calculate_opportunity_cost.py
     -> out/opportunity_cost.json
 """
 import json
@@ -124,7 +124,7 @@ ENERGY_MWH = 222.051e6        # data-center energy, MWh/yr
 
 # the two LCOEs this study measured, read from the solved outputs rather than retyped
 ON_LCOE = json.load(open(f'{OUT}/ongrid_final.json'))['lcoe']
-OFF_LCOE = json.load(open(f'{OUT}/offgrid_v4_summary.json'))['separate']['lcoe']
+OFF_LCOE = json.load(open(f'{OUT}/offgrid_summary.json'))['separate']['lcoe']
 
 
 def af_annual(n, r):

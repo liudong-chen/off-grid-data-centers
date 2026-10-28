@@ -1,14 +1,14 @@
 """On-grid numbers from the solved HOPE cases -> the figure packages' 01_raw folders.
 
-    python3 68_ongrid_from_hope.py            (ModelCases found relative to this file)
-    python3 68_ongrid_from_hope.py <ModelCases>
+    python3 prepare_grid_results.py            (ModelCases found relative to this file)
+    python3 prepare_grid_results.py <ModelCases>
 
 Writes
-  fig123_package/01_raw/ongrid_final.json   ERCOT 2030: new build, cost, LCOE (69_ongrid_overbuild.py logic)
-  fig5_package/01_raw/ongrid_final.json     the same file
-  fig5_package/01_raw/grid_newbuild.json    new-build capacity factor, ERCOT and Georgia (97_grid_newbuild.py)
-  fig5_package/01_raw/hope/{gabase,gadc}/   metadata.yml, capacity.csv, system_cost.csv copied from the cases
-  fig4_package/01_raw/ongrid2035.json       2035 pairs, 20 and 121 GW (77_ongrid_2035.py logic)
+  figures_1_to_3/01_raw/ongrid_final.json   ERCOT 2030: new build, cost, LCOE (69_ongrid_overbuild.py logic)
+  figure_5/01_raw/ongrid_final.json     the same file
+  figure_5/01_raw/grid_newbuild.json    new-build capacity factor, ERCOT and Georgia (97_grid_newbuild.py)
+  figure_5/01_raw/hope/{gabase,gadc}/   metadata.yml, capacity.csv, system_cost.csv copied from the cases
+  figure_4/01_raw/ongrid2035.json       2035 pairs, 20 and 121 GW (77_ongrid_2035.py logic)
 
 Conventions kept from the scripts this replaces:
   - the TOTAL attributable cost is the difference of the two solver objectives (metadata.yml);
@@ -29,7 +29,7 @@ import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 NEW = os.path.dirname(os.path.dirname(HERE))                         # Figures
 MC = sys.argv[1] if len(sys.argv) > 1 else os.path.abspath(f'{NEW}/../Code/HOPE/ModelCases')
-RAW123, RAW4, RAW5 = f'{NEW}/fig123_package/01_raw', f'{NEW}/fig4_package/01_raw', f'{NEW}/fig5_package/01_raw'
+RAW123, RAW4, RAW5 = f'{NEW}/figures_1_to_3/01_raw', f'{NEW}/figure_4/01_raw', f'{NEW}/figure_5/01_raw'
 
 DC_ENERGY_MWh = 222_051_000.0                       # ERCOT 2030 data-center energy, from the load model
 NGCC_FIXED = 118_650.0                              # $/MW-yr, 2030 candidate (ERCOT 2026 LTSA)

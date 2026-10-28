@@ -1,4 +1,4 @@
-"""OffGridBYONG - the off-grid counterpart to ReliabilityPRM, built for comparison.
+"""offgrid_model - the off-grid counterpart to ReliabilityPRM, built for comparison.
 
 The on-grid case is: HOPE picks a least-cost portfolio subject to a reserve margin,
 a sequential Monte Carlo scores its true LOLE, and the margin is bisected until the

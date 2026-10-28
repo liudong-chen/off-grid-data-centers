@@ -28,7 +28,7 @@ T_GAS, T_CON, END = 24, 50, 264
 r_m = 1.08**(1/12) - 1; mo = np.arange(END + 1); disc = (1 + r_m)**(-mo.astype(float))
 W_ISL = disc[(mo > T_GAS) & (mo <= T_CON)].sum()/12; W_POST = disc[mo > T_CON].sum()/12
 
-MC = os.environ.get('BYONG_MC', os.path.abspath(f'{HERE}/../HOPE/ModelCases'))
+MC = os.environ.get('OFFGRID_MC', os.path.abspath(f'{HERE}/../HOPE/ModelCases'))
 PREFIX = os.environ.get('HYB_PREFIX', 'hyb2p')
 
 

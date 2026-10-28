@@ -1,7 +1,7 @@
 """Speed-to-power value sensitivity: $200k, 300k, 400k, 500k, 600k per MW-month.
 
-Re-runs the unmodified figure code (fig123_package/02_code/73_fig123.py for ERCOT 2030 and
-fig5_package/02_code/96_fig5_new.py for Georgia) on a temporary copy of each package with only the
+Re-runs the unmodified figure code (figures_1_to_3/02_code/plot_figures_1_to_3.py for ERCOT 2030 and
+figure_5/02_code/plot_figure_5.py for Georgia) on a temporary copy of each package with only the
 rate changed, then collects the bound on the interconnection wait by diesel share and the present
 values per year of the 20-year horizon.  Designs and electricity costs do not depend on the rate,
 so nothing is re-solved.  python3 run_speed_value_sensitivity.py  ->  speed_value_sensitivity.json/.csv
@@ -33,9 +33,9 @@ rows, out = [], {}
 for rate in RATES:
     with tempfile.TemporaryDirectory() as tmp:
         # fig5 code reads ../../fig123... ? keep both packages side by side as in Figures
-        e_dir, e_txt = run('fig123_package', '73_fig123.py', r"RATE, R_ = P\['RATE'\], P\['R'\]",
+        e_dir, e_txt = run('figures_1_to_3', 'plot_figures_1_to_3.py', r"RATE, R_ = P\['RATE'\], P\['R'\]",
                            "RATE, R_ = {rate}, P['R']", rate, tmp)
-        g_dir, g_txt = run('fig5_package', '96_fig5_new.py', r"RATE, R, N_ELEC = 400_000\.0, 0\.08, 20",
+        g_dir, g_txt = run('figure_5', 'plot_figure_5.py', r"RATE, R, N_ELEC = 400_000\.0, 0\.08, 20",
                            "RATE, R, N_ELEC = {rate}, 0.08, 20", rate, tmp)
         num = json.load(open(f'{e_dir}/03_panel_data/fig123_numbers.json'))
         pv = pd.read_csv(f'{e_dir}/03_panel_data/fig3_panel_a_present_value.csv').set_index('approach')

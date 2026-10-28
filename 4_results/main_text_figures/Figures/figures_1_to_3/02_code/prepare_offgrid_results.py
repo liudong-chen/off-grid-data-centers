@@ -1,14 +1,14 @@
 """Write the GAS-ONLY off-grid designs in the file shapes the figure code reads.
 
-    python3 70_prep_gasonly.py <Code/OffGrid/out dir>
+    python3 prepare_offgrid_results.py <Code/OffGrid/out dir>
 
 Reads  offgrid_mip_gasonly.json, offgrid_mip_pool_gasonly.json (ERCOT 2030, allow=(F,F,F)),
        offgrid_mip_2035_k{0p5,3}_gasonly_{sites,pool}.json, offgrid_mip_georgia_gasonly_{sites,pool}.json,
        georgia_decomp_gasonly.json, hybrid_diesel/all_sites.json, hybrid_diesel/hybrid_diesel_summary.json
-Writes into the three packages' 01_raw: offgrid_v4_{sites,pool,summary}.json (SAME names as the
+Writes into the three packages' 01_raw: offgrid_{sites,pool,summary}.json (SAME names as the
 published package so 69b/87 run unchanged -- but gas-only), offgrid2035_*, offgrid_georgia_*,
-georgia_decomp.json, hybrid_*.json.  Then run 69b_overbuild_decomp.py and 87_opportunity_cost.py
-on fig123_package/01_raw.
+georgia_decomp.json, hybrid_*.json.  Then run decompose_overbuild.py and calculate_opportunity_cost.py
+on figures_1_to_3/01_raw.
 """
 import json
 import os
@@ -18,7 +18,7 @@ import sys
 SRC = sys.argv[1]
 HERE = os.path.dirname(os.path.abspath(__file__))
 NEW = os.path.dirname(os.path.dirname(HERE))
-RAW23, RAW4, RAW5 = f'{NEW}/fig123_package/01_raw', f'{NEW}/fig4_package/01_raw', f'{NEW}/fig5_package/01_raw'
+RAW23, RAW4, RAW5 = f'{NEW}/figures_1_to_3/01_raw', f'{NEW}/figure_4/01_raw', f'{NEW}/figure_5/01_raw'
 
 
 def rec(r):
@@ -55,7 +55,7 @@ def emit(src_sites, src_pool, dest, name, extra):
 
 
 for dest in (RAW23, RAW5):
-    emit(f'{SRC}/offgrid_mip_gasonly.json', f'{SRC}/offgrid_mip_pool_gasonly.json', dest, 'offgrid_v4', {})
+    emit(f'{SRC}/offgrid_mip_gasonly.json', f'{SRC}/offgrid_mip_pool_gasonly.json', dest, 'offgrid', {})
 emit(f'{SRC}/offgrid_mip_georgia_gasonly_sites.json', f'{SRC}/offgrid_mip_georgia_gasonly_pool.json', RAW5,
      'offgrid_georgia', dict(region='GeorgiaPower', year=2030, gas=5.688, land=4670.0, solar_cf=None,
                              wind_available=False, n_campuses=31, fleet_MW=12400.0))
@@ -78,4 +78,4 @@ if os.path.exists(f'{SRC}/hybrid_diesel/hybrid_diesel_summary.json'):
 for f in ('S1_free_siting_gasonly.json', 'S1_free_siting_gasonly_sites.json'):
     if os.path.exists(f'{SRC}/{f}'):
         shutil.copyfile(f'{SRC}/{f}', f'{RAW23}/{f}'); print(f'   {f}')
-print('done; now: python3 69b_overbuild_decomp.py ../01_raw && python3 87_opportunity_cost.py')
+print('done; now: python3 decompose_overbuild.py ../01_raw && python3 calculate_opportunity_cost.py')

@@ -36,12 +36,12 @@ import numpy as np
 import hybrid_diesel_lib as L
 
 HERE = os.path.dirname(os.path.abspath(__file__))            # Code/OffGrid
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..'))
-LOAD_DIR = os.environ.get('BYONG_LOAD', f'{BYONG}/DC_Load/load_profiles')
-CASE = os.environ.get('BYONG_CASE',
-                      f'{BYONG}/Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
-DESIGN = os.environ.get('BYONG_DESIGN', f'{HERE}/out/offgrid_mip_final.json')
-OUT = os.environ.get('BYONG_OUT', os.path.join(HERE, 'out', 'hybrid_diesel')); os.makedirs(OUT, exist_ok=True)
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
+LOAD_DIR = os.environ.get('OFFGRID_LOAD', f'{PROJECT_ROOT}/DC_Load/load_profiles')
+CASE = os.environ.get('OFFGRID_CASE',
+                      f'{PROJECT_ROOT}/Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
+DESIGN = os.environ.get('OFFGRID_DESIGN', f'{HERE}/out/offgrid_mip_final.json')
+OUT = os.environ.get('OFFGRID_OUT', os.path.join(HERE, 'out', 'hybrid_diesel')); os.makedirs(OUT, exist_ok=True)
 SCREEN = int(os.environ.get('SCREEN', 100))
 CONFIRM = int(os.environ.get('CONFIRM', 400))
 TARGET = 0.1

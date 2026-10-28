@@ -48,16 +48,16 @@ import shutil
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 SRC = os.path.join(HERE, 'TX8z_GTEP_dc_vre_case')
 DST = os.path.join(HERE, 'TX8z_GTEP_hybrid_vre_case')
 SRC_DATA, DST_DATA = 'Data_TX8z_GTEP_dc_vre', 'Data_TX8z_GTEP_hybrid_vre'
 
-DESIGN = f'{BYONG}/Figures/fig123_package/01_raw/offgrid_v4_sites.json'
-GASF = f'{BYONG}/Figures/fig123_package/01_raw/zonal_gas_2030.json'
-CFDIR = f'{BYONG}/Code/OffGridJL/cases/ercot2030'
+DESIGN = f'{PROJECT_ROOT}/Figures/figures_1_to_3/01_raw/offgrid_sites.json'
+GASF = f'{PROJECT_ROOT}/Figures/figures_1_to_3/01_raw/zonal_gas_2030.json'
+CFDIR = f'{PROJECT_ROOT}/Code/OffGridJL/cases/ercot2030'
 
-# The machine catalogue, copied from OffGridBYONG.py.  vom is already escalated there;
+# The machine catalogue, copied from offgrid_model.py.  vom is already escalated there;
 # variable cost is vom + hr*gas, which is what the model's 'Cost ($/MWh)' column means.
 E23, E19 = 1.053, 1.2549
 CAT = {

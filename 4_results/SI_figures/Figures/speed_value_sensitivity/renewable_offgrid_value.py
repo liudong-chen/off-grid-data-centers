@@ -1,17 +1,17 @@
 """Pure-renewable off-grid against waiting for the grid, on the Fig. 3 accounting.
-Same flows as fig123_package/02_code/73_fig123.py (monthly, 8% discounted to day 0, 20 years after
+Same flows as figures_1_to_3/02_code/plot_figures_1_to_3.py (monthly, 8% discounted to day 0, 20 years after
 month 24), with the off-grid plant replaced by the pure-renewable design
 (Code/OffGrid/scenario_renewable_only/renewable_only_summary.json), built in 24 months and never connected.
 python3 renewable_offgrid_value.py -> renewable_offgrid_value.json"""
 import json, os
 import numpy as np
 H = os.path.dirname(os.path.abspath(__file__)); WN = os.path.dirname(H)
-HS = json.load(open(f'{WN}/fig123_package/01_raw/hybrid_diesel_summary.json')); P = HS['params']
-ONG = json.load(open(f'{WN}/fig123_package/01_raw/ongrid_final.json'))
+HS = json.load(open(f'{WN}/figures_1_to_3/01_raw/hybrid_diesel_summary.json')); P = HS['params']
+ONG = json.load(open(f'{WN}/figures_1_to_3/01_raw/ongrid_final.json'))
 REN = json.load(open(f'{os.path.dirname(WN)}/Code/OffGrid/scenario_renewable_only/renewable_only_summary.json'))
 REN4 = json.load(open(f'{os.path.dirname(WN)}/Code/OffGrid/scenario_renewable_only/renewable_only_4h_summary.json'))
 HYB = json.load(open(f'{os.path.dirname(WN)}/Code/OffGrid/out/hybrid_renewable_summary.json'))
-GAS = json.load(open(f'{WN}/fig123_package/01_raw/offgrid_v4_summary.json'))['separate']
+GAS = json.load(open(f'{WN}/figures_1_to_3/01_raw/offgrid_summary.json'))['separate']
 E, C_ON, MW, R, T_GAS = ONG['energy_MWh'], P['c_on'], P['MW_pub'], P['R'], P['T_GAS']
 END = T_GAS + 240; mo = np.arange(END + 1); disc = (1 + R/12)**(-mo.astype(float))
 

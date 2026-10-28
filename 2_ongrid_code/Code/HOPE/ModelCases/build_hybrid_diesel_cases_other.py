@@ -27,7 +27,7 @@ import pandas as pd
 import build_hybrid_diesel_cases as B
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 TAG = sys.argv[1]
 SPEC = {
     '2035_k0p5': dict(src='TX8z_GTEP_dc20_case', data='Data_TX8z_GTEP_dc20', dst='TX8z_GTEP_hyb20_dsl{tag}_case',
@@ -41,7 +41,7 @@ SPEC = {
     'georgia': dict(src='GA1z_GTEP_dc_case', data='Data_GA1z_GTEP_dc', dst='GA1z_GTEP_hyb_dsl{tag}_case',
                     dst_data='Data_GA1z_GTEP_hyb_dsl{tag}', gas={'Georgia': 5.688}),
 }[TAG]
-DESIGNS = f'{BYONG}/Code/OffGrid/out/hybrid_diesel_{TAG}/all_sites.json'
+DESIGNS = f'{PROJECT_ROOT}/Code/OffGrid/out/hybrid_diesel_{TAG}/all_sites.json'
 
 
 def build(sites, key, gas, dsl):

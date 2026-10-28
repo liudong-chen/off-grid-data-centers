@@ -9,7 +9,7 @@ import os, sys, json, shutil, time
 import numpy as np, pandas as pd
 import offgrid_mip as om
 CASE, SITES = sys.argv[1], sys.argv[2]; POOL = sys.argv[3] if len(sys.argv) > 3 else None
-CD = os.environ['BYONG_CASE']; R = os.environ['BYONG_LOAD']; HERE = os.path.dirname(os.path.abspath(__file__))
+CD = os.environ['OFFGRID_CASE']; R = os.environ['OFFGRID_LOAD']; HERE = os.path.dirname(os.path.abspath(__file__))
 d = pd.read_csv(f'{R}/dc_load_hourly_MW.csv', index_col=0, parse_dates=True)
 d = d[~((d.index.month == 2) & (d.index.day == 29))].drop(columns=['TOTAL_MW'])
 meta = pd.read_csv(f'{R}/site_parameters_and_results.csv')

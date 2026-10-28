@@ -1,4 +1,4 @@
-"""Figures 1, 2 and 3 (Figures).  python3 73_fig123.py  ->  04_figure/fig{1,2,3}_*.{pdf,png}, 03_panel_data/fig{1,2,3}_panel_*.csv  Three approaches: off-grid (diesel share x,
+"""Figures 1, 2 and 3 (Figures).  python3 plot_figures_1_to_3.py  ->  04_figure/fig{1,2,3}_*.{pdf,png}, 03_panel_data/fig{1,2,3}_panel_*.csv  Three approaches: off-grid (diesel share x,
 never connects), hybrid (x, connects at the ERCOT queue, diesel retired), on-grid.  Focal cases:
 off-grid gas only (x = 0), off-grid x = 0.6, on-grid; hybrid x = 0.6 as the extra strategy.
 The x = 0 ... 1.0 sweep appears only as a band, whisker or a compact line panel.
@@ -64,8 +64,8 @@ def letters(fig, axes, chars, dx=0.036, dy=0.012):
 
 
 # ============================================================ the solved numbers
-S = json.load(open(f'{O}/offgrid_v4_summary.json'))            # GAS-ONLY, 17 plants
-SITES = json.load(open(f'{O}/offgrid_v4_sites.json'))
+S = json.load(open(f'{O}/offgrid_summary.json'))            # GAS-ONLY, 17 plants
+SITES = json.load(open(f'{O}/offgrid_sites.json'))
 ONG = json.load(open(f'{O}/ongrid_final.json'))
 OB = json.load(open(f'{O}/overbuild.json'))
 OC = json.load(open(f'{O}/opportunity_cost.json'))
@@ -292,7 +292,7 @@ for x, vals, col, dx, dy, ha, va in ((0.0, T['lcoe_islanded'], SELF, 0.0, 1.6, '
     ax.plot([x], [vals[x]], 'o', ms=6.5, color=col, mec='white', mew=1.0, zorder=7)
     ax.text(x + dx, vals[x] + dy, f'{vals[x]:.1f}', ha=ha, va=va, fontsize=FS2, fontweight='bold', color=col, zorder=8)
 UTIL = {x: E/(T.loc[x, 'installed_MW']*8760.0) for x in XS}
-GNB = json.load(open(f'{O}/../../fig5_package/01_raw/grid_newbuild.json'))['ercot']['new_gen_cf'] if os.path.exists(f'{O}/../../fig5_package/01_raw/grid_newbuild.json') else 0.959
+GNB = json.load(open(f'{O}/../../figure_5/01_raw/grid_newbuild.json'))['ercot']['new_gen_cf'] if os.path.exists(f'{O}/../../figure_5/01_raw/grid_newbuild.json') else 0.959
 ax.set_xlim(-0.06, 1.08); ax.set_ylim(38, 80)
 ax.set_xticks(XT6); ax.set_xticklabels(['0', '0.2', '0.4', '0.6', '0.8', '1.0'], fontsize=FS2)
 ax.tick_params(axis='y', labelsize=FS2)

@@ -1,5 +1,5 @@
 """
-BYONG — ERCOT data-center load profile generator (final).
+ERCOT data-center load profile generator (final).
 
 Implements the method in the Methods section §"Constructing DC load profile":
 

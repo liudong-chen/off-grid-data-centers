@@ -185,8 +185,8 @@ function score(genrows, storows, case_tag;
     outf = joinpath(case_dir, "_lole.json")
     open(inf, "w") do io; JSON.print(io, spec); end
     envs = Dict{String,String}()
-    isempty(build_dir) || (envs["BYONG_BUILD"] = build_dir)
-    isempty(case_root) || (envs["BYONG_CASE_ROOT"] = case_root)
+    isempty(build_dir) || (envs["OFFGRID_BUILD"] = build_dir)
+    isempty(case_root) || (envs["OFFGRID_CASE_ROOT"] = case_root)
     cmd = `$python $mc_script $inf $outf`
     run(isempty(envs) ? cmd : setenv(cmd, merge(ENV, envs)))
     return JSON.parsefile(outf)

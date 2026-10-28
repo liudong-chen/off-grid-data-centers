@@ -38,9 +38,9 @@ import numpy as np
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))            # Code/OffGrid
-OUT = os.environ.get('BYONG_OUT', os.path.join(HERE, 'out', 'hybrid_diesel'))
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..'))
-MC = f'{BYONG}/Code/HOPE/ModelCases'
+OUT = os.environ.get('OFFGRID_OUT', os.path.join(HERE, 'out', 'hybrid_diesel'))
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
+MC = f'{PROJECT_ROOT}/Code/HOPE/ModelCases'
 
 E = lambda k, d: float(os.environ.get(k, d))
 T_DSL, T_GAS, M_PAPER = int(E('T_DSL', 12)), int(E('T_GAS', 24)), int(E('M_QUEUE', 26))

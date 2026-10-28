@@ -5,14 +5,14 @@ and the land price, and Far West is the cheapest ERCOT zone on BOTH ($3.953/MMBt
 so it dominates every other zone for every campus: free siting = every campus in Far West.
 Hence one MIP solve per campus (17), not 136.
 
-    BYONG_CASE=in/case BYONG_LOAD=in python3 run_offgrid_mip_S1_gasonly.py
+    OFFGRID_CASE=in/case OFFGRID_LOAD=in python3 run_free_siting.py
     -> out/S1_free_siting_gasonly_sites.json, out/S1_free_siting_gasonly.json
 """
 import os, sys, json, time
 import numpy as np, pandas as pd
 import offgrid_mip as om
 
-CD = os.environ.get('BYONG_CASE', 'in/case'); R = os.environ.get('BYONG_LOAD', 'in')
+CD = os.environ.get('OFFGRID_CASE', 'in/case'); R = os.environ.get('OFFGRID_LOAD', 'in')
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = f'{HERE}/out'
 om.anchor_capex()
 GASZ = json.load(open(f'{HERE}/zonal_gas_2030.json'))

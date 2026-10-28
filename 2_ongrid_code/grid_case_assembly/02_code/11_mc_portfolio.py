@@ -22,9 +22,9 @@ solar are scored on exactly the shapes HOPE optimised against.
 Requires numpy only - no pandas, no SciPy, no HOPE-side Python.
 
 Paths, in order of precedence:
-  BYONG_CASE_ROOT   env var, else <script dir>/ModelCases, else
+  OFFGRID_CASE_ROOT   env var, else <script dir>/ModelCases, else
                     <script dir>/TX8z_GTEP_cases
-  cache             BYONG_MC_CACHE env var, else <script dir>
+  cache             OFFGRID_MC_CACHE env var, else <script dir>
 """
 import csv, json, os, sys
 import numpy as np
@@ -69,7 +69,7 @@ def read_availability(path, ncols):
 
 
 def case_root(case):
-    cands = [os.environ.get('BYONG_CASE_ROOT'),
+    cands = [os.environ.get('OFFGRID_CASE_ROOT'),
              os.path.join(HERE, 'ModelCases'),
              os.path.join(HERE, 'TX8z_GTEP_cases'),
              os.path.join(HERE, '..', 'Code', 'HOPE', 'ModelCases')]
@@ -82,15 +82,15 @@ def case_root(case):
     raise SystemExit(
         'case data not found. Tried:\n  ' +
         '\n  '.join(str(c) for c in cands if c) +
-        '\nSet BYONG_CASE_ROOT to the directory holding TX8z_GTEP_<case>_case/.')
+        '\nSet OFFGRID_CASE_ROOT to the directory holding TX8z_GTEP_<case>_case/.')
 
 
 def cache_path(case):
-    d = os.environ.get('BYONG_MC_CACHE', HERE)
+    d = os.environ.get('OFFGRID_MC_CACHE', HERE)
     p = os.path.join(d, f'mc_cache_{case}.npz')
     if not os.path.isfile(p):
         raise SystemExit(f'missing {p} — it ships beside this script; '
-                         'set BYONG_MC_CACHE if you keep it elsewhere.')
+                         'set OFFGRID_MC_CACHE if you keep it elsewhere.')
     return p
 
 

@@ -17,10 +17,10 @@ import numpy as np
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 SRC, SRC_DATA = os.path.join(HERE, 'TX8z_GTEP_dc_vre_case'), 'Data_TX8z_GTEP_dc_vre'
-# : the 4-hour-battery design (run_renewable_only.py with BYONG_BATT_HOURS=4); E = 4P exactly.
-DESIGN = f'{BYONG}/Code/OffGrid/scenario_renewable_only/renewable_only_4h_sites.json'
+# : the 4-hour-battery design (run_renewable_only.py with OFFGRID_BATT_HOURS=4); E = 4P exactly.
+DESIGN = f'{PROJECT_ROOT}/Code/OffGrid/scenario_renewable_only/renewable_only_4h_sites.json'
 DST, DST_DATA = os.path.join(HERE, 'TX8z_GTEP_hybrid_ren4h_vre_case'), 'Data_TX8z_GTEP_hybrid_ren4h_vre'
 
 
@@ -95,7 +95,7 @@ def main():
     txt = open(sp).read()                                    # read first: open(..., 'w') truncates
     assert f'DataCase: {SRC_DATA}/' in txt
     open(sp, 'w').write(txt.replace(f'DataCase: {SRC_DATA}/', f'DataCase: {DST_DATA}/'))
-    json.dump(dict(case=os.path.basename(DST), data_dir=DST_DATA, design=os.path.relpath(DESIGN, BYONG),
+    json.dump(dict(case=os.path.basename(DST), data_dir=DST_DATA, design=os.path.relpath(DESIGN, PROJECT_ROOT),
                    n_existing_rows_before=n_gen0, n_btm_rows=n_new, n_candidate_rows=n_cand,
                    wind_MW=sum(f['wind'] for f in fleet.values()), solar_MW=sum(f['solar'] for f in fleet.values()),
                    batt_MW=sum(f['batt_MW'] for f in fleet.values()), batt_MWh=sum(f['batt_MWh'] for f in fleet.values()),

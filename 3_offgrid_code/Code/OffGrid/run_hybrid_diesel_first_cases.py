@@ -9,7 +9,7 @@ Same algorithm as run_hybrid_diesel_first.py (size gensets alone for x*load at L
 then least-cost gas around them for the full load), same diesel parameters; the campus set,
 gas prices, land and capex anchor are EXACTLY those of run_offgrid_mip_cases_gasonly.py, and
 x = 0 is that script's gas-only MIP design (out/offgrid_mip_<tag>_gasonly_sites.json).
-Env: BYONG_CASE, BYONG_LOAD (as the other scripts), SCREEN, CONFIRM, WORKERS.
+Env: OFFGRID_CASE, OFFGRID_LOAD (as the other scripts), SCREEN, CONFIRM, WORKERS.
 """
 import json
 import os
@@ -29,8 +29,8 @@ K = float(sys.argv[2]) if CASE == '2035' else None
 TAG = 'georgia' if CASE == 'georgia' else f'2035_k{K:g}'.replace('.', 'p')
 SHARES = [float(s) for s in (sys.argv[3] if CASE == '2035' else (sys.argv[2] if len(sys.argv) > 2 else '0.3,0.6,1.0')).split(',')] \
     if (CASE == '2035' and len(sys.argv) > 3) or (CASE != '2035' and len(sys.argv) > 2) else [0.3, 0.6, 1.0]
-CD = os.environ.get('BYONG_CASE', f'{HERE}/in/case')
-R = os.environ.get('BYONG_LOAD', f'{HERE}/in')
+CD = os.environ.get('OFFGRID_CASE', f'{HERE}/in/case')
+R = os.environ.get('OFFGRID_LOAD', f'{HERE}/in')
 OUT = f'{HERE}/out/hybrid_diesel_{TAG}'; os.makedirs(OUT, exist_ok=True)
 DESIGN = f'{HERE}/out/offgrid_mip_{TAG}_gasonly_sites.json'
 ZM = {'Far West': 'FarWest', 'North Central': 'NorthCentral', 'South Central': 'SouthCentral'}

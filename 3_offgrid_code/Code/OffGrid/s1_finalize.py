@@ -3,7 +3,7 @@ final sites file, rebuild the S1 summary.  python3 s1_finalize.py"""
 import os, sys, json, glob
 import numpy as np, pandas as pd
 import offgrid_mip as om
-CD = os.environ['BYONG_CASE']; R = os.environ['BYONG_LOAD']
+CD = os.environ['OFFGRID_CASE']; R = os.environ['OFFGRID_LOAD']
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = f'{HERE}/out'
 om.anchor_capex(); GAS = json.load(open(f'{HERE}/zonal_gas_2030.json')); K = ['Recip', 'Aero35', 'Aero48', 'FrameCT', 'CC']
 ZM = {'Far West': 'FarWest', 'North Central': 'NorthCentral', 'South Central': 'SouthCentral'}

@@ -6,19 +6,19 @@ out/sensitivity_with_vre/ as a sensitivity case.
 
 Run from the assembled project root:
 
-    BYONG_CASE=<HOPE Data_TX8z_GTEP_dc dir> BYONG_LOAD=<DC_Load/load_profiles dir> \
+    OFFGRID_CASE=<HOPE Data_TX8z_GTEP_dc dir> OFFGRID_LOAD=<DC_Load/load_profiles dir> \
         python3 Code/OffGrid/run_offgrid_mip_gasonly.py all gasonly
 
 Writes out/offgrid_mip_<tag>.json, one record per campus, in the same shape as
-offgrid_v4_sites.json so the figure scripts can read either.
+offgrid_sites.json so the figure scripts can read either.
 """
 import os, sys, json, time
 import numpy as np, pandas as pd
 import offgrid_mip as om
 
-CD = os.environ.get('BYONG_CASE', 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
-R = os.environ.get('BYONG_LOAD', 'DC_Load/load_profiles')
-OUT = os.environ.get('BYONG_OUT', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'out'))   # BYONG_OUT: scenario folders
+CD = os.environ.get('OFFGRID_CASE', 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
+R = os.environ.get('OFFGRID_LOAD', 'DC_Load/load_profiles')
+OUT = os.environ.get('OFFGRID_OUT', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'out'))   # OFFGRID_OUT: scenario folders
 ZM = {'Far West': 'FarWest', 'North Central': 'NorthCentral', 'South Central': 'SouthCentral'}
 
 d = pd.read_csv(f'{R}/dc_load_hourly_MW.csv', index_col=0, parse_dates=True)
@@ -28,17 +28,17 @@ meta['zone'] = meta.ercot_weather_zone.map(lambda z: ZM.get(z, z))
 only = sys.argv[1].split(',') if len(sys.argv) > 1 and sys.argv[1] != 'all' else None
 TAG = sys.argv[2] if len(sys.argv) > 2 else 'gasonly'
 POOL = len(sys.argv) > 1 and sys.argv[1] == 'pool'   # one shared plant for all 17 campuses
-FREE = os.environ.get('BYONG_FREE', '0') == '1'      # let VRE + battery substitute for machines
-SENS = os.environ.get('BYONG_SENS', '0') == '1'      # MC sensitivity (Benders-style) cuts
+FREE = os.environ.get('OFFGRID_FREE', '0') == '1'      # let VRE + battery substitute for machines
+SENS = os.environ.get('OFFGRID_SENS', '0') == '1'      # MC sensitivity (Benders-style) cuts
 CF_S = {z: om.og.zonal_solar_cf(CD, z) for z in om.og.GAS}
 CF_W = {z: om.zonal_wind_cf(CD, z) for z in om.og.GAS}
 # zonal delivered gas, $/MMBtu, 2030 -- the table the published v4 results and the HOPE vre
-# cases use (Figures/fig123_package/01_raw/zonal_gas_2030.json); OffGridBYONG.GAS is the
+# cases use (Figures/figures_1_to_3/01_raw/zonal_gas_2030.json); offgrid_model.GAS is the
 # older ERCOT-wide $3.891 fallback and is NOT used here
-if os.environ.get('BYONG_RAW', '0') != '1':                # paper basis: capex anchored to on-grid
+if os.environ.get('OFFGRID_RAW', '0') != '1':                # paper basis: capex anchored to on-grid
     FAC = om.anchor_capex()
     print(f"capex anchored to on-grid candidates: CT-class x{FAC['CT']:.5f}, CC x{FAC['CC']:.5f}", flush=True)
-GASZ = json.load(open(os.environ.get('BYONG_GAS', os.path.join(os.path.dirname(os.path.abspath(__file__)),
+GASZ = json.load(open(os.environ.get('OFFGRID_GAS', os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                                              'zonal_gas_2030.json'))))
 
 rows = []
@@ -46,10 +46,10 @@ os.makedirs(OUT, exist_ok=True)
 
 if POOL:
     # the pooled architecture: the 17 hourly loads summed and served by ONE plant, designed
-    # in each of the three zones offgrid_v4_pool.json reports (Far West is the paper's case)
+    # in each of the three zones offgrid_pool.json reports (Far West is the paper's case)
     tot = d[meta.site_id].values[:om.H].sum(axis=1)
     pool = {}
-    for zone in os.environ.get('BYONG_POOL_ZONES', 'FarWest,SouthCentral,NorthCentral').split(','):
+    for zone in os.environ.get('OFFGRID_POOL_ZONES', 'FarWest,SouthCentral,NorthCentral').split(','):
         t = time.time()
         res = om.design(tot, zone, CF_S[zone], CF_W[zone], gas=GASZ[zone],
                         allow=(False, False, False), credit_cap=0.15, vre_cut_frac=0.0,

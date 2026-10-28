@@ -13,10 +13,10 @@ Figure 5 -- Georgia Power against ERCOT: the same physics on a different fleet.
      the extra months the grid takes, both systems, with the break-even
 
 SOURCES.  ERCOT on-grid: HOPE TX8z_GTEP_{dc,base}_vre_case Gurobi objectives (dc - base
-over data-center energy).  ERCOT off-grid: offgrid_v4_sites.json (17 campuses),
-offgrid_v4_pool.json (FarWest).  Georgia on-grid: HOPE GA1z_GTEP_{dc,base}_case.
+over data-center energy).  ERCOT off-grid: offgrid_sites.json (17 campuses),
+offgrid_pool.json (FarWest).  Georgia on-grid: HOPE GA1z_GTEP_{dc,base}_case.
 Georgia off-grid: offgrid_georgia_sites.json (31 campuses), offgrid_georgia_pool.json.
-Levers: georgia_decomp.json.  Time: 87_opportunity_cost.py conventions.
+Levers: georgia_decomp.json.  Time: calculate_opportunity_cost.py conventions.
 
     python 96_fig5.py
 """
@@ -35,7 +35,7 @@ _PKG = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if os.path.isdir(f'{_PKG}/01_raw'):
     O, FIG, DATA = f'{_PKG}/01_raw', f'{_PKG}/04_figure', f'{_PKG}/03_panel_data'
 else:
-    OUT = os.environ.get('BYONG_OUT', 'build/fig5')
+    OUT = os.environ.get('OFFGRID_OUT', 'build/fig5')
     O, FIG, DATA = f'{OUT}/out', OUT, OUT
 MM = 1/25.4
 W2 = 183*MM
@@ -97,7 +97,7 @@ def capital(r):
 
 
 # ======================================================================= ERCOT
-E_SITES = json.load(open(f'{O}/offgrid_v4_sites.json'))
+E_SITES = json.load(open(f'{O}/offgrid_sites.json'))
 E_ON = json.load(open(f'{O}/ongrid_final.json'))
 E_MWH = E_ON['energy_MWh']
 E = dict(
@@ -147,7 +147,7 @@ RESID_V = GAP - sum(v for _n, v in LEV)
 # ---------------------------------------------------------------------- time
 # forgone earnings while a built campus waits, $/MW of grid load/month.
 # CoreWeave FY2024: $1.915 B revenue / 250 MW / 12 months x 62.7% adjusted-EBITDA
-# margin = $400k.  Derivation and the three cross-checks: 87_opportunity_cost.py.
+# margin = $400k.  Derivation and the three cross-checks: calculate_opportunity_cost.py.
 RATE, R, N_ELEC = 400_000.0, 0.08, 20
 E_PEN_PV = E['pen']*E['mwh']*af_annual(N_ELEC, R)
 G_PEN_PV = G['pen']*G['mwh']*af_annual(N_ELEC, R)

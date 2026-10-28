@@ -16,10 +16,10 @@ import numpy as np
 import hybrid_diesel_lib as L
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..'))
-LOAD_DIR = os.environ.get('BYONG_LOAD', f'{BYONG}/DC_Load/load_profiles')
-OUT = os.environ.get('BYONG_OUT', os.path.join(HERE, 'out', 'hybrid_diesel'))
-GASONLY = os.environ.get('BYONG_GASONLY', f'{HERE}/out/offgrid_mip_gasonly.json')
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
+LOAD_DIR = os.environ.get('OFFGRID_LOAD', f'{PROJECT_ROOT}/DC_Load/load_profiles')
+OUT = os.environ.get('OFFGRID_OUT', os.path.join(HERE, 'out', 'hybrid_diesel'))
+GASONLY = os.environ.get('OFFGRID_GASONLY', f'{HERE}/out/offgrid_mip_gasonly.json')
 
 L.prepare()
 d, meta = L.load_sites(f'{LOAD_DIR}/dc_load_hourly_MW.csv', f'{LOAD_DIR}/site_parameters_and_results.csv')

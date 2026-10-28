@@ -1,6 +1,6 @@
 """GAS-ONLY variant: no solar/wind/battery; the wind lever (G3) is dropped.
 Georgia -> ERCOT, one parameter at a time, with the MIP (frontier-search version:
-Figures/fig5_package/02_code/82_georgia_decomp.py). G0 is read from the Georgia run.
+Figures/figure_5/02_code/82_georgia_decomp.py). G0 is read from the Georgia run.
 
     python3 run_offgrid_mip_georgia_decomp.py [G1|G2|G3|G4]    # one step (parallel), or all
     -> out/georgia_decomp_<step>.json, and out/georgia_decomp.json when all four exist
@@ -9,7 +9,7 @@ import os, sys, json, time
 import numpy as np, pandas as pd
 import offgrid_mip as om
 
-CD = os.environ.get('BYONG_CASE'); R = os.environ.get('BYONG_LOAD')
+CD = os.environ.get('OFFGRID_CASE'); R = os.environ.get('OFFGRID_LOAD')
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = f'{HERE}/out'
 GA_GAS, GA_LAND, TX_GAS, TX_LAND = 5.688, 4670.0, 3.953, 2560.0
 GA_SOLAR_CF, FLEET_MW, GA_N, CAMELLIA = 0.265*0.88, 12400.0, 31, 3200.0

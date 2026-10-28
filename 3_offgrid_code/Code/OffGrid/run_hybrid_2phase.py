@@ -37,7 +37,7 @@ import run_hybrid_diesel_first as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.environ.get('HYB_SRC', f'{HERE}/out/hybrid_diesel/all_sites.json')
-OUT = os.environ.get('BYONG_OUT2', os.path.join(HERE, 'out', 'hybrid_2phase')); os.makedirs(OUT, exist_ok=True)
+OUT = os.environ.get('OFFGRID_OUT2', os.path.join(HERE, 'out', 'hybrid_2phase')); os.makedirs(OUT, exist_ok=True)
 T_GAS, T_CON, END = 24, int(os.environ.get('T_CON', 50)), 24 + 240
 r_m = 1.08**(1/12) - 1
 mo = np.arange(END + 1); disc = (1 + r_m)**(-mo.astype(float))

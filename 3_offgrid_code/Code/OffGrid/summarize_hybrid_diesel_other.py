@@ -8,7 +8,7 @@ $/MWh, year-one load fraction, and -- when the HOPE cases exist and are solved -
 connected cost with gensets retired:
     c_connected = (obj_hybrid - obj_base)/E + (gas capital + land + genset capex)/E
 using the scenario's own base and dc cases (same formula as summarize_hybrid_diesel.py).
-Env: BYONG_MC (ModelCases dir; default ../HOPE/ModelCases relative to this file).
+Env: OFFGRID_MC (ModelCases dir; default ../HOPE/ModelCases relative to this file).
 """
 import glob
 import json
@@ -19,8 +19,8 @@ import numpy as np
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..'))
-MC = os.environ.get('BYONG_MC', f'{BYONG}/Code/HOPE/ModelCases')
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
+MC = os.environ.get('OFFGRID_MC', f'{PROJECT_ROOT}/Code/HOPE/ModelCases')
 TAG = sys.argv[1]
 OUT = f'{HERE}/out/hybrid_diesel_{TAG}'
 HOPE = {'2035_k0p5': dict(base='TX8z_GTEP_base2035_case', dc='TX8z_GTEP_dc20_case', hyb='TX8z_GTEP_hyb20_dsl{tag}_case'),

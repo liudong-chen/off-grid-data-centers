@@ -12,7 +12,7 @@ distillate fuel oil No. 2 (diesel) 73.96 kg CO2/MMBtu.
 import json, os, sys
 import numpy as np, pandas as pd
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
-import OffGridBYONG as og
+import offgrid_model as og
 
 EF_GAS = 53.06e-3    # t CO2 / MMBtu
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..'))

@@ -1,14 +1,14 @@
 """The overbuild decomposition of 69_ongrid_overbuild.py, recomputed from the off-grid
 files in out/ and the already-reconciled ongrid_final.json (the on-grid half of 69 needs
 the HOPE power.csv, which the packages do not carry, and it does not change when the
-off-grid designs do). Writes out/overbuild.json.  python3 69b_overbuild_decomp.py [out_dir]
+off-grid designs do). Writes out/overbuild.json.  python3 decompose_overbuild.py [out_dir]
 """
 import json, sys
 OUT = sys.argv[1] if len(sys.argv) > 1 else 'build/out'
 ONG = json.load(open(f'{OUT}/ongrid_final.json'))
-SITES = json.load(open(f'{OUT}/offgrid_v4_sites.json'))
-SUMM = json.load(open(f'{OUT}/offgrid_v4_summary.json'))
-POOLR = json.load(open(f'{OUT}/offgrid_v4_pool.json'))
+SITES = json.load(open(f'{OUT}/offgrid_sites.json'))
+SUMM = json.load(open(f'{OUT}/offgrid_summary.json'))
+POOLR = json.load(open(f'{OUT}/offgrid_pool.json'))
 UNIT_MW = {'Recip': 20.0, 'Aero35': 35.0, 'Aero48': 48.0, 'FrameCT': 419.0, 'CC': 627.0}
 A = SUMM['separate']['installed_MW']
 bestpool = min(POOLR.values(), key=lambda r: r['cost'])

@@ -12,8 +12,8 @@ sized from the map's own aspect ratio, which fixes the figure height and leaves 
 space anywhere.
 
 DATA (full record in fig1_manifest.md)
-  BYONG_DC_Load/load_profiles/dc_load_hourly_MW.csv            8,760 x 17, MW, weather year 2025
-  BYONG_DC_Load/load_profiles/site_parameters_and_results.csv  lat, lon, city, train_share
+  DC_Load/load_profiles/dc_load_hourly_MW.csv            8,760 x 17, MW, weather year 2025
+  DC_Load/load_profiles/site_parameters_and_results.csv  lat, lon, city, train_share
   out/tx_zones.json                                      the eight weather-zone polygons
   out/ongrid_build.json                                  system peak increment, 30,793 MW (122,729 - 91,936)
 

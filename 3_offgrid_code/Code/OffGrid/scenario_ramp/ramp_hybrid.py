@@ -2,7 +2,7 @@
 10 GW, 25 GW and 40 GW, at months 0, 12 and 24.  Each stage is a proportional slice of the
 17 data centers, so the fleet designs of the diesel-share sweep scale with the slice.
 
-Same monthly accounting as Figures/fig123_package/02_code/73_fig123.py (8% discounted to
+Same monthly accounting as Figures/figures_1_to_3/02_code/plot_figures_1_to_3.py (8% discounted to
 day 0, 20 years after the first gas build).  For each stage, diesel can be on site 12 months
 after the stage is committed and gas 24 months after; if the grid arrives first, that tranche
 is not built.  For each stage the data center takes the better of (i) build gas, then connect
@@ -14,8 +14,8 @@ import json, os, csv
 import numpy as np
 H = os.path.dirname(os.path.abspath(__file__)); B = os.path.abspath(os.path.join(H, '..', '..', '..'))
 WN = f'{B}/Figures'
-HS = json.load(open(f'{WN}/fig123_package/01_raw/hybrid_diesel_summary.json')); P = HS['params']
-ONG = json.load(open(f'{WN}/fig123_package/01_raw/ongrid_final.json'))
+HS = json.load(open(f'{WN}/figures_1_to_3/01_raw/hybrid_diesel_summary.json')); P = HS['params']
+ONG = json.load(open(f'{WN}/figures_1_to_3/01_raw/ongrid_final.json'))
 T = {round(r['share'], 1): r for r in HS['table']}
 E, C_ON, MW_PUB, R, T_DSL, T_GAS = ONG['energy_MWh'], P['c_on'], P['MW_pub'], P['R'], P['T_DSL'], P['T_GAS']
 RATE = P['RATE']; r_m = R/12.0; e_m = E/12.0
@@ -85,7 +85,7 @@ def flat_case(x, T_grid):
 
 
 def paper_hybrid(x, T_grid):
-    """The paper's hybrid route exactly as in 73_fig123.monthly_flows('hyb'): diesel on x of the
+    """The paper's hybrid route exactly as in plot_figures_1_to_3.monthly_flows('hyb'): diesel on x of the
     load from month 12 to 24, gas from 24, connected (gas kept, diesel retired) from T_grid."""
     row = T[x]; f = row['load_fraction_before_gas']
     earn = np.zeros(END + 1); cost = np.zeros(END + 1)

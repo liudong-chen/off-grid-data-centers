@@ -19,7 +19,7 @@ subject to the reliability standard the on-grid case is planned to,
     LOLE(n, s, w, b)  <=  0.1 loss-of-load days per year,
 
 scored by the same sequential Monte Carlo (two-state Markov outages, packed planned
-maintenance, greedy storage dispatch) that `OffGridBYONG.py` uses. Everything in the
+maintenance, greedy storage dispatch) that `offgrid_model.py` uses. Everything in the
 catalogue, the cost tables and the Monte Carlo is imported from that file unchanged, so
 a design found here is scored on exactly the same machines and the same random streams
 as a design found by the frontier search.
@@ -90,7 +90,7 @@ import importlib.util
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-_spec = importlib.util.spec_from_file_location('og', os.path.join(HERE, 'OffGridBYONG.py'))
+_spec = importlib.util.spec_from_file_location('og', os.path.join(HERE, 'offgrid_model.py'))
 og = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(og)
 
 H, NC, TARGET = og.H, og.NC, og.TARGET
@@ -103,10 +103,10 @@ SOLAR_FIXED = og.SOLAR_FIXED     # 117,995 $/MW-yr
 BATT_FIXED = og.BATT_FIXED       # 161,512 $/MW-yr, 4-hour
 BATT_HOURS = og.BATT_HOURS
 ETA = og.ETA
-ACRES = dict(og.ACRES_PER_MW, wind=1.0)    # direct-impact area only, as 68_offgrid_v4.py
+ACRES = dict(og.ACRES_PER_MW, wind=1.0)    # direct-impact area only, as 68_offgrid.py
 AVAIL = np.array([(1 - u['q'])*(1 - u['poh']/H) for u in CAT])   # expected availability
 
-# The published v4 results (Figures/fig123_package/02_code/68_offgrid_v4.py) anchor the
+# The published v4 results (Figures/figures_1_to_3/02_code/68_offgrid.py) anchor the
 # catalogue capex so that the frame CT and the CC carry the on-grid candidate file's fixed
 # cost ($103,382 and $118,650 /MW-yr); every 'CT-class' machine (recip, aeros, frame CT)
 # takes the CT factor. Off-grid and on-grid then see the same technology prices.
@@ -830,8 +830,8 @@ if __name__ == '__main__':
     else:
         # one real campus: paths follow run_offgrid.py's conventions
         import pandas as pd
-        CD = os.environ.get('BYONG_CASE', 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
-        R = os.environ.get('BYONG_LOAD', 'DC_Load/load_profiles')
+        CD = os.environ.get('OFFGRID_CASE', 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
+        R = os.environ.get('OFFGRID_LOAD', 'DC_Load/load_profiles')
         d = pd.read_csv(f'{R}/dc_load_hourly_MW.csv', index_col=0, parse_dates=True)
         d = d[~((d.index.month == 2) & (d.index.day == 29))]
         meta = pd.read_csv(f'{R}/site_parameters_and_results.csv')

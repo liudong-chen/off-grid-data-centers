@@ -7,7 +7,7 @@ LARGEST natural gas machines: 20 MW reciprocating engine and 627 MW combined cyc
 35 MW and 48 MW aeroderivatives and the 419 MW frame CT are removed (upper bound 0 in the MIP
 and a prohibitive fixed cost so that no improvement, polish or confirmation step can add them).
 
-    BYONG_CASE=... BYONG_LOAD=... python3 run_two_unit_sizes.py [sites|pool]
+    OFFGRID_CASE=... OFFGRID_LOAD=... python3 run_two_unit_sizes.py [sites|pool]
     -> two_unit_sizes_sites.json, two_unit_sizes_pool.json
 """
 import os, sys, json, time
@@ -18,7 +18,7 @@ KEEP = (0, 4)                                    # Recip 20 MW, CC 627 MW
 om.anchor_capex()
 for j in range(om.NC):
     if j not in KEEP:
-        om.FX_MW[j] = 1e9                        # in place (shared with OffGridBYONG)
+        om.FX_MW[j] = 1e9                        # in place (shared with offgrid_model)
 _orig = om.build_and_solve
 def _restricted(site, *a, nmax=None, **k):
     if nmax is None:
@@ -27,7 +27,7 @@ def _restricted(site, *a, nmax=None, **k):
     return _orig(site, *a, nmax=nmax, **k)
 om.build_and_solve = _restricted
 
-CD, R = os.environ['BYONG_CASE'], os.environ['BYONG_LOAD']
+CD, R = os.environ['OFFGRID_CASE'], os.environ['OFFGRID_LOAD']
 ZM = {'Far West': 'FarWest', 'North Central': 'NorthCentral', 'South Central': 'SouthCentral'}
 GASZ = json.load(open('zonal_gas_2030.json'))
 d = pd.read_csv(f'{R}/dc_load_hourly_MW.csv', index_col=0, parse_dates=True)

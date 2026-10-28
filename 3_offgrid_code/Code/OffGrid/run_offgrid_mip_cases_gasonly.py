@@ -7,24 +7,24 @@ published frontier-search runs used:
     python3 run_offgrid_mip_cases.py 2035 3.0     # fig4: 2035 inputs, 121 GW fleet
     -> out/offgrid_mip_<case>_sites.json, out/offgrid_mip_<case>_pool.json
 
-Georgia follows Figures/fig5_package/02_code/80_offgrid_georgia.py (fleet construction, gas
+Georgia follows Figures/figure_5/02_code/80_offgrid_georgia.py (fleet construction, gas
 $5.688, land $4,670, ERCOT-Coast solar shape at 23.3%, no wind, 2030 capex anchor).
-2035 follows Figures/fig4_package/02_code/76_offgrid_2035.py (loads x k, capex re-anchored to
+2035 follows Figures/figure_4/02_code/76_offgrid_2035.py (loads x k, capex re-anchored to
 the 2035 NGCC/NGCT $113,755/$96,576, 2035 zonal gas, wind $149,412, solar $108,393, VRE
 profiles +3%). The 4-hour battery is not in the paper's 2035 set; it is scaled by the same
 2035/2030 ratio as solar (x0.919) so it is not disadvantaged.
-Env: BYONG_CASE, BYONG_LOAD as run_offgrid_mip.py; BYONG_FREE/BYONG_SENS default ON here.
+Env: OFFGRID_CASE, OFFGRID_LOAD as run_offgrid_mip.py; OFFGRID_FREE/OFFGRID_SENS default ON here.
 """
 import os, sys, json, time
 import numpy as np, pandas as pd
 import offgrid_mip as om
 
 CASE = sys.argv[1]
-CD = os.environ.get('BYONG_CASE', 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
-R = os.environ.get('BYONG_LOAD', 'DC_Load/load_profiles')
+CD = os.environ.get('OFFGRID_CASE', 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
+R = os.environ.get('OFFGRID_LOAD', 'DC_Load/load_profiles')
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'out'); os.makedirs(OUT, exist_ok=True)
-FREE = os.environ.get('BYONG_FREE', '1') == '1'
-SENS = os.environ.get('BYONG_SENS', '1') == '1'
+FREE = os.environ.get('OFFGRID_FREE', '1') == '1'
+SENS = os.environ.get('OFFGRID_SENS', '1') == '1'
 KW = dict(credit_cap=1.0 if FREE else 0.15, vre_cut_frac=0.10 if FREE else 0.0, sens_cuts=SENS)
 ZM = {'Far West': 'FarWest', 'North Central': 'NorthCentral', 'South Central': 'SouthCentral'}
 

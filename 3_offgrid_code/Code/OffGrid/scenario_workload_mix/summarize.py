@@ -5,7 +5,7 @@ import json, os
 import numpy as np, pandas as pd
 H = os.path.dirname(os.path.abspath(__file__)); B = os.path.abspath(os.path.join(H, '..', '..', '..'))
 MC = f'{B}/Code/HOPE/ModelCases'; WN = f'{B}/Figures'
-P = json.load(open(f'{WN}/fig123_package/01_raw/hybrid_diesel_summary.json'))['params']
+P = json.load(open(f'{WN}/figures_1_to_3/01_raw/hybrid_diesel_summary.json'))['params']
 R, MWP, TG = P['R'], P['MW_pub'], P['T_GAS']; END = TG + 240
 mo = np.arange(END + 1); disc = (1 + R/12)**(-mo.astype(float))
 
@@ -43,8 +43,8 @@ for mix, case, d in [('base (archetype mix)', 'TX8z_GTEP_dc_vre_case', None),
                      ('inference', 'TX8z_GTEP_dc_wl_inference_case', 'inference'),
                      ('colocation', 'TX8z_GTEP_dc_wl_colocation_case', 'colocation')]:
     if d is None:
-        S = json.load(open(f'{WN}/fig123_package/01_raw/offgrid_v4_sites.json'))
-        Pl = json.load(open(f'{WN}/fig123_package/01_raw/offgrid_v4_pool.json'))['FarWest']
+        S = json.load(open(f'{WN}/figures_1_to_3/01_raw/offgrid_sites.json'))
+        Pl = json.load(open(f'{WN}/figures_1_to_3/01_raw/offgrid_pool.json'))['FarWest']
         prof = pd.read_csv(f'{B}/DC_Load/load_profiles/dc_load_hourly_MW.csv', index_col=0)
     else:
         f = f'{H}/out/{d}/offgrid_mip_gasonly.json'

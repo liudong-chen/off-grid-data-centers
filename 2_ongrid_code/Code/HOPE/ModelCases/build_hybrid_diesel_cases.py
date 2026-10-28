@@ -30,16 +30,16 @@ import numpy as np
 import pandas as pd
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BYONG = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
+PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..', '..'))
 SRC = os.path.join(HERE, 'TX8z_GTEP_dc_vre_case')
 SRC_DATA = 'Data_TX8z_GTEP_dc_vre'
-DESIGNS = os.environ.get('HYB_DESIGNS', f'{BYONG}/Code/OffGrid/out/hybrid_diesel/all_sites.json')
+DESIGNS = os.environ.get('HYB_DESIGNS', f'{PROJECT_ROOT}/Code/OffGrid/out/hybrid_diesel/all_sites.json')
 PREFIX = os.environ.get('HYB_PREFIX', 'hybrid')   # hyb2p -> connection-aware fleets (out/hybrid_2phase_nocredit)
-GASF = f'{BYONG}/Code/OffGrid/zonal_gas_2030.json'
+GASF = f'{PROJECT_ROOT}/Code/OffGrid/zonal_gas_2030.json'
 DSL_MODE = os.environ.get('DSL_MODE', 'backup')          # backup | retire
 
 E23, E19 = 1.053, 1.2549
-CAT = {   # index order matches OffGridBYONG.CAT; diesel is the sixth
+CAT = {   # index order matches offgrid_model.CAT; diesel is the sixth
     0: dict(k='Recip',   S=20.0,  hr=8.295, vom=5.69*E19, q=0.030,  type='NGCT'),
     1: dict(k='Aero35',  S=35.0,  hr=9.447, vom=5.70*E23, q=0.0476, type='NGCT'),
     2: dict(k='Aero48',  S=48.0,  hr=9.100, vom=5.70*E23, q=0.0476, type='NGCT'),

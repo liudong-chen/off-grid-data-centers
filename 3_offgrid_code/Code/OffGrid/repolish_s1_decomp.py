@@ -4,7 +4,7 @@ carries the same final stages.   python3 repolish_s1_decomp.py s1|decomp"""
 import os, sys, json, glob, shutil, time
 import numpy as np, pandas as pd
 import offgrid_mip as om
-WHAT = sys.argv[1]; CD = os.environ['BYONG_CASE']; R = os.environ['BYONG_LOAD']; HERE = os.path.dirname(os.path.abspath(__file__)); OUT = f'{HERE}/out'
+WHAT = sys.argv[1]; CD = os.environ['OFFGRID_CASE']; R = os.environ['OFFGRID_LOAD']; HERE = os.path.dirname(os.path.abspath(__file__)); OUT = f'{HERE}/out'
 om.anchor_capex(); K = ['Recip', 'Aero35', 'Aero48', 'FrameCT', 'CC']
 d = pd.read_csv(f'{R}/dc_load_hourly_MW.csv', index_col=0, parse_dates=True); d = d[~((d.index.month == 2) & (d.index.day == 29))].drop(columns=['TOTAL_MW'])
 

@@ -1,17 +1,17 @@
 """Scenario 1, free siting, with the MIP: each ERCOT campus designed in all eight zones
-(the frontier-search version is Figures/fig123_package/02_code/73_S1_free_siting.py).
+(the frontier-search version is Figures/figures_1_to_3/02_code/73_S1_free_siting.py).
 
-    python3 run_offgrid_mip_S1.py [sites_json]     # home-zone designs reused from sites_json
+    python3 run_free_siting_with_renewables.py [sites_json]     # home-zone designs reused from sites_json
     -> out/S1_free_siting_sites.json, out/S1_free_siting.json   (same shape as the package)
 
-Env BYONG_CASE, BYONG_LOAD as run_offgrid_mip.py. Paper basis: anchored capex, zonal gas,
+Env OFFGRID_CASE, OFFGRID_LOAD as run_offgrid_mip.py. Paper basis: anchored capex, zonal gas,
 free credits, sensitivity cuts.
 """
 import os, sys, json, time
 import numpy as np, pandas as pd
 import offgrid_mip as om
 
-CD = os.environ.get('BYONG_CASE'); R = os.environ.get('BYONG_LOAD')
+CD = os.environ.get('OFFGRID_CASE'); R = os.environ.get('OFFGRID_LOAD')
 HERE = os.path.dirname(os.path.abspath(__file__)); OUT = f'{HERE}/out'
 HOME_JSON = sys.argv[1] if len(sys.argv) > 1 else f'{OUT}/offgrid_mip_final.json'
 ONLY = sys.argv[2].split(',') if len(sys.argv) > 2 else None

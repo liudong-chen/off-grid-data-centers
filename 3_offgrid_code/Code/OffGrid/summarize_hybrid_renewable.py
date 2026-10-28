@@ -1,7 +1,7 @@
 """Pure-renewable hybrid: value against waiting for the grid, after the HOPE run.
 
 Needs Code/HOPE/ModelCases/TX8z_GTEP_hybrid_ren4h_vre_case/output (build_hybrid_renewable_case.py, then HOPE).
-Accounting is that of Fig. 3 (Figures/fig123_package/02_code/73_fig123.py): monthly flows, 8% to day 0,
+Accounting is that of Fig. 3 (Figures/figures_1_to_3/02_code/plot_figures_1_to_3.py): monthly flows, 8% to day 0,
 20 years after month 24.  The renewable plant is built by month 24 (same as gas), runs islanded
 until the grid arrives at month T, then connects:
     islanded cost   = renewable_only_4h_summary.json cost_Byr                      (months 24 .. T)
@@ -12,9 +12,9 @@ until the grid arrives at month T, then connects:
 """
 import json, os
 import numpy as np
-HERE = os.path.dirname(os.path.abspath(__file__)); BYONG = os.path.abspath(os.path.join(HERE, '..', '..'))
-MC = f'{BYONG}/Code/HOPE/ModelCases'
-HS = json.load(open(f'{BYONG}/Figures/fig123_package/01_raw/hybrid_diesel_summary.json')); P = HS['params']
+HERE = os.path.dirname(os.path.abspath(__file__)); PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
+MC = f'{PROJECT_ROOT}/Code/HOPE/ModelCases'
+HS = json.load(open(f'{PROJECT_ROOT}/Figures/figures_1_to_3/01_raw/hybrid_diesel_summary.json')); P = HS['params']
 REN = json.load(open(f'{HERE}/scenario_renewable_only/renewable_only_4h_summary.json'))
 E, C_ON, MW, R, T_GAS = REN['energy_MWh'], P['c_on'], P['MW_pub'], P['R'], P['T_GAS']
 END = T_GAS + 240; mo = np.arange(END + 1); disc = (1 + R/12)**(-mo.astype(float))

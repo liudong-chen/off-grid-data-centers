@@ -17,8 +17,8 @@ Profiles: zonal candidate solar and wind availability, HOPE TX8z_GTEP_dc_vre cas
 Not modelled (all make the cost here a LOWER bound): other weather years, battery outages and
 degradation, inverter/interconnection limits, land availability.
 
-    BYONG_CASE=... BYONG_LOAD=... python3 run_renewable_only.py   -> renewable_only_sites.json, renewable_only_summary.json
-    BYONG_BATT_HOURS=4 ... python3 run_renewable_only.py           -> renewable_only_4h_sites.json, renewable_only_4h_summary.json
+    OFFGRID_CASE=... OFFGRID_LOAD=... python3 run_renewable_only.py   -> renewable_only_sites.json, renewable_only_summary.json
+    OFFGRID_BATT_HOURS=4 ... python3 run_renewable_only.py           -> renewable_only_4h_sites.json, renewable_only_4h_summary.json
         (: batteries fixed at 4 hours, E = 4P, at the catalogue's 4-hour cost of $161,512/MW-yr,
          the battery the grid builds; used for the renewable hybrid HOPE case)
 """
@@ -28,14 +28,14 @@ from scipy.optimize import linprog
 from scipy.sparse import coo_matrix, vstack
 import offgrid_mip as om
 
-CD, R = os.environ['BYONG_CASE'], os.environ['BYONG_LOAD']
+CD, R = os.environ['OFFGRID_CASE'], os.environ['OFFGRID_LOAD']
 H = 8760
 SOLAR, WIND = 117995.0, 157009.0
 BP, BE = 30048.0, 34404.0
 ETA_C, ETA_D = 0.85, 1.0
 AC = dict(solar=5.0, wind=1.0, storage=0.05, dc=0.0)   # data center land removed 
 LCRF = 0.08
-HOURS = float(os.environ.get('BYONG_BATT_HOURS', 0) or 0)     # 0 = free duration
+HOURS = float(os.environ.get('OFFGRID_BATT_HOURS', 0) or 0)     # 0 = free duration
 BATT4H = 161512.0                                             # $/MW-yr, 4-h battery, unit catalogue / HOPE candidate
 TAG = f'renewable_only_{int(HOURS)}h' if HOURS else 'renewable_only'
 ZM = {'Far West': 'FarWest', 'North Central': 'NorthCentral', 'South Central': 'SouthCentral'}
