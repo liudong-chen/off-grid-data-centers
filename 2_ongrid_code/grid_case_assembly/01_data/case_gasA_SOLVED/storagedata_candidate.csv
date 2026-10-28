@@ -1,0 +1,9 @@
+Zone,Type,Capacity (MWh),Max Power (MW),Charging efficiency,Discharging efficiency,Cost ($/MW/yr),Cost ($/MWh),EF,CC,Charging Rate,Discharging Rate
+Coast,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0
+East,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0
+FarWest,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0
+North,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0
+NorthCentral,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0
+South,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0
+SouthCentral,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0
+West,Battery,40000.0,10000.0,0.922,0.922,161512,0.0,0.0,0.9329,1.0,1.0

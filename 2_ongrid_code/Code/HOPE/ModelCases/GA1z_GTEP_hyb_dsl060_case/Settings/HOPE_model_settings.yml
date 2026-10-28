@@ -1,0 +1,19 @@
+DataCase: Data_GA1z_GTEP_hyb_dsl060/
+model_mode: GTEP
+resource_aggregation: 0
+endogenous_rep_day: 0
+external_rep_day: 0            #Binary, 0 - FULL 8760 CHRONOLOGY
+flexible_demand: 0
+inv_dcs_bin: 0                   # continuous investment -> pure LP
+carbon_policy: 0
+clean_energy_policy: 0           # Georgia has no binding RPS
+planning_reserve_mode: 1         # system RA at Georgia Power's 26% WINTER target
+operation_reserve_mode: 1
+transmission_loss: 0
+transmission_expansion: 0     # one zone: Georgia Power is a single integrated system
+storage_ld_duration_hours: 12
+write_shadow_prices: 0
+summary_table: 1
+save_postprocess_snapshot: 1     # enables HOPE.calculate_erec_from_output(...)
+solver: gurobi
+debug: 0

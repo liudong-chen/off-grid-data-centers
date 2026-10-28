@@ -1,0 +1,7 @@
+data_centers_GW,architecture,built_GW,per_MW_of_peak,in_the_hole
+20.2,"Off-grid, x = 0",37.64,1.982,419 MW × 43 | 627 MW × 23 | 35 MW × 128 | 48 MW × 8 | 20 MW × 17
+20.2,"Off-grid/hybrid, x = 0.6",33.83,1.781,"627 MW × 24 | 419 MW × 4 | 35 MW × 120 | diesel 3 MW × 4,301"
+20.2,On-grid,14.11,0.871,627 MW × 23
+121.3,"Off-grid, x = 0",151.96,1.333,627 MW × 141 | 419 MW × 145 | 35 MW × 58 | 48 MW × 14 | 20 MW × 5
+121.3,"Off-grid/hybrid, x = 0.6",174.23,1.529,"627 MW × 148 | 419 MW × 10 | 35 MW × 30 | diesel 3 MW × 25,397"
+121.3,On-grid,193.53,1.991,627 MW × 128 | wind 55.8 GW | solar 17.7 GW | lines 39.7 GW

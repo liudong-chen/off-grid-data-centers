@@ -1,0 +1,35 @@
+{
+ "new_MW": 29747.30958627716,
+ "by_zone": {
+  "FarWest": 29747.30958627716
+ },
+ "by_tech": {
+  "NGCC": 29747.30958627716
+ },
+ "inv": 3529518282.411785,
+ "opr_increment": 6059380417.980122,
+ "cost": 9588898700.391907,
+ "energy_MWh": 222051000.0,
+ "lcoe": 43.18331689743305,
+ "n_units": 47.44387493824108,
+ "unit_MW": 627.0,
+ "lines": [],
+ "base_new_MW": 0,
+ "lines_dc": {
+  "North->NorthCentral": 3031.977303298215
+ },
+ "lines_base": {
+  "North->NorthCentral": 3110.3535211825
+ },
+ "obj_dc": 19879997380.989952,
+ "obj_base": 10291098680.598045,
+ "new_gen_MWh": 249752043.23171708,
+ "new_gen_cf": 0.9584230511852686,
+ "displaced_older_MWh": 27701043.23171708,
+ "prm_dc": 0.1316896037821198,
+ "prm_base": 0.1344,
+ "cases": {
+  "base": "TX8z_GTEP_base_vre_case",
+  "dc": "TX8z_GTEP_dc_vre_case"
+ }
+}

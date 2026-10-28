@@ -1,0 +1,17 @@
+snapshot_version: 1
+created_at: "2026-10-03T01:36:41"
+termination_status: "OPTIMAL"
+resource_aggregation: 0
+external_rep_day: 0
+save_postprocess_snapshot: 1
+source_case_path: "ModelCases/GA1z_GTEP_dc_u627_case"
+source_output_path: "ModelCases/GA1z_GTEP_dc_u627_case/output"
+unit_commitment: ~
+model_mode: "GTEP"
+planning_reserve_mode: 1
+solver: "gurobi"
+representative_day!: ~
+flexible_demand: 0
+primal_status: "FEASIBLE_POINT"
+objective_value: 6.410783382664864e9
+endogenous_rep_day: 0

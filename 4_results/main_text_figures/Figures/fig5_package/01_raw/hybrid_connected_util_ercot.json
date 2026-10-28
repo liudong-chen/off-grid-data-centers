@@ -1,0 +1,83 @@
+{
+ "note": "HOPE dispatch of the data centers' own gas after grid connection (diesel retired); util = MWh/(MW*8760)",
+ "cases": "TX8z_GTEP_hybrid_dsl000_vre_case, TX8z_GTEP_hybrid_dsl010_vre_case, TX8z_GTEP_hybrid_dsl020_vre_case, TX8z_GTEP_hybrid_dsl030_vre_case, TX8z_GTEP_hybrid_dsl040_vre_case, TX8z_GTEP_hybrid_dsl050_vre_case, TX8z_GTEP_hybrid_dsl060_vre_case, TX8z_GTEP_hybrid_dsl070_vre_case, TX8z_GTEP_hybrid_dsl080_vre_case, TX8z_GTEP_hybrid_dsl090_vre_case, TX8z_GTEP_hybrid_dsl100_vre_case",
+ "table": {
+  "0.0": {
+   "gas_MWh": 189147322.90033558,
+   "gas_MW": 63996.0,
+   "util": 0.3373985897312353,
+   "diesel_MW": 0.0,
+   "diesel_MWh": 0.0
+  },
+  "0.1": {
+   "gas_MWh": 188452665.46519884,
+   "gas_MW": 58462.0,
+   "util": 0.36798024964036047,
+   "diesel_MW": 4461.0,
+   "diesel_MWh": 1.3796477560390485e-07
+  },
+  "0.2": {
+   "gas_MWh": 193833273.3078713,
+   "gas_MW": 54477.0,
+   "util": 0.40617299032709653,
+   "diesel_MW": 8679.0,
+   "diesel_MWh": 0.00015080304598313887
+  },
+  "0.3": {
+   "gas_MWh": 190010561.25804743,
+   "gas_MW": 49099.0,
+   "util": 0.44177484958878493,
+   "diesel_MW": 12903.0,
+   "diesel_MWh": 2.0664155693175417
+  },
+  "0.4": {
+   "gas_MWh": 200617630.68078455,
+   "gas_MW": 44242.0,
+   "util": 0.5176428735994799,
+   "diesel_MW": 17130.0,
+   "diesel_MWh": 2.111297924735709
+  },
+  "0.5": {
+   "gas_MWh": 196655098.55539903,
+   "gas_MW": 40191.0,
+   "util": 0.5585631649836614,
+   "diesel_MW": 21336.0,
+   "diesel_MWh": 0.0004442581553121272
+  },
+  "0.6": {
+   "gas_MWh": 200731156.49605682,
+   "gas_MW": 35546.0,
+   "util": 0.6446439988111643,
+   "diesel_MW": 25545.0,
+   "diesel_MWh": 2.9395330845633225
+  },
+  "0.7": {
+   "gas_MWh": 198065303.61173052,
+   "gas_MW": 34148.0,
+   "util": 0.6621235350891691,
+   "diesel_MW": 29820.0,
+   "diesel_MWh": 1.0669333750640815
+  },
+  "0.8": {
+   "gas_MWh": 190632364.33258602,
+   "gas_MW": 32756.0,
+   "util": 0.6643572300065421,
+   "diesel_MW": 33954.0,
+   "diesel_MWh": 1.3588129448639845
+  },
+  "0.9": {
+   "gas_MWh": 193307681.1704219,
+   "gas_MW": 32543.0,
+   "util": 0.6780901235780559,
+   "diesel_MW": 38214.0,
+   "diesel_MWh": 2.3533283165752437
+  },
+  "1.0": {
+   "gas_MWh": 193260600.67734313,
+   "gas_MW": 32298.0,
+   "util": 0.6830674470892748,
+   "diesel_MW": 42402.0,
+   "diesel_MWh": 0.000196276213046076
+  }
+ }
+}

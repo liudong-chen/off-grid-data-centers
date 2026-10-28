@@ -1,0 +1,122 @@
+{
+ "FarWest": {
+  "zone": "FarWest",
+  "peak_MW": 16204.09,
+  "energy_MWh": 111025427.88499999,
+  "n": [
+   0,
+   0,
+   0,
+   15,
+   22
+  ],
+  "mix": {
+   "FrameCT": 15,
+   "CC": 22
+  },
+  "unit_count": 37,
+  "installed_MW": 20079.0,
+  "ratio": 1.239131601959752,
+  "LOLE": 0.0645,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "gas": 3.997,
+  "fixed_cost": 2176116630.0,
+  "land_cost": 114691.2479999999,
+  "vre_cost": 0.0,
+  "fuel_cost": 3161130823.430994,
+  "cost": 5337362144.678994,
+  "lcoe": 48.07333100492463,
+  "acres": 2007.8999999999996,
+  "n_minus_k": 3,
+  "n_cuts": 4,
+  "capacity_credits": {
+   "solar": 0.6796749580000001,
+   "wind": 0.17230746399999997,
+   "battery": 0.1111111111111111
+  },
+  "seconds": 122.26957893371582,
+  "method": "mip, gas-only (allow solar/wind/battery = False)"
+ },
+ "SouthCentral": {
+  "zone": "SouthCentral",
+  "peak_MW": 16204.09,
+  "energy_MWh": 111025427.88499999,
+  "n": [
+   0,
+   0,
+   0,
+   12,
+   24
+  ],
+  "mix": {
+   "FrameCT": 12,
+   "CC": 24
+  },
+  "unit_count": 36,
+  "installed_MW": 20076.0,
+  "ratio": 1.2389464635163097,
+  "LOLE": 0.0815,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "gas": 5.044,
+  "fixed_cost": 2197369368.0,
+  "land_cost": 1237324.0320000006,
+  "vre_cost": 0.0,
+  "fuel_cost": 3876498102.0778713,
+  "cost": 6075104794.109871,
+  "lcoe": 54.718138987065714,
+  "acres": 2007.6000000000004,
+  "n_minus_k": 3,
+  "n_cuts": 10,
+  "capacity_credits": {
+   "solar": 0.7013288539999999,
+   "wind": 0.22026261600000005,
+   "battery": 0.1111111111111111
+  },
+  "seconds": 242.48630928993225,
+  "method": "mip, gas-only (allow solar/wind/battery = False)"
+ },
+ "NorthCentral": {
+  "zone": "NorthCentral",
+  "peak_MW": 16204.09,
+  "energy_MWh": 111025427.88499999,
+  "n": [
+   0,
+   0,
+   0,
+   15,
+   22
+  ],
+  "mix": {
+   "FrameCT": 15,
+   "CC": 22
+  },
+  "unit_count": 37,
+  "installed_MW": 20079.0,
+  "ratio": 1.239131601959752,
+  "LOLE": 0.0645,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "gas": 5.187,
+  "fixed_cost": 2176116630.0,
+  "land_cost": 1495965.8159999996,
+  "vre_cost": 0.0,
+  "fuel_cost": 3986984601.7026215,
+  "cost": 6164597197.518621,
+  "lcoe": 55.52419220490557,
+  "acres": 2007.8999999999996,
+  "n_minus_k": 3,
+  "n_cuts": 3,
+  "capacity_credits": {
+   "solar": 0.660604508,
+   "wind": 0.18838803,
+   "battery": 0.1111111111111111
+  },
+  "seconds": 103.01984405517578,
+  "method": "mip, gas-only (allow solar/wind/battery = False)"
+ }
+}

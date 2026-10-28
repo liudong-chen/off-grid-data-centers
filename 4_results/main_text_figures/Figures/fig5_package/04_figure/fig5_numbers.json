@@ -1,0 +1,86 @@
+{
+ "ercot": {
+  "sep": {
+   "lcoe": 67.78281838737401,
+   "capital_per_MWh": 32.90693444991494,
+   "fuel_per_MWh": 34.87588393745906,
+   "installed_MW": 63996.0,
+   "peak_MW": 37990.54,
+   "x_peak": 1.6845246211293654
+  },
+  "grid": {
+   "lcoe": 43.18331689743305,
+   "capital_per_MWh": 15.895079429553505,
+   "fuel_per_MWh": 27.288237467879547,
+   "installed_MW": 29747.30958627716,
+   "peak_MW": 30378.0,
+   "x_peak": 0.9792385800999789
+  },
+  "penalty": 24.599501489940955,
+  "energy_MWh": 222051000.0,
+  "obj_dc": 19879997380.989952,
+  "obj_base": 10291098680.598045,
+  "hope_cases": "TX8z_GTEP_dc_vre_case, TX8z_GTEP_base_vre_case"
+ },
+ "georgia": {
+  "sep": {
+   "lcoe": 98.03080457357855,
+   "capital_per_MWh": 50.12477129487203,
+   "fuel_per_MWh": 47.90603327870651,
+   "installed_MW": 21452.0,
+   "peak_MW": 12399.999999999998,
+   "x_peak": 1.7300000000000002
+  },
+  "grid": {
+   "lcoe": 55.216673288909654,
+   "capital_per_MWh": 16.907205041886673,
+   "fuel_per_MWh": 38.309468247022984,
+   "installed_MW": 10332.869760266087,
+   "peak_MW": 9743.7,
+   "x_peak": 1.0604667385352675
+  },
+  "penalty": 42.814131284668896,
+  "energy_MWh": 72513167.84875064,
+  "obj_dc": 6410783382.664864,
+  "obj_base": 2406847484.416532,
+  "prm": {
+   "base": 0.1484999999999999,
+   "dc": 0.1175
+  },
+  "hope_cases": "GA1z_GTEP_dc_case, GA1z_GTEP_base_case"
+ },
+ "penalty_ratio": 1.740447110368319,
+ "levers": [
+  {
+   "name": "Gas price",
+   "saving": 13.335042131755927
+  },
+  {
+   "name": "Campus size",
+   "saving": 8.227863150860856
+  },
+  {
+   "name": "Land",
+   "saving": 0.0049937103942170324
+  },
+  {
+   "name": "interaction",
+   "saving": 8.680087193193543
+  }
+ ],
+ "gap": 30.247986186204542,
+ "time": {
+  "rate": 400000.0,
+  "r": 0.08,
+  "n_elec": 20,
+  "ercot_penalty_pv": 53630097652.83864,
+  "georgia_penalty_pv": 30481305452.434933,
+  "ercot_ratio_at_24": 6.666545573920652,
+  "georgia_ratio_at_6": 0.9539539636867823,
+  "georgia_ratio_at_36": 5.192774816594106,
+  "breakeven_months": {
+   "ercot": 3.37,
+   "georgia": 6.3
+  }
+ }
+}

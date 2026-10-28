@@ -1,0 +1,7 @@
+system,architecture,capital_land_USD_MWh,fuel_om_USD_MWh,lcoe_USD_MWh
+ERCOT,sep,32.907,34.876,67.783
+ERCOT,grid,15.895,27.288,43.183
+ERCOT,penalty,,,24.600
+Georgia,sep,50.125,47.906,98.031
+Georgia,grid,16.907,38.309,55.217
+Georgia,penalty,,,42.814

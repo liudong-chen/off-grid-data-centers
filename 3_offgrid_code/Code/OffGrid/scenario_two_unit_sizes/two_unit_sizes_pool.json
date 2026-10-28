@@ -1,0 +1,114 @@
+{
+ "FarWest": {
+  "zone": "FarWest",
+  "n": [
+   0,
+   0,
+   0,
+   0,
+   61
+  ],
+  "installed_MW": 38247.0,
+  "ratio": 1.1801650077233587,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.055,
+  "cost": 10781821668.691898,
+  "fixed_cost": 4538006550.0,
+  "land_cost": 218466.86400000006,
+  "vre_cost": 0.0,
+  "fuel_cost": 6243596651.827898,
+  "acres": 3824.7000000000007,
+  "gas": 3.953,
+  "lcoe": 48.55564114492626,
+  "energy_MWh": 222050855.76999998,
+  "peak_MW": 32408.18,
+  "unit_count": 61,
+  "mix": {
+   "CC": 61
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.0,
+   "wind": 0.0,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     0,
+     59
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 33636.25686917808,
+    "lole": 0.7333333333333333,
+    "cost": 10634415772.275097,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.0379158829670869,
+      0.06468003564973648,
+      0.09120357638946648,
+      0.8508386526327992,
+      1.3059070088475944
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+87": 0.027083333333333334,
+      "Aero35+51": 0.027083333333333334,
+      "Aero48+38": 0.022916666666666665,
+      "FrameCT+5": 0.010416666666666666,
+      "CC+3": 0.014583333333333334
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     0,
+     0,
+     61
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 34776.468966438355,
+    "lole": 0.041666666666666664,
+    "cost": 10783210035.123098,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 10783210035.123098,
+    "tested": 16
+   }
+  ],
+  "seconds": 64.96896147727966,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve"
+ }
+}

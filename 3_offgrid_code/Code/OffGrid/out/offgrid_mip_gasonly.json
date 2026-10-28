@@ -1,0 +1,2506 @@
+[
+ {
+  "zone": "West",
+  "n": [
+   3,
+   0,
+   1,
+   5,
+   1
+  ],
+  "installed_MW": 2830.0,
+  "ratio": 2.474598205697697,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.093,
+  "cost": 561446831.8122187,
+  "fixed_cost": 317860061.2167321,
+  "land_cost": 63097.67999999999,
+  "vre_cost": 0.0,
+  "fuel_cost": 243523672.91548654,
+  "acres": 283.0,
+  "gas": 4.456,
+  "lcoe": 78.25573356906072,
+  "energy_MWh": 7174513.6899999995,
+  "peak_MW": 1143.62,
+  "unit_count": 10,
+  "mix": {
+   "Recip": 3,
+   "Aero48": 1,
+   "FrameCT": 5,
+   "CC": 1
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.42932899999999996,
+   "wind": 0.24371559999999998,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     1,
+     0,
+     0,
+     4,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2103.066339041096,
+    "lole": 1.1125,
+    "cost": 497272542.3384464,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.15189051482813354,
+      0.27485926102109726,
+      0.3632466029538324,
+      2.186051276738094,
+      2.8464086344750488
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+16": 0.09791666666666667,
+      "Aero35+9": 0.09375,
+      "Aero48+7": 0.0875,
+      "FrameCT+1": 0.125,
+      "CC+1": 0.06458333333333334
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     1,
+     5,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2506.514639041096,
+    "lole": 0.07916666666666666,
+    "cost": 544104557.1529392,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 544104557.1529392,
+    "tested": 300
+   }
+  ],
+  "seconds": 105.89023017883301,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S01",
+  "home_zone": "West"
+ },
+ {
+  "zone": "West",
+  "n": [
+   2,
+   1,
+   0,
+   4,
+   2
+  ],
+  "installed_MW": 3005.0,
+  "ratio": 2.2758944530279623,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.099,
+  "cost": 598933716.560594,
+  "fixed_cost": 340560461.65580386,
+  "land_cost": 66999.48000000001,
+  "vre_cost": 0.0,
+  "fuel_cost": 258306255.42479008,
+  "acres": 300.5,
+  "gas": 4.456,
+  "lcoe": 72.46188003876014,
+  "energy_MWh": 8265500.65,
+  "peak_MW": 1320.36,
+  "unit_count": 9,
+  "mix": {
+   "Recip": 2,
+   "Aero35": 1,
+   "FrameCT": 4,
+   "CC": 2
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.5283378,
+   "wind": 0.2915224,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     2,
+     3
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2467.4304828767126,
+    "lole": 0.625,
+    "cost": 568389322.1984049,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.07753873207595988,
+      0.14188927180856126,
+      0.19038624775889645,
+      2.0149030205422647,
+      2.995732273553991
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+4": 0.4583333333333333,
+      "Aero35+3": 0.4083333333333333,
+      "Aero48+2": 0.4270833333333333,
+      "FrameCT+1": 0.08333333333333333,
+      "CC+1": 0.03125
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     6,
+     0,
+     5,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2653.758288356165,
+    "lole": 0.05416666666666667,
+    "cost": 620834624.9625745,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "n": [
+     0,
+     2,
+     0,
+     4,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.09,
+    "cost": 594283294.6213585,
+    "feasible": true,
+    "tested": 300
+   }
+  ],
+  "seconds": 145.49119305610657,
+  "n_improvements": 1,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S02",
+  "home_zone": "West"
+ },
+ {
+  "zone": "FarWest",
+  "n": [
+   0,
+   0,
+   0,
+   8,
+   4
+  ],
+  "installed_MW": 5860.0,
+  "ratio": 1.51432536288249,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0995,
+  "cost": 1270102569.5995328,
+  "fixed_cost": 644110664.0,
+  "land_cost": 33472.31999999998,
+  "vre_cost": 0.0,
+  "fuel_cost": 625958433.2795328,
+  "acres": 586.0,
+  "gas": 3.953,
+  "lcoe": 58.61611357428971,
+  "energy_MWh": 21668147.07,
+  "peak_MW": 3869.71,
+  "unit_count": 12,
+  "mix": {
+   "FrameCT": 8,
+   "CC": 4
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.620377,
+   "wind": 0.09675260000000002,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     6,
+     5
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 5121.867254109589,
+    "lole": 0.30833333333333335,
+    "cost": 1243252634.2246885,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.1102747854405322,
+      0.18337717243711532,
+      0.2567280414119614,
+      1.8191584434161694,
+      1.9061698204057995
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 1.6007833120682655,
+     "evals": {
+      "Recip+11": 0.09166666666666666,
+      "Aero35+7": 0.08541666666666667,
+      "Aero48+5": 0.08541666666666667,
+      "FrameCT+1": 0.05,
+      "CC+1": 0.04583333333333333
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     2,
+     7,
+     5
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 5587.678918493151,
+    "lole": 0.020833333333333332,
+    "cost": 1305270730.2667937,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 1305270730.2667937,
+    "tested": 300
+   }
+  ],
+  "seconds": 121.5685384273529,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S03",
+  "home_zone": "FarWest"
+ },
+ {
+  "zone": "FarWest",
+  "n": [
+   0,
+   0,
+   0,
+   6,
+   2
+  ],
+  "installed_MW": 3768.0,
+  "ratio": 1.951593438751146,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0555,
+  "cost": 722710686.9430238,
+  "fixed_cost": 408689448.0,
+  "land_cost": 21522.816000000006,
+  "vre_cost": 0.0,
+  "fuel_cost": 313999716.1270237,
+  "acres": 376.79999999999995,
+  "gas": 3.953,
+  "lcoe": 66.43506463030764,
+  "energy_MWh": 10878452.379999999,
+  "peak_MW": 1930.73,
+  "unit_count": 8,
+  "mix": {
+   "FrameCT": 6,
+   "CC": 2
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 2,
+  "n_sens_cuts": 2,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.5688114,
+   "wind": 0.25711280000000003,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     1,
+     5,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3076.620687671233,
+    "lole": 0.26666666666666666,
+    "cost": 688823270.4452763,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.11039592031553191,
+      0.1978968133432994,
+      0.3002621817793965,
+      2.0188169198634007,
+      2.6548056865833978
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 1.4120466992704181,
+     "evals": {
+      "Recip+6": 0.1375,
+      "Aero35+4": 0.12083333333333333,
+      "Aero48+3": 0.10833333333333334,
+      "FrameCT+1": 0.035416666666666666,
+      "CC+1": 0.01875
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     1,
+     6,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2885.070807534247,
+    "lole": 0.475,
+    "cost": 699860294.1342318,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.10559251389294994,
+      0.22151271167110922,
+      0.26812427189005655,
+      2.028148247292285,
+      2.5961322848982245
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.1625566738156885,
+     "evals": {
+      "Recip+6": 0.2520833333333333,
+      "Aero35+4": 0.19583333333333333,
+      "Aero48+3": 0.2125,
+      "FrameCT+1": 0.0625,
+      "CC+1": 0.035416666666666666
+     }
+    }
+   },
+   {
+    "it": 2,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     1,
+     6,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3455.176856164384,
+    "lole": 0.029166666666666667,
+    "cost": 732142721.7732763,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 732142721.7732763,
+    "tested": 300
+   }
+  ],
+  "seconds": 91.0042953491211,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S04",
+  "home_zone": "FarWest"
+ },
+ {
+  "zone": "South",
+  "n": [
+   0,
+   6,
+   0,
+   8,
+   5
+  ],
+  "installed_MW": 6697.0,
+  "ratio": 1.4784643574629668,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0965,
+  "cost": 1788783489.9113445,
+  "fixed_cost": 759406299.7921052,
+  "land_cost": 319848.72,
+  "vre_cost": 0.0,
+  "fuel_cost": 1029057341.3992393,
+  "acres": 669.6999999999998,
+  "gas": 5.304,
+  "lcoe": 65.1504442486135,
+  "energy_MWh": 27456197.89,
+  "peak_MW": 4529.7,
+  "unit_count": 19,
+  "mix": {
+   "Aero35": 6,
+   "FrameCT": 8,
+   "CC": 5
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.4182768,
+   "wind": 0.3657816,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     6,
+     6
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 5691.973302739726,
+    "lole": 0.9083333333333333,
+    "cost": 1714389175.4548578,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.08207745763482911,
+      0.13934970163614088,
+      0.19416455960216372,
+      1.5778325730187692,
+      2.388762789235098
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+13": 0.3125,
+      "Aero35+8": 0.29791666666666666,
+      "Aero48+6": 0.2833333333333333,
+      "FrameCT+1": 0.1875,
+      "CC+1": 0.08333333333333333
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     0,
+     9,
+     5
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 6257.535759589042,
+    "lole": 0.05416666666666667,
+    "cost": 1792830982.4992394,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "n": [
+     0,
+     4,
+     0,
+     8,
+     5
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.0975,
+    "cost": 1776768656.653976,
+    "feasible": true,
+    "tested": 275
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 1776768656.653976,
+    "tested": 300
+   }
+  ],
+  "seconds": 99.63175868988037,
+  "n_improvements": 1,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S05",
+  "home_zone": "South"
+ },
+ {
+  "zone": "SouthCentral",
+  "n": [
+   0,
+   0,
+   0,
+   8,
+   4
+  ],
+  "installed_MW": 5860.0,
+  "ratio": 1.5853133969803297,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.048,
+  "cost": 1415540283.4341981,
+  "fixed_cost": 644110664.0,
+  "land_cost": 361163.52,
+  "vre_cost": 0.0,
+  "fuel_cost": 771068455.9141982,
+  "acres": 586.0,
+  "gas": 4.999,
+  "lcoe": 65.02096664778668,
+  "energy_MWh": 21770520.439999998,
+  "peak_MW": 3696.43,
+  "unit_count": 12,
+  "mix": {
+   "FrameCT": 8,
+   "CC": 4
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.39772099999999994,
+   "wind": 0.2241274,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     3,
+     0,
+     5,
+     5
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 4838.746784246576,
+    "lole": 0.5458333333333333,
+    "cost": 1365863848.917509,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.1014467612160556,
+      0.1744259877853427,
+      0.25285588211138543,
+      1.8306748854777284,
+      2.3902906734131513
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.3432552110643416,
+     "evals": {
+      "Recip+10": 0.19791666666666666,
+      "Aero35+6": 0.19166666666666668,
+      "Aero48+5": 0.15416666666666667,
+      "FrameCT+1": 0.0875,
+      "CC+1": 0.05
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     0,
+     7,
+     5
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 5500.42342260274,
+    "lole": 0.020833333333333332,
+    "cost": 1432092098.2774563,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 1432092098.2774563,
+    "tested": 300
+   }
+  ],
+  "seconds": 82.84746623039246,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S06",
+  "home_zone": "SouthCentral"
+ },
+ {
+  "zone": "NorthCentral",
+  "n": [
+   0,
+   0,
+   0,
+   6,
+   4
+  ],
+  "installed_MW": 5022.0,
+  "ratio": 1.7007240438083755,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0605,
+  "cost": 1187406887.9134629,
+  "fixed_cost": 557476548.0,
+  "land_cost": 374159.0880000002,
+  "vre_cost": 0.0,
+  "fuel_cost": 629556180.8254628,
+  "acres": 502.2000000000003,
+  "gas": 5.142,
+  "lcoe": 67.08500578120429,
+  "energy_MWh": 17700034.07,
+  "peak_MW": 2952.86,
+  "unit_count": 10,
+  "mix": {
+   "FrameCT": 6,
+   "CC": 4
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.2874042,
+   "wind": 0.4157838000000001,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     5,
+     4
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 4173.205036986302,
+    "lole": 0.3125,
+    "cost": 1145708611.8482628,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.09526750650586208,
+      0.17035044214731676,
+      0.26484789387870705,
+      1.83258146374831,
+      2.5257286443082556
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 1.6182332385000482,
+     "evals": {
+      "Recip+8": 0.14583333333333334,
+      "Aero35+5": 0.13333333333333333,
+      "Aero48+4": 0.10833333333333334,
+      "FrameCT+1": 0.05,
+      "CC+1": 0.025
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     1,
+     3,
+     0,
+     6,
+     4
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 4665.932520547945,
+    "lole": 0.025,
+    "cost": 1215361300.598875,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 1215361300.598875,
+    "tested": 300
+   }
+  ],
+  "seconds": 134.3573009967804,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S07",
+  "home_zone": "NorthCentral"
+ },
+ {
+  "zone": "NorthCentral",
+  "n": [
+   0,
+   0,
+   0,
+   9,
+   6
+  ],
+  "installed_MW": 7533.0,
+  "ratio": 1.4198847957537284,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0865,
+  "cost": 1982557851.4946568,
+  "fixed_cost": 836214822.0,
+  "land_cost": 561238.6320000002,
+  "vre_cost": 0.0,
+  "fuel_cost": 1145781790.8626568,
+  "acres": 753.3000000000002,
+  "gas": 5.142,
+  "lcoe": 62.58792503161677,
+  "energy_MWh": 31676363.3,
+  "peak_MW": 5305.36,
+  "unit_count": 15,
+  "mix": {
+   "FrameCT": 9,
+   "CC": 6
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.5265204000000001,
+   "wind": 0.32507780000000003,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     5,
+     8
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 6453.6292315068495,
+    "lole": 0.7083333333333334,
+    "cost": 1940453163.0460882,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.07583984902540424,
+      0.12742382116510972,
+      0.18215267514423802,
+      1.3630374989556233,
+      2.3949584131250607
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+15": 0.22708333333333333,
+      "Aero35+9": 0.225,
+      "Aero48+7": 0.19791666666666666,
+      "FrameCT+1": 0.18125,
+      "CC+1": 0.06458333333333334
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     0,
+     8,
+     7
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 7019.191688356165,
+    "lole": 0.058333333333333334,
+    "cost": 1999008744.664122,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 1999008744.664122,
+    "tested": 300
+   }
+  ],
+  "seconds": 82.60423564910889,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S08",
+  "home_zone": "NorthCentral"
+ },
+ {
+  "zone": "NorthCentral",
+  "n": [
+   0,
+   0,
+   0,
+   8,
+   6
+  ],
+  "installed_MW": 7114.0,
+  "ratio": 1.508980918200253,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.09,
+  "cost": 1843113134.6629941,
+  "fixed_cost": 792897764.0,
+  "land_cost": 530021.4559999998,
+  "vre_cost": 0.0,
+  "fuel_cost": 1049685349.2069942,
+  "acres": 711.3999999999996,
+  "gas": 5.142,
+  "lcoe": 62.875917026842785,
+  "energy_MWh": 29313499.060000002,
+  "peak_MW": 4714.44,
+  "unit_count": 14,
+  "mix": {
+   "FrameCT": 8,
+   "CC": 6
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.45737500000000003,
+   "wind": 0.12154859999999999,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     5,
+     7
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 5883.523182876713,
+    "lole": 1.2833333333333334,
+    "cost": 1781866488.4487877,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.10195630100846856,
+      0.16903281482982946,
+      0.22940167726905428,
+      1.6058117408833799,
+      2.14108232117784
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+63": 0.0020833333333333333,
+      "Aero35+38": 0.0020833333333333333,
+      "Aero48+28": 0.0020833333333333333,
+      "FrameCT+4": 0.0020833333333333333,
+      "CC+3": 0.0020833333333333333
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     0,
+     0,
+     8,
+     6
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 6449.085639726028,
+    "lole": 0.0875,
+    "cost": 1845747469.4461942,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 1845747469.4461942,
+    "tested": 300
+   }
+  ],
+  "seconds": 74.67574191093445,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S09",
+  "home_zone": "NorthCentral"
+ },
+ {
+  "zone": "East",
+  "n": [
+   6,
+   4,
+   0,
+   5,
+   2
+  ],
+  "installed_MW": 3609.0,
+  "ratio": 1.8330311295311525,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.091,
+  "cost": 805472827.8801979,
+  "fixed_cost": 427704793.26609576,
+  "land_cost": 268884.9360000002,
+  "vre_cost": 0.0,
+  "fuel_cost": 377499149.6781021,
+  "acres": 360.9000000000001,
+  "gas": 4.822,
+  "lcoe": 73.43594235153509,
+  "energy_MWh": 10968373.280000001,
+  "peak_MW": 1968.87,
+  "unit_count": 17,
+  "mix": {
+   "Recip": 6,
+   "Aero35": 4,
+   "FrameCT": 5,
+   "CC": 2
+  },
+  "margin": 0.0,
+  "n_minus_k": 2,
+  "n_cuts": 3,
+  "n_sens_cuts": 3,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.3723792,
+   "wind": 0.1462054,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     2,
+     5,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3120.2484356164387,
+    "lole": 0.15416666666666667,
+    "cost": 762926467.4988073,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.08290043390564168,
+      0.16661973336944602,
+      0.2221596444925947,
+      2.1068405158679506,
+      2.917770732084279
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 0.6996919773403364,
+     "evals": {
+      "Recip+6": 0.09375,
+      "Aero35+4": 0.07916666666666666,
+      "Aero48+3": 0.07916666666666666,
+      "FrameCT+1": 0.01875,
+      "CC+1": 0.008333333333333333
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     4,
+     3
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3224.542819863014,
+    "lole": 0.1375,
+    "cost": 765571140.9437656,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.1314095600607117,
+      0.19711434009106754,
+      0.2741196373466505,
+      2.243744592971112,
+      2.243744592971112
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 0.5509585208092691,
+     "evals": {
+      "Recip+6": 0.0625,
+      "Aero35+4": 0.0625,
+      "Aero48+3": 0.06041666666666667,
+      "FrameCT+1": 0.014583333333333334,
+      "CC+1": 0.014583333333333334
+     }
+    }
+   },
+   {
+    "it": 2,
+    "k": 2,
+    "n": [
+     0,
+     1,
+     1,
+     2,
+     4
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3112.976178995434,
+    "lole": 0.2791666666666667,
+    "cost": 769480510.9199761,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.1514759588977728,
+      0.23664902034237095,
+      0.3286055981742551,
+      1.8067973465925957,
+      2.412933150162911
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 1.4715990961111005,
+     "evals": {
+      "Recip+6": 0.1125,
+      "Aero35+4": 0.10833333333333334,
+      "Aero48+3": 0.10416666666666667,
+      "FrameCT+1": 0.04583333333333333,
+      "CC+1": 0.025
+     }
+    }
+   },
+   {
+    "it": 3,
+    "k": 2,
+    "n": [
+     1,
+     4,
+     0,
+     5,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3178.9761543379,
+    "lole": 0.0875,
+    "cost": 777345254.2659988,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 4,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 777345254.2659988,
+    "tested": 300
+   }
+  ],
+  "seconds": 135.24743390083313,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S10",
+  "home_zone": "East"
+ },
+ {
+  "zone": "SouthCentral",
+  "n": [
+   1,
+   11,
+   0,
+   0,
+   0
+  ],
+  "installed_MW": 405.0,
+  "ratio": 1.5106303618052963,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.061,
+  "cost": 156559265.6183651,
+  "fixed_cost": 80831214.96408615,
+  "land_cost": 24960.959999999992,
+  "vre_cost": 0.0,
+  "fuel_cost": 75703089.69427897,
+  "acres": 40.5,
+  "gas": 4.999,
+  "lcoe": 108.91383699978948,
+  "energy_MWh": 1437459.83,
+  "peak_MW": 268.1,
+  "unit_count": 12,
+  "mix": {
+   "Recip": 1,
+   "Aero35": 11
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.41361139999999996,
+   "wind": 0.45631980000000005,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     1,
+     10,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 336.85461187214617,
+    "lole": 0.5125,
+    "cost": 149864020.7436809,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      1.315676793905937,
+      1.9789710113162011,
+      2.6721181918761463,
+      2.369837320003213,
+      1.7211419020141017
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.2613383528869875,
+     "evals": {
+      "Recip+1": 0.1375,
+      "Aero35+1": 0.07083333333333333,
+      "Aero48+1": 0.035416666666666666,
+      "FrameCT+1": 0.04791666666666667,
+      "CC+1": 0.09166666666666666
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     12,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 381.742794520548,
+    "lole": 0.025,
+    "cost": 158466596.6008895,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "n": [
+     0,
+     10,
+     1,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.1,
+    "cost": 153450873.38713372,
+    "feasible": true,
+    "tested": 15
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 153450873.38713372,
+    "tested": 25
+   }
+  ],
+  "seconds": 39.20562744140625,
+  "n_improvements": 1,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S11",
+  "home_zone": "SouthCentral"
+ },
+ {
+  "zone": "West",
+  "n": [
+   0,
+   7,
+   2,
+   0,
+   0
+  ],
+  "installed_MW": 341.0,
+  "ratio": 1.8454378179456652,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.094,
+  "cost": 121942886.3741679,
+  "fixed_cost": 66417196.45289474,
+  "land_cost": 7602.935999999998,
+  "vre_cost": 0.0,
+  "fuel_cost": 55518086.98527316,
+  "acres": 34.099999999999994,
+  "gas": 4.456,
+  "lcoe": 103.25937905303934,
+  "energy_MWh": 1180937.63,
+  "peak_MW": 184.78,
+  "unit_count": 9,
+  "mix": {
+   "Aero35": 7,
+   "Aero48": 2
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 4,
+  "n_sens_cuts": 4,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.3356802,
+   "wind": 0.3978958,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     8,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 254.495196347032,
+    "lole": 1.6875,
+    "cost": 111373914.00505483,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      1.2879403012034227,
+      2.2499048351651325,
+      2.799210979499187,
+      2.689701062434014,
+      2.4923416282755184
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+3": 0.035416666666666666,
+      "Aero35+2": 0.01875,
+      "Aero48+2": 0.00625,
+      "FrameCT+1": 0.11458333333333333,
+      "CC+1": 0.13958333333333334
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     8,
+     1,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 298.1229442922375,
+    "lole": 0.16666666666666666,
+    "cost": 120074037.04989746,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      1.290984181315566,
+      2.436116485618568,
+      3.2834143460057716,
+      3.2834143460057716,
+      2.772588722239781
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 0.8010419812509619,
+     "evals": {
+      "Recip+1": 0.04583333333333333,
+      "Aero35+1": 0.014583333333333334,
+      "Aero48+1": 0.00625,
+      "FrameCT+1": 0.00625,
+      "CC+1": 0.010416666666666666
+     }
+    }
+   },
+   {
+    "it": 2,
+    "k": 3,
+    "n": [
+     2,
+     8,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 291.96642922374434,
+    "lole": 0.1,
+    "cost": 121663226.89510137,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      1.037987666851675,
+      2.2617630984737906,
+      2.0794415416798357,
+      3.1780538303479458,
+      3.1780538303479458
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 0.13696867035517424,
+     "evals": {
+      "Recip+1": 0.035416666666666666,
+      "Aero35+1": 0.010416666666666666,
+      "Aero48+1": 0.0125,
+      "FrameCT+1": 0.004166666666666667,
+      "CC+1": 0.004166666666666667
+     }
+    }
+   },
+   {
+    "it": 3,
+    "k": 3,
+    "n": [
+     0,
+     7,
+     2,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 309.938792694064,
+    "lole": 0.12916666666666668,
+    "cost": 121973785.2857679,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      1.4190841839428816,
+      3.0285220963769817,
+      2.517696472610991,
+      2.740840023925201,
+      1.9299098077088725
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 0.4696820567335349,
+     "evals": {
+      "Recip+1": 0.03125,
+      "Aero35+1": 0.00625,
+      "Aero48+1": 0.010416666666666666,
+      "FrameCT+1": 0.008333333333333333,
+      "CC+1": 0.01875
+     }
+    }
+   },
+   {
+    "it": 4,
+    "k": 3,
+    "n": [
+     1,
+     9,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 305.04271232876715,
+    "lole": 0.08333333333333333,
+    "cost": 123336282.83109887,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 5,
+    "stage": "improve",
+    "n": [
+     0,
+     7,
+     2,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.0775,
+    "cost": 121973785.2857679,
+    "feasible": true,
+    "tested": 31
+   },
+   {
+    "it": 6,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 121973785.2857679,
+    "tested": 45
+   }
+  ],
+  "seconds": 69.3925530910492,
+  "n_improvements": 1,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S12",
+  "home_zone": "West"
+ },
+ {
+  "zone": "NorthCentral",
+  "n": [
+   2,
+   8,
+   0,
+   0,
+   0
+  ],
+  "installed_MW": 320.0,
+  "ratio": 1.681467080027324,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0575,
+  "cost": 119754776.8889368,
+  "fixed_cost": 66224229.74659333,
+  "land_cost": 23841.280000000013,
+  "vre_cost": 0.0,
+  "fuel_cost": 53506705.862343475,
+  "acres": 32.0,
+  "gas": 5.142,
+  "lcoe": 118.44206922269338,
+  "energy_MWh": 1011083.1200000001,
+  "peak_MW": 190.31,
+  "unit_count": 10,
+  "mix": {
+   "Recip": 2,
+   "Aero35": 8
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.5541655999999999,
+   "wind": 0.39085380000000003,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     8,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 254.495196347032,
+    "lole": 1.025,
+    "cost": 109846791.81634444,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      1.3730123916041572,
+      2.0006270695780444,
+      2.4060921776862085,
+      2.7972813348301524,
+      2.266653083767982
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+3": 0.016666666666666666,
+      "Aero35+2": 0.01875,
+      "Aero48+2": 0.008333333333333333,
+      "FrameCT+1": 0.0625,
+      "CC+1": 0.10625
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     2,
+     8,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 291.96642922374434,
+    "lole": 0.05,
+    "cost": 119861118.3107368,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "n": [
+     0,
+     9,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.1,
+    "cost": 116666413.75502865,
+    "feasible": true,
+    "tested": 42
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 116666413.75502865,
+    "tested": 42
+   }
+  ],
+  "seconds": 37.885650634765625,
+  "n_improvements": 1,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "S13",
+  "home_zone": "NorthCentral"
+ },
+ {
+  "zone": "NorthCentral",
+  "n": [
+   0,
+   0,
+   0,
+   6,
+   2
+  ],
+  "installed_MW": 3768.0,
+  "ratio": 1.8152387559255403,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.1,
+  "cost": 813232786.7964638,
+  "fixed_cost": 408689448.0,
+  "land_cost": 280731.0719999999,
+  "vre_cost": 0.0,
+  "fuel_cost": 404262607.72446376,
+  "acres": 376.79999999999995,
+  "gas": 5.142,
+  "lcoe": 73.74064396028106,
+  "energy_MWh": 11028284.309999999,
+  "peak_MW": 2075.76,
+  "unit_count": 8,
+  "mix": {
+   "FrameCT": 6,
+   "CC": 2
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 2,
+  "n_sens_cuts": 2,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.3640434000000001,
+   "wind": 0.3871552,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     4,
+     3
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3224.542819863014,
+    "lole": 0.2708333333333333,
+    "cost": 789656535.9678435,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.08728817143364975,
+      0.16571045776615406,
+      0.26333233551662105,
+      1.6894806201076367,
+      2.3826278006675823
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 1.4322021417671729,
+     "evals": {
+      "Recip+6": 0.16041666666666668,
+      "Aero35+4": 0.13958333333333334,
+      "Aero48+3": 0.12291666666666666,
+      "FrameCT+1": 0.05,
+      "CC+1": 0.025
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     1,
+     5
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3229.086411643836,
+    "lole": 0.7125,
+    "cost": 808440565.5414673,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.08049210059775645,
+      0.15770101249645246,
+      0.20662499315120653,
+      1.7239368728892939,
+      2.890371757896165
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+6": 0.4395833333333333,
+      "Aero35+4": 0.37916666666666665,
+      "Aero48+3": 0.38333333333333336,
+      "FrameCT+1": 0.12708333333333333,
+      "CC+1": 0.03958333333333333
+     }
+    }
+   },
+   {
+    "it": 2,
+    "k": 3,
+    "n": [
+     0,
+     6,
+     0,
+     6,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3602.420505479452,
+    "lole": 0.029166666666666667,
+    "cost": 855310411.601369,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "n": [
+     0,
+     0,
+     0,
+     6,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.0875,
+    "cost": 814392679.9692638,
+    "feasible": true,
+    "tested": 275
+   },
+   {
+    "it": 4,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 814392679.9692638,
+    "tested": 300
+   }
+  ],
+  "seconds": 74.89902901649475,
+  "n_improvements": 1,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "A01",
+  "home_zone": "NorthCentral"
+ },
+ {
+  "zone": "Coast",
+  "n": [
+   1,
+   4,
+   0,
+   4,
+   2
+  ],
+  "installed_MW": 3090.0,
+  "ratio": 2.0322930711302574,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.093,
+  "cost": 631911836.1976855,
+  "fixed_cost": 355167446.8732967,
+  "land_cost": 282376.55999999994,
+  "vre_cost": 0.0,
+  "fuel_cost": 276462012.76438886,
+  "acres": 309.0,
+  "gas": 4.956,
+  "lcoe": 78.69415707870323,
+  "energy_MWh": 8029971.47,
+  "peak_MW": 1520.45,
+  "unit_count": 11,
+  "mix": {
+   "Recip": 1,
+   "Aero35": 4,
+   "FrameCT": 4,
+   "CC": 2
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "n_sens_cuts": 1,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.3070342,
+   "wind": 0.6283502,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     1,
+     0,
+     0,
+     5,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2481.622507534247,
+    "lole": 0.43333333333333335,
+    "cost": 605908440.6558878,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.12380784168124467,
+      0.19753531711268926,
+      0.27087376705228844,
+      2.202043863772168,
+      2.4471663218051534
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.043206859786629,
+     "evals": {
+      "Recip+5": 0.23333333333333334,
+      "Aero35+3": 0.23958333333333334,
+      "Aero48+2": 0.2520833333333333,
+      "FrameCT+1": 0.04791666666666667,
+      "CC+1": 0.0375
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     1,
+     0,
+     0,
+     6,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2860.1786760273976,
+    "lole": 0.04583333333333333,
+    "cost": 649263788.5518878,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 2,
+    "stage": "improve",
+    "n": [
+     0,
+     0,
+     0,
+     5,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.0475,
+    "cost": 643182533.8013889,
+    "feasible": true,
+    "tested": 290
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "n": [
+     0,
+     5,
+     0,
+     4,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.0925,
+    "cost": 633928249.59881,
+    "feasible": true,
+    "tested": 315
+   }
+  ],
+  "seconds": 92.83489179611206,
+  "n_improvements": 2,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "A02",
+  "home_zone": "Coast"
+ },
+ {
+  "zone": "SouthCentral",
+  "n": [
+   1,
+   0,
+   0,
+   5,
+   2
+  ],
+  "installed_MW": 3369.0,
+  "ratio": 2.0338798869865493,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0665,
+  "cost": 683129779.1119758,
+  "fixed_cost": 371216447.6785598,
+  "land_cost": 207638.20799999998,
+  "vre_cost": 0.0,
+  "fuel_cost": 311705693.225416,
+  "acres": 336.9000000000001,
+  "gas": 4.999,
+  "lcoe": 76.3228439300734,
+  "energy_MWh": 8950528.36,
+  "peak_MW": 1656.44,
+  "unit_count": 8,
+  "mix": {
+   "Recip": 1,
+   "FrameCT": 5,
+   "CC": 2
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 3,
+  "n_sens_cuts": 3,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.3359992,
+   "wind": 0.2635704,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     3,
+     3
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2845.986651369863,
+    "lole": 0.3,
+    "cost": 664050058.087887,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.1200730894217958,
+      0.18769801743724912,
+      0.24623824254889704,
+      1.9740810260220096,
+      2.7725887222397816
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 1.5651646456237165,
+     "evals": {
+      "Recip+5": 0.16458333333333333,
+      "Aero35+3": 0.17083333333333334,
+      "Aero48+2": 0.18333333333333332,
+      "FrameCT+1": 0.041666666666666664,
+      "CC+1": 0.01875
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 2,
+    "n": [
+     0,
+     2,
+     2,
+     4,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2805.316066210046,
+    "lole": 0.22083333333333333,
+    "cost": 667049635.6824896,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.1348910095095585,
+      0.21870196962653213,
+      0.2522780053761976,
+      1.830225750055851,
+      2.7175289450567535
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 1.166878178520603,
+     "evals": {
+      "Recip+5": 0.1125,
+      "Aero35+3": 0.11458333333333333,
+      "Aero48+2": 0.13333333333333333,
+      "FrameCT+1": 0.035416666666666666,
+      "CC+1": 0.014583333333333334
+     }
+    }
+   },
+   {
+    "it": 2,
+    "k": 2,
+    "n": [
+     0,
+     2,
+     2,
+     5,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 2613.7661860730595,
+    "lole": 0.49583333333333335,
+    "cost": 677214370.0247574,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.13039782161328753,
+      0.21732970268881255,
+      0.29473437554255183,
+      2.5278316945050343,
+      2.6390573296152584
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.218359231947833,
+     "evals": {
+      "Recip+5": 0.25833333333333336,
+      "Aero35+3": 0.25833333333333336,
+      "Aero48+2": 0.275,
+      "FrameCT+1": 0.03958333333333333,
+      "CC+1": 0.035416666666666666
+     }
+    }
+   },
+   {
+    "it": 3,
+    "k": 3,
+    "n": [
+     0,
+     2,
+     2,
+     5,
+     2
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 3183.8722347031967,
+    "lole": 0.025,
+    "cost": 710392517.4904897,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 4,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 710392517.4904897,
+    "tested": 300
+   }
+  ],
+  "seconds": 161.4669930934906,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "A03",
+  "home_zone": "SouthCentral"
+ },
+ {
+  "zone": "SouthCentral",
+  "n": [
+   0,
+   14,
+   6,
+   0,
+   1
+  ],
+  "installed_MW": 1405.0,
+  "ratio": 2.1203706498445563,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0785,
+  "cost": 348642994.53496677,
+  "fixed_cost": 225926039.26789474,
+  "land_cost": 86592.96000000002,
+  "vre_cost": 0.0,
+  "fuel_cost": 122630362.30707204,
+  "acres": 140.5,
+  "gas": 4.999,
+  "lcoe": 98.45920811218025,
+  "energy_MWh": 3540989.2199999997,
+  "peak_MW": 662.62,
+  "unit_count": 21,
+  "mix": {
+   "Aero35": 14,
+   "Aero48": 6,
+   "CC": 1
+  },
+  "margin": 0.0,
+  "n_minus_k": 3,
+  "n_cuts": 2,
+  "n_sens_cuts": 2,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.2771034,
+   "wind": 0.3113696,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     0,
+     3,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 1705.7745541095892,
+    "lole": 0.4666666666666667,
+    "cost": 327396167.9563949,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.13207578752079346,
+      0.3079277531291494,
+      0.31789585104827756,
+      2.079441541679836,
+      2.5212742939588755
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.139547223586468,
+     "evals": {
+      "Recip+2": 0.35833333333333334,
+      "Aero35+2": 0.2520833333333333,
+      "Aero48+1": 0.33958333333333335,
+      "FrameCT+1": 0.058333333333333334,
+      "CC+1": 0.0375
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     0,
+     24,
+     0,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 763.485589041096,
+    "lole": 0.15,
+    "cost": 352444948.99612164,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.8958797346140275,
+      1.3336141032909774,
+      1.791759469228055,
+      3.1780538303479453,
+      3.1780538303479453
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 0.6640733108957877,
+     "evals": {
+      "Recip+2": 0.025,
+      "Aero35+2": 0.010416666666666666,
+      "Aero48+1": 0.025,
+      "FrameCT+1": 0.00625,
+      "CC+1": 0.00625
+     }
+    }
+   },
+   {
+    "it": 2,
+    "k": 3,
+    "n": [
+     0,
+     14,
+     8,
+     0,
+     0
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 794.3885771689498,
+    "lole": 0.06666666666666667,
+    "cost": 353656967.3078143,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "n": [
+     0,
+     14,
+     6,
+     0,
+     1
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "lole": 0.0925,
+    "cost": 348949284.0037668,
+    "feasible": true,
+    "tested": 125
+   },
+   {
+    "it": 4,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 348949284.0037668,
+    "tested": 160
+   }
+  ],
+  "seconds": 83.31155562400818,
+  "n_improvements": 1,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve",
+  "site": "A04",
+  "home_zone": "SouthCentral"
+ }
+]

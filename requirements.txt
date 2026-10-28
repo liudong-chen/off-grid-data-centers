@@ -1,0 +1,16 @@
+# Direct dependencies identified in the supplied Python workflows.
+# This is an installation specification, not the original solve environment.
+numpy>=1.24
+pandas>=2.0
+scipy>=1.9
+matplotlib>=3.7
+shapely>=2.0
+pvlib
+openpyxl
+xlrd
+requests
+numba
+geopandas
+highspy
+clarabel
+ortools

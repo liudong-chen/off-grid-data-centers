@@ -1,0 +1,17 @@
+Technology,Zone,EC_Category,New_Build,EnergyCapacity (MWh),Capacity (MW)
+Battery,Coast,Existing,0,3842.3,2408.7
+Battery,East,Existing,0,1479.5,1051.4
+Battery,FarWest,Existing,0,4398.5,2705.6
+Battery,North,Existing,0,548.0,444.1
+Battery,NorthCentral,Existing,0,5293.0,3471.4
+Battery,South,Existing,0,2253.2,1506.7
+Battery,SouthCentral,Existing,0,1951.6,1109.6
+Battery,West,Existing,0,1487.7,806.9
+Battery,Coast,Candidate,1,0.006426166004041623,0.0016065415010104056
+Battery,East,Candidate,1,0.0064302038609722716,0.0016075509652430679
+Battery,FarWest,Candidate,1,0.006423066170267229,0.0016057665425668072
+Battery,North,Candidate,1,0.0066761573964991125,0.0016690393491247781
+Battery,NorthCentral,Candidate,1,0.006408613857801585,0.0016021534644503962
+Battery,South,Candidate,1,0.006431911860042929,0.0016079779650107321
+Battery,SouthCentral,Candidate,1,0.006416115979270999,0.0016040289948177498
+Battery,West,Candidate,1,0.006421380458187523,0.0016053451145468807

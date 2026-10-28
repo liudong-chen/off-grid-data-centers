@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+workspace/
+demo_output/
+.pytest_cache/
+# Editorial correspondence (includes proposed reviewers); keep local.
+CoverLetter*.docx
+dist/

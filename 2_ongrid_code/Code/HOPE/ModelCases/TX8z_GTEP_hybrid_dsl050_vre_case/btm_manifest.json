@@ -1,0 +1,255 @@
+{
+ "case": "TX8z_GTEP_hybrid_dsl050_vre_case",
+ "data_dir": "Data_TX8z_GTEP_hybrid_dsl050_vre",
+ "diesel_share": 0.5,
+ "diesel_mode": "backup",
+ "n_existing_rows_before": 57,
+ "n_btm_rows": 27,
+ "n_candidate_rows": 40,
+ "total_btm_MW": 61527.0,
+ "units": [
+  {
+   "row": 57,
+   "zone": "Coast",
+   "machine": "Aero35",
+   "units": 2,
+   "MW": 70.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 52.8214
+  },
+  {
+   "row": 58,
+   "zone": "Coast",
+   "machine": "FrameCT",
+   "units": 3,
+   "MW": 1257.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 46.6135
+  },
+  {
+   "row": 59,
+   "zone": "Coast",
+   "machine": "CC",
+   "units": 1,
+   "MW": 627.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 34.3625
+  },
+  {
+   "row": 60,
+   "zone": "Coast",
+   "machine": "Diesel",
+   "units": 288,
+   "MW": 864.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  },
+  {
+   "row": 61,
+   "zone": "East",
+   "machine": "Aero35",
+   "units": 2,
+   "MW": 70.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 51.5555
+  },
+  {
+   "row": 62,
+   "zone": "East",
+   "machine": "FrameCT",
+   "units": 1,
+   "MW": 419.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 45.3884
+  },
+  {
+   "row": 63,
+   "zone": "East",
+   "machine": "CC",
+   "units": 3,
+   "MW": 1881.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 33.5283
+  },
+  {
+   "row": 64,
+   "zone": "East",
+   "machine": "Diesel",
+   "units": 369,
+   "MW": 1107.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  },
+  {
+   "row": 65,
+   "zone": "FarWest",
+   "machine": "Aero35",
+   "units": 1,
+   "MW": 35.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 43.3461
+  },
+  {
+   "row": 66,
+   "zone": "FarWest",
+   "machine": "FrameCT",
+   "units": 4,
+   "MW": 1676.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 37.444
+  },
+  {
+   "row": 67,
+   "zone": "FarWest",
+   "machine": "CC",
+   "units": 7,
+   "MW": 4389.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 28.1179
+  },
+  {
+   "row": 68,
+   "zone": "FarWest",
+   "machine": "Diesel",
+   "units": 1085,
+   "MW": 3255.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  },
+  {
+   "row": 69,
+   "zone": "NorthCentral",
+   "machine": "Aero35",
+   "units": 12,
+   "MW": 420.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 54.5786
+  },
+  {
+   "row": 70,
+   "zone": "NorthCentral",
+   "machine": "FrameCT",
+   "units": 2,
+   "MW": 838.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 48.3139
+  },
+  {
+   "row": 71,
+   "zone": "NorthCentral",
+   "machine": "CC",
+   "units": 21,
+   "MW": 13167.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 35.5206
+  },
+  {
+   "row": 72,
+   "zone": "NorthCentral",
+   "machine": "Diesel",
+   "units": 2840,
+   "MW": 8520.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  },
+  {
+   "row": 73,
+   "zone": "South",
+   "machine": "FrameCT",
+   "units": 1,
+   "MW": 419.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 49.7949
+  },
+  {
+   "row": 74,
+   "zone": "South",
+   "machine": "CC",
+   "units": 6,
+   "MW": 3762.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 36.5292
+  },
+  {
+   "row": 75,
+   "zone": "South",
+   "machine": "Diesel",
+   "units": 843,
+   "MW": 2529.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  },
+  {
+   "row": 76,
+   "zone": "SouthCentral",
+   "machine": "Aero35",
+   "units": 24,
+   "MW": 840.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 53.2277
+  },
+  {
+   "row": 77,
+   "zone": "SouthCentral",
+   "machine": "FrameCT",
+   "units": 4,
+   "MW": 1676.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 47.0066
+  },
+  {
+   "row": 78,
+   "zone": "SouthCentral",
+   "machine": "CC",
+   "units": 7,
+   "MW": 4389.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 34.6303
+  },
+  {
+   "row": 79,
+   "zone": "SouthCentral",
+   "machine": "Diesel",
+   "units": 1180,
+   "MW": 3540.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  },
+  {
+   "row": 80,
+   "zone": "West",
+   "machine": "Aero35",
+   "units": 8,
+   "MW": 280.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 48.0979
+  },
+  {
+   "row": 81,
+   "zone": "West",
+   "machine": "FrameCT",
+   "units": 5,
+   "MW": 2095.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 42.0425
+  },
+  {
+   "row": 82,
+   "zone": "West",
+   "machine": "CC",
+   "units": 3,
+   "MW": 1881.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 31.2495
+  },
+  {
+   "row": 83,
+   "zone": "West",
+   "machine": "Diesel",
+   "units": 507,
+   "MW": 1521.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  }
+ ]
+}

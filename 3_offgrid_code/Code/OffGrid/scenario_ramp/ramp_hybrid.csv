@@ -1,0 +1,13 @@
+x,queue,ramp_gas_GW,flat_gas_GW,ramp_diesel_GW,flat_diesel_GW,ramp_value,flat_value,ramp_routes
+0.0,36,16.0,64.0,0.0,0.0,1.33,5.33,gas / wait / wait
+0.0,50,64.0,64.0,0.0,0.0,5.37,13.38,gas / gas / gas
+0.0,72,64.0,64.0,0.0,0.0,16.59,24.61,gas / gas / gas
+0.3,36,12.3,49.1,8.1,12.9,2.38,7.46,gas / diesel_only / wait
+0.3,50,30.7,49.1,12.9,12.9,7.46,15.49,gas / gas / diesel_only
+0.3,72,49.1,49.1,12.9,12.9,18.51,26.69,gas / gas / gas
+0.6,36,8.9,35.5,16.0,25.5,3.42,9.54,gas / diesel_only / wait
+0.6,50,22.2,35.5,25.5,25.5,9.28,17.54,gas / gas / diesel_only
+0.6,72,35.5,35.5,25.5,25.5,20.37,28.71,gas / gas / gas
+1.0,36,8.1,32.3,26.5,42.4,4.66,11.71,gas / diesel_only / wait
+1.0,50,20.2,32.3,42.4,42.4,11.35,19.69,gas / gas / diesel_only
+1.0,72,32.3,32.3,42.4,42.4,22.34,30.82,gas / gas / gas

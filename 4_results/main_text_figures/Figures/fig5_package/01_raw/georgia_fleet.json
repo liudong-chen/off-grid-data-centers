@@ -1,0 +1,86 @@
+{
+ "source": "EIA-860 2025 Early Release, 3_1_Generator, State=GA, Status=OP, Utility Name=\"Georgia Power Co\"; MW scaled to the owned totals in Georgia Power Facts & Figures 2025",
+ "operated_MW_winter": 19848.800000000003,
+ "operated_units": 132,
+ "owned_totals": {
+  "gas_oil": 6252.0,
+  "Coal": 3911.0,
+  "Nuclear": 3067.0,
+  "Hydro": 1112.0,
+  "SolarPV": 368.0,
+  "Battery": 65.0
+ },
+ "gasoil_scale": 0.9348785046728972,
+ "firm": [
+  {
+   "Type": "Coal",
+   "mw": 3911.0,
+   "n_units": 7,
+   "FOR": 0.0714,
+   "MTTR": 72
+  },
+  {
+   "Type": "Hydro",
+   "mw": 1112.0,
+   "n_units": 51,
+   "FOR": 0.6,
+   "MTTR": 24
+  },
+  {
+   "Type": "NGCC",
+   "mw": 3803.83,
+   "n_units": 15,
+   "FOR": 0.0357,
+   "MTTR": 48
+  },
+  {
+   "Type": "NGCT",
+   "mw": 707.33,
+   "n_units": 11,
+   "FOR": 0.0476,
+   "MTTR": 36
+  },
+  {
+   "Type": "NGST",
+   "mw": 667.5,
+   "n_units": 2,
+   "FOR": 0.0595,
+   "MTTR": 60
+  },
+  {
+   "Type": "Nuclear",
+   "mw": 3067.0,
+   "n_units": 6,
+   "FOR": 0.0476,
+   "MTTR": 120
+  },
+  {
+   "Type": "Oil",
+   "mw": 1073.33,
+   "n_units": 22,
+   "FOR": 0.0595,
+   "MTTR": 36
+  },
+  {
+   "Type": "Purchase",
+   "mw": 5742.85,
+   "n_units": 20,
+   "FOR": 0.0476,
+   "MTTR": 36
+  }
+ ],
+ "solar": {
+  "Type": "SolarPV",
+  "mw": 368.0,
+  "n_units": 16
+ },
+ "battery": {
+  "Type": "Battery",
+  "mw": 65.0,
+  "n_units": 2
+ },
+ "purchased_MW": 5742.85,
+ "purchased_units": 20,
+ "gp_peak_2025": 16284.0,
+ "trm_winter": 0.26
+}

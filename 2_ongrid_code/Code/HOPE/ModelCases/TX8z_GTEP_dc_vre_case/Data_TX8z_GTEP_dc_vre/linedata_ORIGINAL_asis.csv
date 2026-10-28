@@ -1,0 +1,18 @@
+From_zone,To_zone,Forward Capacity (MW),Reverse Capacity (MW),Loss (%),N_branches
+Coast,East,7047.1,7047.1,0.0,8
+Coast,South,15208.0,15208.0,0.0,10
+Coast,SouthCentral,21992.0,21992.0,0.0,15
+East,North,2768.0,2768.0,0.0,1
+East,NorthCentral,22852.6,22852.6,0.0,15
+East,SouthCentral,3862.0,3862.0,0.0,8
+FarWest,North,1521.0,1521.0,0.0,5
+FarWest,NorthCentral,8149.4,8149.4,0.0,3
+FarWest,SouthCentral,2700.0,2700.0,0.0,1
+FarWest,West,16200.0,16200.0,0.0,36
+North,NorthCentral,4440.0,4440.0,0.0,38
+North,West,1371.0,1371.0,0.0,4
+NorthCentral,SouthCentral,10973.9,10973.9,0.0,10
+NorthCentral,West,24134.8,24134.8,0.0,17
+South,SouthCentral,7306.2,7306.2,0.0,20
+South,West,1618.2,1618.2,0.0,7
+SouthCentral,West,3544.9,3544.9,0.0,14

@@ -1,0 +1,1332 @@
+{
+ "200000": {
+  "rate": 200000,
+  "ercot_bound_months": {
+   "0.0": 31.28,
+   "0.1": 30.240000000000002,
+   "0.2": 29.28,
+   "0.3": 28.400000000000002,
+   "0.4": 27.5,
+   "0.5": 26.54,
+   "0.6": 25.7,
+   "0.7": 25.14,
+   "0.8": 24.8,
+   "0.9": 24.400000000000002,
+   "1.0": 24.12
+  },
+  "georgia_bound_months": {
+   "0.0": 37.5,
+   "0.3": 32.9,
+   "0.6": 28.9,
+   "1.0": 25.0
+  },
+  "ercot_pv_per_year_B": {
+   "On-grid": {
+    "earnings_per_year_B": 33.00327544057497,
+    "electricity_per_year_B": 3.261856014597225,
+    "net_per_year_B": 29.741419425977742
+   },
+   "Off-grid, x = 0.0": {
+    "earnings_per_year_B": 41.20583144612024,
+    "electricity_per_year_B": 6.392485733524749,
+    "net_per_year_B": 34.813345712595485
+   },
+   "Off-grid, x = 0.1": {
+    "earnings_per_year_B": 41.63493319214565,
+    "electricity_per_year_B": 6.579480137386585,
+    "net_per_year_B": 35.05545305475907
+   },
+   "Off-grid, x = 0.2": {
+    "earnings_per_year_B": 42.064034938171055,
+    "electricity_per_year_B": 6.797155164351446,
+    "net_per_year_B": 35.26687977381961
+   },
+   "Off-grid, x = 0.3": {
+    "earnings_per_year_B": 42.49313668419647,
+    "electricity_per_year_B": 7.01205870238028,
+    "net_per_year_B": 35.4810779818162
+   },
+   "Off-grid, x = 0.4": {
+    "earnings_per_year_B": 42.922238430221874,
+    "electricity_per_year_B": 7.222839539692055,
+    "net_per_year_B": 35.69939889052982
+   },
+   "Off-grid, x = 0.5": {
+    "earnings_per_year_B": 43.35134017624728,
+    "electricity_per_year_B": 7.447416346196971,
+    "net_per_year_B": 35.90392383005032
+   },
+   "Off-grid, x = 0.6": {
+    "earnings_per_year_B": 43.78044192227269,
+    "electricity_per_year_B": 7.728679456168356,
+    "net_per_year_B": 36.051762466104336
+   },
+   "Off-grid, x = 0.7": {
+    "earnings_per_year_B": 44.20954366829811,
+    "electricity_per_year_B": 8.054566211431311,
+    "net_per_year_B": 36.1549774568668
+   },
+   "Off-grid, x = 0.8": {
+    "earnings_per_year_B": 44.63864541432351,
+    "electricity_per_year_B": 8.428556801664936,
+    "net_per_year_B": 36.210088612658566
+   },
+   "Off-grid, x = 0.9": {
+    "earnings_per_year_B": 45.06774716034892,
+    "electricity_per_year_B": 8.806975446503309,
+    "net_per_year_B": 36.260771713845614
+   },
+   "Off-grid, x = 1.0": {
+    "earnings_per_year_B": 45.496848906374325,
+    "electricity_per_year_B": 9.211989767254472,
+    "net_per_year_B": 36.28485913911986
+   },
+   "Hybrid, x = 0.0": {
+    "earnings_per_year_B": 41.20583144612024,
+    "electricity_per_year_B": 6.286926787482457,
+    "net_per_year_B": 34.91890465863778
+   },
+   "Hybrid, x = 0.1": {
+    "earnings_per_year_B": 41.63493319214565,
+    "electricity_per_year_B": 6.42211661569241,
+    "net_per_year_B": 35.21281657645325
+   },
+   "Hybrid, x = 0.2": {
+    "earnings_per_year_B": 42.064034938171055,
+    "electricity_per_year_B": 6.576616405822511,
+    "net_per_year_B": 35.48741853234854
+   },
+   "Hybrid, x = 0.3": {
+    "earnings_per_year_B": 42.49313668419647,
+    "electricity_per_year_B": 6.753261412149539,
+    "net_per_year_B": 35.73987527204694
+   },
+   "Hybrid, x = 0.4": {
+    "earnings_per_year_B": 42.922238430221874,
+    "electricity_per_year_B": 6.922719006804501,
+    "net_per_year_B": 35.999519423417375
+   },
+   "Hybrid, x = 0.5": {
+    "earnings_per_year_B": 43.35134017624728,
+    "electricity_per_year_B": 7.075743445978628,
+    "net_per_year_B": 36.27559673026865
+   },
+   "Hybrid, x = 0.6": {
+    "earnings_per_year_B": 43.78044192227269,
+    "electricity_per_year_B": 7.274681103451044,
+    "net_per_year_B": 36.50576081882165
+   },
+   "Hybrid, x = 0.7": {
+    "earnings_per_year_B": 44.20954366829811,
+    "electricity_per_year_B": 7.546944952857477,
+    "net_per_year_B": 36.66259871544063
+   },
+   "Hybrid, x = 0.8": {
+    "earnings_per_year_B": 44.63864541432351,
+    "electricity_per_year_B": 7.878497089090986,
+    "net_per_year_B": 36.76014832523252
+   },
+   "Hybrid, x = 0.9": {
+    "earnings_per_year_B": 45.06774716034892,
+    "electricity_per_year_B": 8.204717790647504,
+    "net_per_year_B": 36.863029369701415
+   },
+   "Hybrid, x = 1.0": {
+    "earnings_per_year_B": 45.496848906374325,
+    "electricity_per_year_B": 8.557756810004467,
+    "net_per_year_B": 36.93909209636986
+   }
+  },
+  "ercot_at_queue": {
+   "36": {
+    "0.0": {
+     "earn": 3.9621601240643662,
+     "cost": 2.5924115189259163,
+     "net": 1.369748605138447
+    },
+    "0.3": {
+     "earn": 5.249465362140593,
+     "cost": 3.039057454064237,
+     "net": 2.2104079080763626
+    },
+    "0.6": {
+     "earn": 6.536770600216819,
+     "cost": 3.535396914074181,
+     "net": 3.001373686142635
+    },
+    "1.0": {
+     "earn": 8.253177584318456,
+     "cost": 4.792745659256171,
+     "net": 3.4604319250622737
+    }
+   },
+   "50": {
+    "0.0": {
+     "earn": 8.202556005545269,
+     "cost": 3.0250707728852326,
+     "net": 5.177485232660068
+    },
+    "0.3": {
+     "earn": 9.489861243621494,
+     "cost": 3.491405397552313,
+     "net": 5.998455846069213
+    },
+    "0.6": {
+     "earn": 10.777166481697725,
+     "cost": 4.0128250888538215,
+     "net": 6.764341392843932
+    },
+    "1.0": {
+     "earn": 12.493573465799358,
+     "cost": 5.295900795407241,
+     "net": 7.19767267039213
+    }
+   },
+   "72": {
+    "0.0": {
+     "earn": 14.118018324718292,
+     "cost": 3.62864166234285,
+     "net": 10.489376662375484
+    },
+    "0.3": {
+     "earn": 15.405323562794518,
+     "cost": 4.122442519945853,
+     "net": 11.282881042848707
+    },
+    "0.6": {
+     "earn": 16.692628800870743,
+     "cost": 4.678849784886255,
+     "net": 12.013779015984532
+    },
+    "1.0": {
+     "earn": 18.40903578497238,
+     "cost": 5.997815270326635,
+     "net": 12.411220514645784
+    }
+   }
+  },
+  "georgia_time_columns": [
+   "month_grid_arrives",
+   "Build own, x = 0.0 earnings above on-grid",
+   "Build own, x = 0.3 earnings above on-grid",
+   "Build own, x = 0.6 earnings above on-grid",
+   "Build own, x = 1.0 earnings above on-grid",
+   "Build own, x = 0.0 electricity cost above on-grid",
+   "Build own, x = 0.3 electricity cost above on-grid",
+   "Build own, x = 0.6 electricity cost above on-grid",
+   "Build own, x = 1.0 electricity cost above on-grid",
+   "Build own, x = 0.0 net",
+   "Build own, x = 0.3 net",
+   "Build own, x = 0.6 net",
+   "Build own, x = 1.0 net"
+  ],
+  "georgia_at_queue": {
+   "36": {
+    "Build own, x = 0.0 earnings above on-grid": 1.2239320762078094,
+    "Build own, x = 0.3 earnings above on-grid": 1.6204860688991398,
+    "Build own, x = 0.6 earnings above on-grid": 2.0170400615904693,
+    "Build own, x = 1.0 earnings above on-grid": 2.545778718512243,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.3500485798053066,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.3610888855735084,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.4186070354448144,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.611014468144114,
+    "Build own, x = 0.0 net": -0.1261165035974869,
+    "Build own, x = 0.3 net": 0.2593971833256443,
+    "Build own, x = 0.6 net": 0.5984330261456741,
+    "Build own, x = 1.0 net": 0.9347642503681346
+   },
+   "50": {
+    "Build own, x = 0.0 earnings above on-grid": 2.53774562843062,
+    "Build own, x = 0.3 earnings above on-grid": 2.9342996211219496,
+    "Build own, x = 0.6 earnings above on-grid": 3.33085361381328,
+    "Build own, x = 1.0 earnings above on-grid": 3.859592270735053,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.545644736751772,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.5657688583165374,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.6298663768122927,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.8286500529723155,
+    "Build own, x = 0.0 net": 0.9921008916788558,
+    "Build own, x = 0.3 net": 1.368530762805424,
+    "Build own, x = 0.6 net": 1.700987237001005,
+    "Build own, x = 1.0 net": 2.0309422177627408
+   },
+   "72": {
+    "Build own, x = 0.0 earnings above on-grid": 4.378123742398998,
+    "Build own, x = 0.3 earnings above on-grid": 4.774677735090329,
+    "Build own, x = 0.6 earnings above on-grid": 5.171231727781659,
+    "Build own, x = 1.0 earnings above on-grid": 5.699970384703432,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.819634060283694,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.85248270866966,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.9257965470912377,
+    "Build own, x = 1.0 electricity cost above on-grid": 2.1335120072891063,
+    "Build own, x = 0.0 net": 2.558489682115309,
+    "Build own, x = 0.3 net": 2.9221950264206766,
+    "Build own, x = 0.6 net": 3.2454351806904365,
+    "Build own, x = 1.0 net": 3.5664583774143277
+   }
+  }
+ },
+ "300000": {
+  "rate": 300000,
+  "ercot_bound_months": {
+   "0.0": 28.64,
+   "0.1": 27.52,
+   "0.2": 26.46,
+   "0.3": 25.44,
+   "0.4": 24.44,
+   "0.5": 22.38,
+   "0.6": 20.54,
+   "0.7": 19.54,
+   "0.8": 19.0,
+   "0.9": 18.54,
+   "1.0": 18.26
+  },
+  "georgia_bound_months": {
+   "0.0": 32.4,
+   "0.3": 28.1,
+   "0.6": 24.2,
+   "1.0": 18.8
+  },
+  "ercot_pv_per_year_B": {
+   "On-grid": {
+    "earnings_per_year_B": 49.50491316086247,
+    "electricity_per_year_B": 3.261856014597225,
+    "net_per_year_B": 46.24305714626524
+   },
+   "Off-grid, x = 0.0": {
+    "earnings_per_year_B": 61.80874716918036,
+    "electricity_per_year_B": 6.392485733524749,
+    "net_per_year_B": 55.41626143565561
+   },
+   "Off-grid, x = 0.1": {
+    "earnings_per_year_B": 62.452399788218486,
+    "electricity_per_year_B": 6.579480137386585,
+    "net_per_year_B": 55.872919650831896
+   },
+   "Off-grid, x = 0.2": {
+    "earnings_per_year_B": 63.09605240725659,
+    "electricity_per_year_B": 6.797155164351446,
+    "net_per_year_B": 56.29889724290515
+   },
+   "Off-grid, x = 0.3": {
+    "earnings_per_year_B": 63.7397050262947,
+    "electricity_per_year_B": 7.01205870238028,
+    "net_per_year_B": 56.72764632391441
+   },
+   "Off-grid, x = 0.4": {
+    "earnings_per_year_B": 64.38335764533281,
+    "electricity_per_year_B": 7.222839539692055,
+    "net_per_year_B": 57.16051810564076
+   },
+   "Off-grid, x = 0.5": {
+    "earnings_per_year_B": 65.02701026437093,
+    "electricity_per_year_B": 7.447416346196971,
+    "net_per_year_B": 57.57959391817396
+   },
+   "Off-grid, x = 0.6": {
+    "earnings_per_year_B": 65.67066288340904,
+    "electricity_per_year_B": 7.728679456168356,
+    "net_per_year_B": 57.94198342724068
+   },
+   "Off-grid, x = 0.7": {
+    "earnings_per_year_B": 66.31431550244714,
+    "electricity_per_year_B": 8.054566211431311,
+    "net_per_year_B": 58.25974929101583
+   },
+   "Off-grid, x = 0.8": {
+    "earnings_per_year_B": 66.95796812148525,
+    "electricity_per_year_B": 8.428556801664936,
+    "net_per_year_B": 58.52941131982031
+   },
+   "Off-grid, x = 0.9": {
+    "earnings_per_year_B": 67.60162074052337,
+    "electricity_per_year_B": 8.806975446503309,
+    "net_per_year_B": 58.79464529402007
+   },
+   "Off-grid, x = 1.0": {
+    "earnings_per_year_B": 68.2452733595615,
+    "electricity_per_year_B": 9.211989767254472,
+    "net_per_year_B": 59.03328359230702
+   },
+   "Hybrid, x = 0.0": {
+    "earnings_per_year_B": 61.80874716918036,
+    "electricity_per_year_B": 6.286926787482457,
+    "net_per_year_B": 55.5218203816979
+   },
+   "Hybrid, x = 0.1": {
+    "earnings_per_year_B": 62.452399788218486,
+    "electricity_per_year_B": 6.42211661569241,
+    "net_per_year_B": 56.03028317252607
+   },
+   "Hybrid, x = 0.2": {
+    "earnings_per_year_B": 63.09605240725659,
+    "electricity_per_year_B": 6.576616405822511,
+    "net_per_year_B": 56.51943600143409
+   },
+   "Hybrid, x = 0.3": {
+    "earnings_per_year_B": 63.7397050262947,
+    "electricity_per_year_B": 6.753261412149539,
+    "net_per_year_B": 56.98644361414516
+   },
+   "Hybrid, x = 0.4": {
+    "earnings_per_year_B": 64.38335764533281,
+    "electricity_per_year_B": 6.922719006804501,
+    "net_per_year_B": 57.4606386385283
+   },
+   "Hybrid, x = 0.5": {
+    "earnings_per_year_B": 65.02701026437093,
+    "electricity_per_year_B": 7.075743445978628,
+    "net_per_year_B": 57.9512668183923
+   },
+   "Hybrid, x = 0.6": {
+    "earnings_per_year_B": 65.67066288340904,
+    "electricity_per_year_B": 7.274681103451044,
+    "net_per_year_B": 58.39598177995799
+   },
+   "Hybrid, x = 0.7": {
+    "earnings_per_year_B": 66.31431550244714,
+    "electricity_per_year_B": 7.546944952857477,
+    "net_per_year_B": 58.76737054958967
+   },
+   "Hybrid, x = 0.8": {
+    "earnings_per_year_B": 66.95796812148525,
+    "electricity_per_year_B": 7.878497089090986,
+    "net_per_year_B": 59.07947103239426
+   },
+   "Hybrid, x = 0.9": {
+    "earnings_per_year_B": 67.60162074052337,
+    "electricity_per_year_B": 8.204717790647504,
+    "net_per_year_B": 59.39690294987588
+   },
+   "Hybrid, x = 1.0": {
+    "earnings_per_year_B": 68.2452733595615,
+    "electricity_per_year_B": 8.557756810004467,
+    "net_per_year_B": 59.68751654955703
+   }
+  },
+  "ercot_at_queue": {
+   "36": {
+    "0.0": {
+     "earn": 5.943240186096547,
+     "cost": 2.5924115189259163,
+     "net": 3.350828667170582
+    },
+    "0.3": {
+     "earn": 7.874198043210889,
+     "cost": 3.039057454064237,
+     "net": 4.83514058914659
+    },
+    "0.6": {
+     "earn": 9.805155900325229,
+     "cost": 3.535396914074181,
+     "net": 6.269758986251027
+    },
+    "1.0": {
+     "earn": 12.379766376477685,
+     "cost": 4.792745659256171,
+     "net": 7.587020717221499
+    }
+   },
+   "50": {
+    "0.0": {
+     "earn": 12.303834008317905,
+     "cost": 3.0250707728852326,
+     "net": 9.278763235432628
+    },
+    "0.3": {
+     "earn": 14.234791865432246,
+     "cost": 3.491405397552313,
+     "net": 10.743386467879873
+    },
+    "0.6": {
+     "earn": 16.165749722546582,
+     "cost": 4.0128250888538215,
+     "net": 12.152924633692749
+    },
+    "1.0": {
+     "earn": 18.74036019869904,
+     "cost": 5.295900795407241,
+     "net": 13.44445940329178
+    }
+   },
+   "72": {
+    "0.0": {
+     "earn": 21.177027487077435,
+     "cost": 3.62864166234285,
+     "net": 17.548385824734552
+    },
+    "0.3": {
+     "earn": 23.10798534419178,
+     "cost": 4.122442519945853,
+     "net": 18.98554282424587
+    },
+    "0.6": {
+     "earn": 25.03894320130612,
+     "cost": 4.678849784886255,
+     "net": 20.360093416419858
+    },
+    "1.0": {
+     "earn": 27.61355367745857,
+     "cost": 5.997815270326635,
+     "net": 21.615738407131943
+    }
+   }
+  },
+  "georgia_time_columns": [
+   "month_grid_arrives",
+   "Build own, x = 0.0 earnings above on-grid",
+   "Build own, x = 0.3 earnings above on-grid",
+   "Build own, x = 0.6 earnings above on-grid",
+   "Build own, x = 1.0 earnings above on-grid",
+   "Build own, x = 0.0 electricity cost above on-grid",
+   "Build own, x = 0.3 electricity cost above on-grid",
+   "Build own, x = 0.6 electricity cost above on-grid",
+   "Build own, x = 1.0 electricity cost above on-grid",
+   "Build own, x = 0.0 net",
+   "Build own, x = 0.3 net",
+   "Build own, x = 0.6 net",
+   "Build own, x = 1.0 net"
+  ],
+  "georgia_at_queue": {
+   "36": {
+    "Build own, x = 0.0 earnings above on-grid": 1.835898114311714,
+    "Build own, x = 0.3 earnings above on-grid": 2.430729103348709,
+    "Build own, x = 0.6 earnings above on-grid": 3.025560092385705,
+    "Build own, x = 1.0 earnings above on-grid": 3.818668077768365,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.3500485798053066,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.3610888855735084,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.4186070354448144,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.611014468144114,
+    "Build own, x = 0.0 net": 0.4858495345064142,
+    "Build own, x = 0.3 net": 1.0696402177752091,
+    "Build own, x = 0.6 net": 1.6069530569409096,
+    "Build own, x = 1.0 net": 2.207653609624259
+   },
+   "50": {
+    "Build own, x = 0.0 earnings above on-grid": 3.8066184426459295,
+    "Build own, x = 0.3 earnings above on-grid": 4.401449431682925,
+    "Build own, x = 0.6 earnings above on-grid": 4.99628042071992,
+    "Build own, x = 1.0 earnings above on-grid": 5.78938840610258,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.545644736751772,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.5657688583165374,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.6298663768122927,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.8286500529723155,
+    "Build own, x = 0.0 net": 2.2609737058941484,
+    "Build own, x = 0.3 net": 2.835680573366382,
+    "Build own, x = 0.6 net": 3.3664140439076355,
+    "Build own, x = 1.0 net": 3.96073835313026
+   },
+   "72": {
+    "Build own, x = 0.0 earnings above on-grid": 6.567185613598497,
+    "Build own, x = 0.3 earnings above on-grid": 7.162016602635494,
+    "Build own, x = 0.6 earnings above on-grid": 7.756847591672487,
+    "Build own, x = 1.0 earnings above on-grid": 8.549955577055147,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.819634060283694,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.85248270866966,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.9257965470912377,
+    "Build own, x = 1.0 electricity cost above on-grid": 2.1335120072891063,
+    "Build own, x = 0.0 net": 4.747551553314793,
+    "Build own, x = 0.3 net": 5.309533893965831,
+    "Build own, x = 0.6 net": 5.831051044581262,
+    "Build own, x = 1.0 net": 6.4164435697660345
+   }
+  }
+ },
+ "400000": {
+  "rate": 400000,
+  "ercot_bound_months": {
+   "0.0": 27.400000000000002,
+   "0.1": 26.26,
+   "0.2": 25.14,
+   "0.3": 24.080000000000002,
+   "0.4": 21.080000000000002,
+   "0.5": 19.02,
+   "0.6": 17.78,
+   "0.7": 17.080000000000002,
+   "0.8": 16.72,
+   "0.9": 16.42,
+   "1.0": 16.22
+  },
+  "georgia_bound_months": {
+   "0.0": 30.1,
+   "0.3": 26.0,
+   "0.6": 20.4,
+   "1.0": 16.5
+  },
+  "ercot_pv_per_year_B": {
+   "On-grid": {
+    "earnings_per_year_B": 66.00655088114993,
+    "electricity_per_year_B": 3.261856014597225,
+    "net_per_year_B": 62.74469486655271
+   },
+   "Off-grid, x = 0.0": {
+    "earnings_per_year_B": 82.41166289224047,
+    "electricity_per_year_B": 6.392485733524749,
+    "net_per_year_B": 76.01917715871573
+   },
+   "Off-grid, x = 0.1": {
+    "earnings_per_year_B": 83.2698663842913,
+    "electricity_per_year_B": 6.579480137386585,
+    "net_per_year_B": 76.69038624690472
+   },
+   "Off-grid, x = 0.2": {
+    "earnings_per_year_B": 84.12806987634211,
+    "electricity_per_year_B": 6.797155164351446,
+    "net_per_year_B": 77.33091471199067
+   },
+   "Off-grid, x = 0.3": {
+    "earnings_per_year_B": 84.98627336839294,
+    "electricity_per_year_B": 7.01205870238028,
+    "net_per_year_B": 77.97421466601267
+   },
+   "Off-grid, x = 0.4": {
+    "earnings_per_year_B": 85.84447686044375,
+    "electricity_per_year_B": 7.222839539692055,
+    "net_per_year_B": 78.6216373207517
+   },
+   "Off-grid, x = 0.5": {
+    "earnings_per_year_B": 86.70268035249457,
+    "electricity_per_year_B": 7.447416346196971,
+    "net_per_year_B": 79.2552640062976
+   },
+   "Off-grid, x = 0.6": {
+    "earnings_per_year_B": 87.56088384454539,
+    "electricity_per_year_B": 7.728679456168356,
+    "net_per_year_B": 79.83220438837704
+   },
+   "Off-grid, x = 0.7": {
+    "earnings_per_year_B": 88.41908733659622,
+    "electricity_per_year_B": 8.054566211431311,
+    "net_per_year_B": 80.3645211251649
+   },
+   "Off-grid, x = 0.8": {
+    "earnings_per_year_B": 89.27729082864701,
+    "electricity_per_year_B": 8.428556801664936,
+    "net_per_year_B": 80.84873402698209
+   },
+   "Off-grid, x = 0.9": {
+    "earnings_per_year_B": 90.13549432069784,
+    "electricity_per_year_B": 8.806975446503309,
+    "net_per_year_B": 81.32851887419454
+   },
+   "Off-grid, x = 1.0": {
+    "earnings_per_year_B": 90.99369781274864,
+    "electricity_per_year_B": 9.211989767254472,
+    "net_per_year_B": 81.78170804549418
+   },
+   "Hybrid, x = 0.0": {
+    "earnings_per_year_B": 82.41166289224047,
+    "electricity_per_year_B": 6.286926787482457,
+    "net_per_year_B": 76.12473610475801
+   },
+   "Hybrid, x = 0.1": {
+    "earnings_per_year_B": 83.2698663842913,
+    "electricity_per_year_B": 6.42211661569241,
+    "net_per_year_B": 76.8477497685989
+   },
+   "Hybrid, x = 0.2": {
+    "earnings_per_year_B": 84.12806987634211,
+    "electricity_per_year_B": 6.576616405822511,
+    "net_per_year_B": 77.55145347051959
+   },
+   "Hybrid, x = 0.3": {
+    "earnings_per_year_B": 84.98627336839294,
+    "electricity_per_year_B": 6.753261412149539,
+    "net_per_year_B": 78.23301195624342
+   },
+   "Hybrid, x = 0.4": {
+    "earnings_per_year_B": 85.84447686044375,
+    "electricity_per_year_B": 6.922719006804501,
+    "net_per_year_B": 78.92175785363925
+   },
+   "Hybrid, x = 0.5": {
+    "earnings_per_year_B": 86.70268035249457,
+    "electricity_per_year_B": 7.075743445978628,
+    "net_per_year_B": 79.62693690651594
+   },
+   "Hybrid, x = 0.6": {
+    "earnings_per_year_B": 87.56088384454539,
+    "electricity_per_year_B": 7.274681103451044,
+    "net_per_year_B": 80.28620274109434
+   },
+   "Hybrid, x = 0.7": {
+    "earnings_per_year_B": 88.41908733659622,
+    "electricity_per_year_B": 7.546944952857477,
+    "net_per_year_B": 80.87214238373875
+   },
+   "Hybrid, x = 0.8": {
+    "earnings_per_year_B": 89.27729082864701,
+    "electricity_per_year_B": 7.878497089090986,
+    "net_per_year_B": 81.39879373955603
+   },
+   "Hybrid, x = 0.9": {
+    "earnings_per_year_B": 90.13549432069784,
+    "electricity_per_year_B": 8.204717790647504,
+    "net_per_year_B": 81.93077653005034
+   },
+   "Hybrid, x = 1.0": {
+    "earnings_per_year_B": 90.99369781274864,
+    "electricity_per_year_B": 8.557756810004467,
+    "net_per_year_B": 82.43594100274419
+   }
+  },
+  "ercot_at_queue": {
+   "36": {
+    "0.0": {
+     "earn": 7.9243202481287325,
+     "cost": 2.5924115189259163,
+     "net": 5.331908729202766
+    },
+    "0.3": {
+     "earn": 10.498930724281186,
+     "cost": 3.039057454064237,
+     "net": 7.459873270216917
+    },
+    "0.6": {
+     "earn": 13.073541200433638,
+     "cost": 3.535396914074181,
+     "net": 9.538144286359367
+    },
+    "1.0": {
+     "earn": 16.50635516863691,
+     "cost": 4.792745659256171,
+     "net": 11.713609509380715
+    }
+   },
+   "50": {
+    "0.0": {
+     "earn": 16.405112011090537,
+     "cost": 3.0250707728852326,
+     "net": 13.380041238205322
+    },
+    "0.3": {
+     "earn": 18.979722487242988,
+     "cost": 3.491405397552313,
+     "net": 15.48831708969071
+    },
+    "0.6": {
+     "earn": 21.55433296339545,
+     "cost": 4.0128250888538215,
+     "net": 17.541507874541622
+    },
+    "1.0": {
+     "earn": 24.98714693159872,
+     "cost": 5.295900795407241,
+     "net": 19.69124613619151
+    }
+   },
+   "72": {
+    "0.0": {
+     "earn": 28.236036649436585,
+     "cost": 3.62864166234285,
+     "net": 24.60739498709373
+    },
+    "0.3": {
+     "earn": 30.81064712558904,
+     "cost": 4.122442519945853,
+     "net": 26.6882046056432
+    },
+    "0.6": {
+     "earn": 33.385257601741486,
+     "cost": 4.678849784886255,
+     "net": 28.70640781685521
+    },
+    "1.0": {
+     "earn": 36.81807156994476,
+     "cost": 5.997815270326635,
+     "net": 30.82025629961816
+    }
+   }
+  },
+  "georgia_time_columns": [
+   "month_grid_arrives",
+   "Build own, x = 0.0 earnings above on-grid",
+   "Build own, x = 0.3 earnings above on-grid",
+   "Build own, x = 0.6 earnings above on-grid",
+   "Build own, x = 1.0 earnings above on-grid",
+   "Build own, x = 0.0 electricity cost above on-grid",
+   "Build own, x = 0.3 electricity cost above on-grid",
+   "Build own, x = 0.6 electricity cost above on-grid",
+   "Build own, x = 1.0 electricity cost above on-grid",
+   "Build own, x = 0.0 net",
+   "Build own, x = 0.3 net",
+   "Build own, x = 0.6 net",
+   "Build own, x = 1.0 net"
+  ],
+  "georgia_at_queue": {
+   "36": {
+    "Build own, x = 0.0 earnings above on-grid": 2.447864152415619,
+    "Build own, x = 0.3 earnings above on-grid": 3.24097213779828,
+    "Build own, x = 0.6 earnings above on-grid": 4.034080123180939,
+    "Build own, x = 1.0 earnings above on-grid": 5.091557437024486,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.3500485798053066,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.3610888855735084,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.4186070354448144,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.611014468144114,
+    "Build own, x = 0.0 net": 1.0978155726103154,
+    "Build own, x = 0.3 net": 1.8798832522247932,
+    "Build own, x = 0.6 net": 2.6154730877361345,
+    "Build own, x = 1.0 net": 3.480542968880389
+   },
+   "50": {
+    "Build own, x = 0.0 earnings above on-grid": 5.075491256861239,
+    "Build own, x = 0.3 earnings above on-grid": 5.868599242243899,
+    "Build own, x = 0.6 earnings above on-grid": 6.66170722762656,
+    "Build own, x = 1.0 earnings above on-grid": 7.719184541470106,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.545644736751772,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.5657688583165374,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.6298663768122927,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.8286500529723155,
+    "Build own, x = 0.0 net": 3.5298465201094693,
+    "Build own, x = 0.3 net": 4.302830383927375,
+    "Build own, x = 0.6 net": 5.03184085081427,
+    "Build own, x = 1.0 net": 5.890534488497803
+   },
+   "72": {
+    "Build own, x = 0.0 earnings above on-grid": 8.756247484797996,
+    "Build own, x = 0.3 earnings above on-grid": 9.549355470180656,
+    "Build own, x = 0.6 earnings above on-grid": 10.342463455563315,
+    "Build own, x = 1.0 earnings above on-grid": 11.399940769406864,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.819634060283694,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.85248270866966,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.9257965470912377,
+    "Build own, x = 1.0 electricity cost above on-grid": 2.1335120072891063,
+    "Build own, x = 0.0 net": 6.936613424514292,
+    "Build own, x = 0.3 net": 7.696872761510992,
+    "Build own, x = 0.6 net": 8.416666908472067,
+    "Build own, x = 1.0 net": 9.266428762117757
+   }
+  }
+ },
+ "500000": {
+  "rate": 500000,
+  "ercot_bound_months": {
+   "0.0": 26.7,
+   "0.1": 25.52,
+   "0.2": 24.38,
+   "0.3": 21.32,
+   "0.4": 18.88,
+   "0.5": 17.32,
+   "0.6": 16.36,
+   "0.7": 15.84,
+   "0.8": 15.56,
+   "0.9": 15.32,
+   "1.0": 15.18
+  },
+  "georgia_bound_months": {
+   "0.0": 28.8,
+   "0.3": 24.7,
+   "0.6": 18.3,
+   "1.0": 15.4
+  },
+  "ercot_pv_per_year_B": {
+   "On-grid": {
+    "earnings_per_year_B": 82.50818860143742,
+    "electricity_per_year_B": 3.261856014597225,
+    "net_per_year_B": 79.24633258684021
+   },
+   "Off-grid, x = 0.0": {
+    "earnings_per_year_B": 103.01457861530062,
+    "electricity_per_year_B": 6.392485733524749,
+    "net_per_year_B": 96.62209288177588
+   },
+   "Off-grid, x = 0.1": {
+    "earnings_per_year_B": 104.08733298036412,
+    "electricity_per_year_B": 6.579480137386585,
+    "net_per_year_B": 97.50785284297751
+   },
+   "Off-grid, x = 0.2": {
+    "earnings_per_year_B": 105.16008734542766,
+    "electricity_per_year_B": 6.797155164351446,
+    "net_per_year_B": 98.36293218107622
+   },
+   "Off-grid, x = 0.3": {
+    "earnings_per_year_B": 106.23284171049116,
+    "electricity_per_year_B": 7.01205870238028,
+    "net_per_year_B": 99.22078300811089
+   },
+   "Off-grid, x = 0.4": {
+    "earnings_per_year_B": 107.30559607555467,
+    "electricity_per_year_B": 7.222839539692055,
+    "net_per_year_B": 100.08275653586264
+   },
+   "Off-grid, x = 0.5": {
+    "earnings_per_year_B": 108.37835044061822,
+    "electricity_per_year_B": 7.447416346196971,
+    "net_per_year_B": 100.93093409442125
+   },
+   "Off-grid, x = 0.6": {
+    "earnings_per_year_B": 109.45110480568174,
+    "electricity_per_year_B": 7.728679456168356,
+    "net_per_year_B": 101.72242534951336
+   },
+   "Off-grid, x = 0.7": {
+    "earnings_per_year_B": 110.52385917074524,
+    "electricity_per_year_B": 8.054566211431311,
+    "net_per_year_B": 102.46929295931396
+   },
+   "Off-grid, x = 0.8": {
+    "earnings_per_year_B": 111.5966135358088,
+    "electricity_per_year_B": 8.428556801664936,
+    "net_per_year_B": 103.16805673414385
+   },
+   "Off-grid, x = 0.9": {
+    "earnings_per_year_B": 112.66936790087232,
+    "electricity_per_year_B": 8.806975446503309,
+    "net_per_year_B": 103.862392454369
+   },
+   "Off-grid, x = 1.0": {
+    "earnings_per_year_B": 113.74212226593583,
+    "electricity_per_year_B": 9.211989767254472,
+    "net_per_year_B": 104.53013249868135
+   },
+   "Hybrid, x = 0.0": {
+    "earnings_per_year_B": 103.01457861530062,
+    "electricity_per_year_B": 6.286926787482457,
+    "net_per_year_B": 96.72765182781816
+   },
+   "Hybrid, x = 0.1": {
+    "earnings_per_year_B": 104.08733298036412,
+    "electricity_per_year_B": 6.42211661569241,
+    "net_per_year_B": 97.66521636467168
+   },
+   "Hybrid, x = 0.2": {
+    "earnings_per_year_B": 105.16008734542766,
+    "electricity_per_year_B": 6.576616405822511,
+    "net_per_year_B": 98.58347093960516
+   },
+   "Hybrid, x = 0.3": {
+    "earnings_per_year_B": 106.23284171049116,
+    "electricity_per_year_B": 6.753261412149539,
+    "net_per_year_B": 99.47958029834162
+   },
+   "Hybrid, x = 0.4": {
+    "earnings_per_year_B": 107.30559607555467,
+    "electricity_per_year_B": 6.922719006804501,
+    "net_per_year_B": 100.3828770687502
+   },
+   "Hybrid, x = 0.5": {
+    "earnings_per_year_B": 108.37835044061822,
+    "electricity_per_year_B": 7.075743445978628,
+    "net_per_year_B": 101.3026069946396
+   },
+   "Hybrid, x = 0.6": {
+    "earnings_per_year_B": 109.45110480568174,
+    "electricity_per_year_B": 7.274681103451044,
+    "net_per_year_B": 102.1764237022307
+   },
+   "Hybrid, x = 0.7": {
+    "earnings_per_year_B": 110.52385917074524,
+    "electricity_per_year_B": 7.546944952857477,
+    "net_per_year_B": 102.97691421788775
+   },
+   "Hybrid, x = 0.8": {
+    "earnings_per_year_B": 111.5966135358088,
+    "electricity_per_year_B": 7.878497089090986,
+    "net_per_year_B": 103.7181164467178
+   },
+   "Hybrid, x = 0.9": {
+    "earnings_per_year_B": 112.66936790087232,
+    "electricity_per_year_B": 8.204717790647504,
+    "net_per_year_B": 104.4646501102248
+   },
+   "Hybrid, x = 1.0": {
+    "earnings_per_year_B": 113.74212226593583,
+    "electricity_per_year_B": 8.557756810004467,
+    "net_per_year_B": 105.18436545593138
+   }
+  },
+  "ercot_at_queue": {
+   "36": {
+    "0.0": {
+     "earn": 9.905400310160912,
+     "cost": 2.5924115189259163,
+     "net": 7.312988791235028
+    },
+    "0.3": {
+     "earn": 13.12366340535148,
+     "cost": 3.039057454064237,
+     "net": 10.0846059512873
+    },
+    "0.6": {
+     "earn": 16.341926500542048,
+     "cost": 3.535396914074181,
+     "net": 12.806529586467946
+    },
+    "1.0": {
+     "earn": 20.63294396079614,
+     "cost": 4.792745659256171,
+     "net": 15.840198301540012
+    }
+   },
+   "50": {
+    "0.0": {
+     "earn": 20.50639001386317,
+     "cost": 3.0250707728852326,
+     "net": 17.481319240977996
+    },
+    "0.3": {
+     "earn": 23.72465310905374,
+     "cost": 3.491405397552313,
+     "net": 20.23324771150152
+    },
+    "0.6": {
+     "earn": 26.942916204244305,
+     "cost": 4.0128250888538215,
+     "net": 22.93009111539058
+    },
+    "1.0": {
+     "earn": 31.2339336644984,
+     "cost": 5.295900795407241,
+     "net": 25.9380328690912
+    }
+   },
+   "72": {
+    "0.0": {
+     "earn": 35.29504581179573,
+     "cost": 3.62864166234285,
+     "net": 31.66640414945293
+    },
+    "0.3": {
+     "earn": 38.513308906986296,
+     "cost": 4.122442519945853,
+     "net": 34.390866387040546
+    },
+    "0.6": {
+     "earn": 41.73157200217686,
+     "cost": 4.678849784886255,
+     "net": 37.05272221729072
+    },
+    "1.0": {
+     "earn": 46.02258946243095,
+     "cost": 5.997815270326635,
+     "net": 40.02477419210439
+    }
+   }
+  },
+  "georgia_time_columns": [
+   "month_grid_arrives",
+   "Build own, x = 0.0 earnings above on-grid",
+   "Build own, x = 0.3 earnings above on-grid",
+   "Build own, x = 0.6 earnings above on-grid",
+   "Build own, x = 1.0 earnings above on-grid",
+   "Build own, x = 0.0 electricity cost above on-grid",
+   "Build own, x = 0.3 electricity cost above on-grid",
+   "Build own, x = 0.6 electricity cost above on-grid",
+   "Build own, x = 1.0 electricity cost above on-grid",
+   "Build own, x = 0.0 net",
+   "Build own, x = 0.3 net",
+   "Build own, x = 0.6 net",
+   "Build own, x = 1.0 net"
+  ],
+  "georgia_at_queue": {
+   "36": {
+    "Build own, x = 0.0 earnings above on-grid": 3.0598301905195235,
+    "Build own, x = 0.3 earnings above on-grid": 4.051215172247849,
+    "Build own, x = 0.6 earnings above on-grid": 5.042600153976174,
+    "Build own, x = 1.0 earnings above on-grid": 6.364446796280608,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.3500485798053066,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.3610888855735084,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.4186070354448144,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.611014468144114,
+    "Build own, x = 0.0 net": 1.7097816107142307,
+    "Build own, x = 0.3 net": 2.6901262866743387,
+    "Build own, x = 0.6 net": 3.623993118531338,
+    "Build own, x = 1.0 net": 4.753432328136487
+   },
+   "50": {
+    "Build own, x = 0.0 earnings above on-grid": 6.34436407107655,
+    "Build own, x = 0.3 earnings above on-grid": 7.335749052804874,
+    "Build own, x = 0.6 earnings above on-grid": 8.3271340345332,
+    "Build own, x = 1.0 earnings above on-grid": 9.648980676837636,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.545644736751772,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.5657688583165374,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.6298663768122927,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.8286500529723155,
+    "Build own, x = 0.0 net": 4.798719334324783,
+    "Build own, x = 0.3 net": 5.769980194488333,
+    "Build own, x = 0.6 net": 6.697267657720879,
+    "Build own, x = 1.0 net": 7.820330623865306
+   },
+   "72": {
+    "Build own, x = 0.0 earnings above on-grid": 10.945309355997496,
+    "Build own, x = 0.3 earnings above on-grid": 11.936694337725822,
+    "Build own, x = 0.6 earnings above on-grid": 12.928079319454149,
+    "Build own, x = 1.0 earnings above on-grid": 14.24992596175858,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.819634060283694,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.85248270866966,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.9257965470912377,
+    "Build own, x = 1.0 electricity cost above on-grid": 2.1335120072891063,
+    "Build own, x = 0.0 net": 9.125675295713794,
+    "Build own, x = 0.3 net": 10.084211629056142,
+    "Build own, x = 0.6 net": 11.002282772362872,
+    "Build own, x = 1.0 net": 12.11641395446945
+   }
+  }
+ },
+ "600000": {
+  "rate": 600000,
+  "ercot_bound_months": {
+   "0.0": 26.22,
+   "0.1": 25.04,
+   "0.2": 23.34,
+   "0.3": 19.52,
+   "0.4": 17.54,
+   "0.5": 16.28,
+   "0.6": 15.5,
+   "0.7": 15.08,
+   "0.8": 14.86,
+   "0.9": 14.68,
+   "1.0": 14.56
+  },
+  "georgia_bound_months": {
+   "0.0": 27.9,
+   "0.3": 23.8,
+   "0.6": 17.1,
+   "1.0": 14.7
+  },
+  "ercot_pv_per_year_B": {
+   "On-grid": {
+    "earnings_per_year_B": 99.00982632172492,
+    "electricity_per_year_B": 3.261856014597225,
+    "net_per_year_B": 95.7479703071277
+   },
+   "Off-grid, x = 0.0": {
+    "earnings_per_year_B": 123.61749433836071,
+    "electricity_per_year_B": 6.392485733524749,
+    "net_per_year_B": 117.22500860483596
+   },
+   "Off-grid, x = 0.1": {
+    "earnings_per_year_B": 124.90479957643696,
+    "electricity_per_year_B": 6.579480137386585,
+    "net_per_year_B": 118.3253194390504
+   },
+   "Off-grid, x = 0.2": {
+    "earnings_per_year_B": 126.1921048145132,
+    "electricity_per_year_B": 6.797155164351446,
+    "net_per_year_B": 119.39494965016176
+   },
+   "Off-grid, x = 0.3": {
+    "earnings_per_year_B": 127.4794100525894,
+    "electricity_per_year_B": 7.01205870238028,
+    "net_per_year_B": 120.46735135020911
+   },
+   "Off-grid, x = 0.4": {
+    "earnings_per_year_B": 128.76671529066562,
+    "electricity_per_year_B": 7.222839539692055,
+    "net_per_year_B": 121.54387575097356
+   },
+   "Off-grid, x = 0.5": {
+    "earnings_per_year_B": 130.05402052874186,
+    "electricity_per_year_B": 7.447416346196971,
+    "net_per_year_B": 122.60660418254488
+   },
+   "Off-grid, x = 0.6": {
+    "earnings_per_year_B": 131.34132576681807,
+    "electricity_per_year_B": 7.728679456168356,
+    "net_per_year_B": 123.61264631064972
+   },
+   "Off-grid, x = 0.7": {
+    "earnings_per_year_B": 132.6286310048943,
+    "electricity_per_year_B": 8.054566211431311,
+    "net_per_year_B": 124.57406479346298
+   },
+   "Off-grid, x = 0.8": {
+    "earnings_per_year_B": 133.9159362429705,
+    "electricity_per_year_B": 8.428556801664936,
+    "net_per_year_B": 125.48737944130556
+   },
+   "Off-grid, x = 0.9": {
+    "earnings_per_year_B": 135.20324148104677,
+    "electricity_per_year_B": 8.806975446503309,
+    "net_per_year_B": 126.39626603454344
+   },
+   "Off-grid, x = 1.0": {
+    "earnings_per_year_B": 136.490546719123,
+    "electricity_per_year_B": 9.211989767254472,
+    "net_per_year_B": 127.27855695186852
+   },
+   "Hybrid, x = 0.0": {
+    "earnings_per_year_B": 123.61749433836071,
+    "electricity_per_year_B": 6.286926787482457,
+    "net_per_year_B": 117.33056755087826
+   },
+   "Hybrid, x = 0.1": {
+    "earnings_per_year_B": 124.90479957643696,
+    "electricity_per_year_B": 6.42211661569241,
+    "net_per_year_B": 118.48268296074455
+   },
+   "Hybrid, x = 0.2": {
+    "earnings_per_year_B": 126.1921048145132,
+    "electricity_per_year_B": 6.576616405822511,
+    "net_per_year_B": 119.61548840869068
+   },
+   "Hybrid, x = 0.3": {
+    "earnings_per_year_B": 127.4794100525894,
+    "electricity_per_year_B": 6.753261412149539,
+    "net_per_year_B": 120.72614864043985
+   },
+   "Hybrid, x = 0.4": {
+    "earnings_per_year_B": 128.76671529066562,
+    "electricity_per_year_B": 6.922719006804501,
+    "net_per_year_B": 121.84399628386112
+   },
+   "Hybrid, x = 0.5": {
+    "earnings_per_year_B": 130.05402052874186,
+    "electricity_per_year_B": 7.075743445978628,
+    "net_per_year_B": 122.97827708276324
+   },
+   "Hybrid, x = 0.6": {
+    "earnings_per_year_B": 131.34132576681807,
+    "electricity_per_year_B": 7.274681103451044,
+    "net_per_year_B": 124.066644663367
+   },
+   "Hybrid, x = 0.7": {
+    "earnings_per_year_B": 132.6286310048943,
+    "electricity_per_year_B": 7.546944952857477,
+    "net_per_year_B": 125.0816860520368
+   },
+   "Hybrid, x = 0.8": {
+    "earnings_per_year_B": 133.9159362429705,
+    "electricity_per_year_B": 7.878497089090986,
+    "net_per_year_B": 126.03743915387952
+   },
+   "Hybrid, x = 0.9": {
+    "earnings_per_year_B": 135.20324148104677,
+    "electricity_per_year_B": 8.204717790647504,
+    "net_per_year_B": 126.99852369039924
+   },
+   "Hybrid, x = 1.0": {
+    "earnings_per_year_B": 136.490546719123,
+    "electricity_per_year_B": 8.557756810004467,
+    "net_per_year_B": 127.93278990911854
+   }
+  },
+  "ercot_at_queue": {
+   "36": {
+    "0.0": {
+     "earn": 11.886480372193096,
+     "cost": 2.5924115189259163,
+     "net": 9.294068853267136
+    },
+    "0.3": {
+     "earn": 15.748396086421778,
+     "cost": 3.039057454064237,
+     "net": 12.709338632357472
+    },
+    "0.6": {
+     "earn": 19.610311800650457,
+     "cost": 3.535396914074181,
+     "net": 16.074914886576238
+    },
+    "1.0": {
+     "earn": 24.75953275295537,
+     "cost": 4.792745659256171,
+     "net": 19.96678709369924
+    }
+   },
+   "50": {
+    "0.0": {
+     "earn": 24.60766801663581,
+     "cost": 3.0250707728852326,
+     "net": 21.58259724375056
+    },
+    "0.3": {
+     "earn": 28.469583730864493,
+     "cost": 3.491405397552313,
+     "net": 24.97817833331213
+    },
+    "0.6": {
+     "earn": 32.331499445093165,
+     "cost": 4.0128250888538215,
+     "net": 28.318674356239317
+    },
+    "1.0": {
+     "earn": 37.48072039739807,
+     "cost": 5.295900795407241,
+     "net": 32.18481960199091
+    }
+   },
+   "72": {
+    "0.0": {
+     "earn": 42.35405497415487,
+     "cost": 3.62864166234285,
+     "net": 38.72541331181189
+    },
+    "0.3": {
+     "earn": 46.21597068838356,
+     "cost": 4.122442519945853,
+     "net": 42.09352816843759
+    },
+    "0.6": {
+     "earn": 50.07788640261224,
+     "cost": 4.678849784886255,
+     "net": 45.39903661772588
+    },
+    "1.0": {
+     "earn": 55.227107354917145,
+     "cost": 5.997815270326635,
+     "net": 49.22929208459051
+    }
+   }
+  },
+  "georgia_time_columns": [
+   "month_grid_arrives",
+   "Build own, x = 0.0 earnings above on-grid",
+   "Build own, x = 0.3 earnings above on-grid",
+   "Build own, x = 0.6 earnings above on-grid",
+   "Build own, x = 1.0 earnings above on-grid",
+   "Build own, x = 0.0 electricity cost above on-grid",
+   "Build own, x = 0.3 electricity cost above on-grid",
+   "Build own, x = 0.6 electricity cost above on-grid",
+   "Build own, x = 1.0 electricity cost above on-grid",
+   "Build own, x = 0.0 net",
+   "Build own, x = 0.3 net",
+   "Build own, x = 0.6 net",
+   "Build own, x = 1.0 net"
+  ],
+  "georgia_at_queue": {
+   "36": {
+    "Build own, x = 0.0 earnings above on-grid": 3.671796228623428,
+    "Build own, x = 0.3 earnings above on-grid": 4.861458206697418,
+    "Build own, x = 0.6 earnings above on-grid": 6.05112018477141,
+    "Build own, x = 1.0 earnings above on-grid": 7.63733615553673,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.3500485798053066,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.3610888855735084,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.4186070354448144,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.611014468144114,
+    "Build own, x = 0.0 net": 2.3217476488181177,
+    "Build own, x = 0.3 net": 3.500369321123898,
+    "Build own, x = 0.6 net": 4.632513149326577,
+    "Build own, x = 1.0 net": 6.0263216873925884
+   },
+   "50": {
+    "Build own, x = 0.0 earnings above on-grid": 7.613236885291859,
+    "Build own, x = 0.3 earnings above on-grid": 8.80289886336585,
+    "Build own, x = 0.6 earnings above on-grid": 9.99256084143984,
+    "Build own, x = 1.0 earnings above on-grid": 11.57877681220516,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.545644736751772,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.5657688583165374,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.6298663768122927,
+    "Build own, x = 1.0 electricity cost above on-grid": 1.8286500529723155,
+    "Build own, x = 0.0 net": 6.067592148540086,
+    "Build own, x = 0.3 net": 7.237130005049309,
+    "Build own, x = 0.6 net": 8.36269446462753,
+    "Build own, x = 1.0 net": 9.75012675923282
+   },
+   "72": {
+    "Build own, x = 0.0 earnings above on-grid": 13.134371227196992,
+    "Build own, x = 0.3 earnings above on-grid": 14.324033205270988,
+    "Build own, x = 0.6 earnings above on-grid": 15.513695183344977,
+    "Build own, x = 1.0 earnings above on-grid": 17.099911154110295,
+    "Build own, x = 0.0 electricity cost above on-grid": 1.819634060283694,
+    "Build own, x = 0.3 electricity cost above on-grid": 1.85248270866966,
+    "Build own, x = 0.6 electricity cost above on-grid": 1.9257965470912377,
+    "Build own, x = 1.0 electricity cost above on-grid": 2.1335120072891063,
+    "Build own, x = 0.0 net": 11.314737166913323,
+    "Build own, x = 0.3 net": 12.471550496601331,
+    "Build own, x = 0.6 net": 13.587898636253732,
+    "Build own, x = 1.0 net": 14.966399146821177
+   }
+  }
+ }
+}

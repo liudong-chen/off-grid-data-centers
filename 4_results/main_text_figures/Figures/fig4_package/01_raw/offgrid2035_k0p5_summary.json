@@ -1,0 +1,62 @@
+{
+ "k": 0.5,
+ "year": 2035,
+ "separate": {
+  "peak_MW": 18995.27,
+  "installed_MW": 37642.0,
+  "cost": 8310797018.972698,
+  "energy": 111025427.885,
+  "lcoe": 74.85489745268994,
+  "wind_MW": 0.0,
+  "solar_MW": 0.0,
+  "batt_MW": 0.0
+ },
+ "pooled": {
+  "FarWest": {
+   "installed_MW": 20079.0,
+   "cost": 5337362144.678994,
+   "lcoe": 48.07333100492463,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "ratio": 1.239131601959752,
+   "mix": {
+    "FrameCT": 15,
+    "CC": 22
+   },
+   "peak_MW": 16204.09,
+   "LOLE": 0.0645
+  },
+  "SouthCentral": {
+   "installed_MW": 20076.0,
+   "cost": 6075104794.109871,
+   "lcoe": 54.718138987065714,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "ratio": 1.2389464635163097,
+   "mix": {
+    "FrameCT": 12,
+    "CC": 24
+   },
+   "peak_MW": 16204.09,
+   "LOLE": 0.0815
+  },
+  "NorthCentral": {
+   "installed_MW": 20079.0,
+   "cost": 6164597197.518621,
+   "lcoe": 55.52419220490557,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "ratio": 1.239131601959752,
+   "mix": {
+    "FrameCT": 15,
+    "CC": 22
+   },
+   "peak_MW": 16204.09,
+   "LOLE": 0.0645
+  }
+ },
+ "method": "mip gas-only (offgrid_mip.py, allow=(False,False,False), 2,000-rep confirmation)"
+}

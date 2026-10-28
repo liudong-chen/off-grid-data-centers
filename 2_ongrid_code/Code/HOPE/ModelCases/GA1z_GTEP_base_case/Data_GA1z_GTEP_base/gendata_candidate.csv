@@ -1,0 +1,4 @@
+Pmax (MW),Pmin (MW),Zone,Type,Cost ($/MW/yr),Cost ($/MWh),Flag_RPS,Flag_thermal,Flag_VRE,Flag_mustrun,EF,CC,AF,FOR,n_units
+100000.0,0.0,Georgia,NGCC,118650.0,38.983488,0,1,0,0,0.3304,1.0,1.0,0.0357,159
+100000.0,0.0,Georgia,NGCT,103382.0,56.169696,0,1,0,0,0.3304,1.0,1.0,0.0476,239
+100000.0,0.0,Georgia,SolarPV,117995.0,0.0,0,0,1,0,0.0,0.1350255752302361,1.0,0.0,285

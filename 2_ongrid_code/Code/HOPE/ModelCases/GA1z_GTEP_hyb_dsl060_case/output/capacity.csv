@@ -1,0 +1,17 @@
+Technology,Zone,EC_Category,New_Build,Capacity_INI (MW),Capacity_RET (MW),Capacity_FIN (MW)
+Coal,Georgia,Existing,0,3911.0,0.0,3911.0
+Hydro,Georgia,Existing,0,1112.0,0.0,1112.0
+NGCC,Georgia,Existing,0,3803.83,0.0,3803.83
+NGCT,Georgia,Existing,0,707.33,0.0,707.33
+NGST,Georgia,Existing,0,667.5,0.0,667.5
+Nuclear,Georgia,Existing,0,3067.0,0.0,3067.0
+Oil,Georgia,Existing,0,1073.33,0.0,1073.33
+SolarPV,Georgia,Existing,0,368.0,0.0,368.0
+Purchase,Georgia,Existing,0,5742.85,0.0,5742.85
+NGCT,Georgia,Existing,0,6510.0,0.0,6510.0
+NGCT,Georgia,Existing,0,419.0,0.0,419.0
+NGCC,Georgia,Existing,0,8151.0,0.0,8151.0
+NGCT,Georgia,Existing,0,8685.0,0.0,8685.0
+NGCC,Georgia,Candidate,0,0.0,0.0,0.0
+NGCT,Georgia,Candidate,0,0.0,0.0,0.0
+SolarPV,Georgia,Candidate,0,0.0,0.0,0.0

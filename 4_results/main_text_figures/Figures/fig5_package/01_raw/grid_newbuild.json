@@ -1,0 +1,28 @@
+{
+ "ercot": {
+  "new_MW": 29747.30958627716,
+  "new_gen_MWh": 249752043.23171708,
+  "new_gen_cf": 0.9584230511852686,
+  "cases": {
+   "base": "TX8z_GTEP_base_vre_case",
+   "dc": "TX8z_GTEP_dc_vre_case"
+  },
+  "prm": {
+   "base": 0.1344,
+   "dc": 0.1316896037821198
+  }
+ },
+ "georgia": {
+  "new_MW": 10332.869760266085,
+  "new_gen_MWh": 84113528.7350135,
+  "new_gen_cf": 0.9292675916685895,
+  "cases": {
+   "base": "GA1z_GTEP_base_case",
+   "dc": "GA1z_GTEP_dc_case"
+  },
+  "prm": {
+   "base": 0.1484999999999999,
+   "dc": 0.1175
+  }
+ }
+}

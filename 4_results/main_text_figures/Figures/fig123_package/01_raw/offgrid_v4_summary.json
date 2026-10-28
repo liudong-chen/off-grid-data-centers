@@ -1,0 +1,30 @@
+{
+ "separate": {
+  "peak_MW": 37990.54,
+  "installed_MW": 63996.0,
+  "cost": 15051242605.734785,
+  "energy": 222050855.77,
+  "lcoe": 67.7828624147472,
+  "wind_MW": 0.0,
+  "solar_MW": 0.0,
+  "batt_MW": 0.0
+ },
+ "pooled": {
+  "FarWest": {
+   "installed_MW": 37852.0,
+   "cost": 10597809539.090096,
+   "lcoe": 47.72694751542545,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "ratio": 1.167976726863403,
+   "mix": {
+    "FrameCT": 23,
+    "CC": 45
+   },
+   "peak_MW": 32408.18,
+   "LOLE": 0.098
+  }
+ },
+ "method": "mip gas-only (offgrid_mip.py, allow=(False,False,False), 2,000-rep confirmation)"
+}

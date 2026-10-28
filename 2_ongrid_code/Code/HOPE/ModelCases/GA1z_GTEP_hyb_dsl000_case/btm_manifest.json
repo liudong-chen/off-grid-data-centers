@@ -1,0 +1,59 @@
+{
+ "case": "GA1z_GTEP_hyb_dsl000_case",
+ "scenario": "georgia",
+ "source_case": "GA1z_GTEP_dc_case",
+ "data_dir": "Data_GA1z_GTEP_hyb_dsl000",
+ "diesel_share": 0.0,
+ "diesel_mode": "backup",
+ "n_existing_rows_before": 9,
+ "n_btm_rows": 5,
+ "n_candidate_rows": 3,
+ "total_btm_MW": 21452.0,
+ "units": [
+  {
+   "row": 9,
+   "zone": "Georgia",
+   "machine": "Recip",
+   "units": 59,
+   "MW": 1180.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 54.3223
+  },
+  {
+   "row": 10,
+   "zone": "Georgia",
+   "machine": "Aero35",
+   "units": 305,
+   "MW": 10675.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 59.7366
+  },
+  {
+   "row": 11,
+   "zone": "Georgia",
+   "machine": "Aero48",
+   "units": 30,
+   "MW": 1440.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 57.7629
+  },
+  {
+   "row": 12,
+   "zone": "Georgia",
+   "machine": "FrameCT",
+   "units": 6,
+   "MW": 2514.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 53.3054
+  },
+  {
+   "row": 13,
+   "zone": "Georgia",
+   "machine": "CC",
+   "units": 9,
+   "MW": 5643.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 38.92
+  }
+ ]
+}

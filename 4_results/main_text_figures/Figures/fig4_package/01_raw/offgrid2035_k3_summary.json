@@ -1,0 +1,33 @@
+{
+ "k": 3.0,
+ "year": 2035,
+ "separate": {
+  "peak_MW": 113971.62000000001,
+  "installed_MW": 151964.0,
+  "cost": 39556154063.38843,
+  "energy": 666152567.31,
+  "lcoe": 59.380021941701266,
+  "wind_MW": 0.0,
+  "solar_MW": 0.0,
+  "batt_MW": 0.0
+ },
+ "pooled": {
+  "FarWest": {
+   "installed_MW": 109619.0,
+   "cost": 31147383395.234295,
+   "lcoe": 46.75713180992604,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "ratio": 1.1274828350949258,
+   "mix": {
+    "Recip": 22,
+    "FrameCT": 81,
+    "CC": 120
+   },
+   "peak_MW": 97224.54,
+   "LOLE": 0.0985
+  }
+ },
+ "method": "mip gas-only (offgrid_mip.py, allow=(False,False,False), 2,000-rep confirmation)"
+}

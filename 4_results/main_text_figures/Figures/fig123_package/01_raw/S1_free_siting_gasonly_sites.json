@@ -1,0 +1,409 @@
+[
+ {
+  "site": "S01",
+  "home_zone": "West",
+  "best_zone": "FarWest",
+  "peak_MW": 1143.62,
+  "energy_MWh": 7174513.6899999995,
+  "home_cost": 561446831.8122187,
+  "best_cost": 536305604.48477036,
+  "home_lcoe": 78.25573356906072,
+  "best_lcoe": 74.75149224849697,
+  "home_installed_MW": 2830.0,
+  "best_installed_MW": 2830.0,
+  "home_mix": {
+   "Recip": 3,
+   "Aero48": 1,
+   "FrameCT": 5,
+   "CC": 1
+  },
+  "best_mix": {
+   "Recip": 3,
+   "Aero48": 1,
+   "FrameCT": 5,
+   "CC": 1
+  },
+  "best_LOLE": 0.093,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S02",
+  "home_zone": "West",
+  "best_zone": "FarWest",
+  "peak_MW": 1320.36,
+  "energy_MWh": 8265500.65,
+  "home_cost": 598933716.560594,
+  "best_cost": 583735259.131404,
+  "home_lcoe": 72.46188003876014,
+  "best_lcoe": 70.62309760164425,
+  "home_installed_MW": 3005.0,
+  "best_installed_MW": 2897.0,
+  "home_mix": {
+   "Recip": 2,
+   "Aero35": 1,
+   "FrameCT": 4,
+   "CC": 2
+  },
+  "best_mix": {
+   "Aero35": 5,
+   "FrameCT": 5,
+   "CC": 1
+  },
+  "best_LOLE": 0.0985,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S03",
+  "home_zone": "FarWest",
+  "best_zone": "FarWest",
+  "peak_MW": 3869.71,
+  "energy_MWh": 21668147.07,
+  "home_cost": 1270102569.5995328,
+  "best_cost": 1270102569.5995328,
+  "home_lcoe": 58.61611357428971,
+  "best_lcoe": 58.61611357428971,
+  "home_installed_MW": 5860.0,
+  "best_installed_MW": 5860.0,
+  "home_mix": {
+   "FrameCT": 8,
+   "CC": 4
+  },
+  "best_mix": {
+   "FrameCT": 8,
+   "CC": 4
+  },
+  "best_LOLE": 0.0995,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S04",
+  "home_zone": "FarWest",
+  "best_zone": "FarWest",
+  "peak_MW": 1930.73,
+  "energy_MWh": 10878452.379999999,
+  "home_cost": 722710686.9430238,
+  "best_cost": 722710686.9430238,
+  "home_lcoe": 66.43506463030764,
+  "best_lcoe": 66.43506463030764,
+  "home_installed_MW": 3768.0,
+  "best_installed_MW": 3768.0,
+  "home_mix": {
+   "FrameCT": 6,
+   "CC": 2
+  },
+  "best_mix": {
+   "FrameCT": 6,
+   "CC": 2
+  },
+  "best_LOLE": 0.0555,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S05",
+  "home_zone": "South",
+  "best_zone": "FarWest",
+  "peak_MW": 4529.7,
+  "energy_MWh": 27456197.89,
+  "home_cost": 1788783489.9113445,
+  "best_cost": 1552222751.8555598,
+  "home_lcoe": 65.1504442486135,
+  "best_lcoe": 56.53451210085082,
+  "home_installed_MW": 6697.0,
+  "best_installed_MW": 6906.0,
+  "home_mix": {
+   "Aero35": 6,
+   "FrameCT": 8,
+   "CC": 5
+  },
+  "best_mix": {
+   "FrameCT": 9,
+   "CC": 5
+  },
+  "best_LOLE": 0.0445,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S06",
+  "home_zone": "SouthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 3696.43,
+  "energy_MWh": 21770520.439999998,
+  "home_cost": 1415540283.4341981,
+  "best_cost": 1269207835.7421203,
+  "home_lcoe": 65.02096664778668,
+  "best_lcoe": 58.29937962393151,
+  "home_installed_MW": 5860.0,
+  "best_installed_MW": 5860.0,
+  "home_mix": {
+   "FrameCT": 8,
+   "CC": 4
+  },
+  "best_mix": {
+   "FrameCT": 8,
+   "CC": 4
+  },
+  "best_LOLE": 0.048,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S07",
+  "home_zone": "NorthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 2952.86,
+  "energy_MWh": 17700034.07,
+  "home_cost": 1187406887.9134629,
+  "best_cost": 1052089286.0645161,
+  "home_lcoe": 67.08500578120429,
+  "best_lcoe": 59.43995824548806,
+  "home_installed_MW": 5022.0,
+  "best_installed_MW": 4862.0,
+  "home_mix": {
+   "FrameCT": 6,
+   "CC": 4
+  },
+  "best_mix": {
+   "Aero48": 1,
+   "FrameCT": 7,
+   "CC": 3
+  },
+  "best_LOLE": 0.092,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S08",
+  "home_zone": "NorthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 5305.36,
+  "energy_MWh": 31676363.3,
+  "home_cost": 1982557851.4946568,
+  "best_cost": 1741960628.7604103,
+  "home_lcoe": 62.58792503161677,
+  "best_lcoe": 54.99244380621213,
+  "home_installed_MW": 7533.0,
+  "best_installed_MW": 7533.0,
+  "home_mix": {
+   "FrameCT": 9,
+   "CC": 6
+  },
+  "best_mix": {
+   "FrameCT": 9,
+   "CC": 6
+  },
+  "best_LOLE": 0.0865,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S09",
+  "home_zone": "NorthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 4714.44,
+  "energy_MWh": 29313499.060000002,
+  "home_cost": 1843113134.6629941,
+  "best_cost": 1623333497.1701832,
+  "home_lcoe": 62.875917026842785,
+  "best_lcoe": 55.378359773682476,
+  "home_installed_MW": 7114.0,
+  "best_installed_MW": 7114.0,
+  "home_mix": {
+   "FrameCT": 8,
+   "CC": 6
+  },
+  "best_mix": {
+   "FrameCT": 8,
+   "CC": 6
+  },
+  "best_LOLE": 0.09,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S10",
+  "home_zone": "East",
+  "best_zone": "FarWest",
+  "peak_MW": 1968.87,
+  "energy_MWh": 10968373.280000001,
+  "home_cost": 805472827.8801979,
+  "best_cost": 724784036.456249,
+  "home_lcoe": 73.43594235153509,
+  "best_lcoe": 66.0794466010596,
+  "home_installed_MW": 3609.0,
+  "best_installed_MW": 3768.0,
+  "home_mix": {
+   "Recip": 6,
+   "Aero35": 4,
+   "FrameCT": 5,
+   "CC": 2
+  },
+  "best_mix": {
+   "FrameCT": 6,
+   "CC": 2
+  },
+  "best_LOLE": 0.048,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S11",
+  "home_zone": "SouthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 268.1,
+  "energy_MWh": 1437459.83,
+  "home_cost": 156559265.6183651,
+  "best_cost": 142543384.18411067,
+  "home_lcoe": 108.91383699978948,
+  "best_lcoe": 99.16338614075265,
+  "home_installed_MW": 405.0,
+  "best_installed_MW": 405.0,
+  "home_mix": {
+   "Recip": 1,
+   "Aero35": 11
+  },
+  "best_mix": {
+   "Recip": 1,
+   "Aero35": 11
+  },
+  "best_LOLE": 0.061,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S12",
+  "home_zone": "West",
+  "best_zone": "FarWest",
+  "peak_MW": 184.78,
+  "energy_MWh": 1180937.63,
+  "home_cost": 121942886.3741679,
+  "best_cost": 116470381.91198257,
+  "home_lcoe": 103.25937905303934,
+  "best_lcoe": 98.62534561794138,
+  "home_installed_MW": 341.0,
+  "best_installed_MW": 341.0,
+  "home_mix": {
+   "Aero35": 7,
+   "Aero48": 2
+  },
+  "best_mix": {
+   "Aero35": 7,
+   "Aero48": 2
+  },
+  "best_LOLE": 0.094,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "S13",
+  "home_zone": "NorthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 190.31,
+  "energy_MWh": 1011083.1200000001,
+  "home_cost": 119754776.8889368,
+  "best_cost": 108855741.85441515,
+  "home_lcoe": 118.44206922269338,
+  "best_lcoe": 107.66250538770258,
+  "home_installed_MW": 320.0,
+  "best_installed_MW": 320.0,
+  "home_mix": {
+   "Recip": 2,
+   "Aero35": 8
+  },
+  "best_mix": {
+   "Recip": 2,
+   "Aero35": 8
+  },
+  "best_LOLE": 0.0575,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "A01",
+  "home_zone": "NorthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 2075.76,
+  "energy_MWh": 11028284.309999999,
+  "home_cost": 813232786.7964638,
+  "best_cost": 727938162.7872851,
+  "home_lcoe": 73.74064396028106,
+  "best_lcoe": 66.00647411014063,
+  "home_installed_MW": 3768.0,
+  "best_installed_MW": 3768.0,
+  "home_mix": {
+   "FrameCT": 6,
+   "CC": 2
+  },
+  "best_mix": {
+   "FrameCT": 6,
+   "CC": 2
+  },
+  "best_LOLE": 0.1,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "A02",
+  "home_zone": "Coast",
+  "best_zone": "FarWest",
+  "peak_MW": 1520.45,
+  "energy_MWh": 8029971.47,
+  "home_cost": 631911836.1976855,
+  "best_cost": 584355352.8390183,
+  "home_lcoe": 78.69415707870323,
+  "best_lcoe": 72.77178443561996,
+  "home_installed_MW": 3090.0,
+  "best_installed_MW": 3141.0,
+  "home_mix": {
+   "Recip": 1,
+   "Aero35": 4,
+   "FrameCT": 4,
+   "CC": 2
+  },
+  "best_mix": {
+   "FrameCT": 6,
+   "CC": 1
+  },
+  "best_LOLE": 0.068,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "A03",
+  "home_zone": "SouthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 1656.44,
+  "energy_MWh": 8950528.36,
+  "home_cost": 683129779.1119758,
+  "best_cost": 638838366.1733396,
+  "home_lcoe": 76.3228439300734,
+  "best_lcoe": 71.37437483895528,
+  "home_installed_MW": 3369.0,
+  "best_installed_MW": 3246.0,
+  "home_mix": {
+   "Recip": 1,
+   "FrameCT": 5,
+   "CC": 2
+  },
+  "best_mix": {
+   "Aero35": 3,
+   "FrameCT": 6,
+   "CC": 1
+  },
+  "best_LOLE": 0.0995,
+  "method": "mip gas-only"
+ },
+ {
+  "site": "A04",
+  "home_zone": "SouthCentral",
+  "best_zone": "FarWest",
+  "peak_MW": 662.62,
+  "energy_MWh": 3540989.2199999997,
+  "home_cost": 348642994.53496677,
+  "best_cost": 317306631.75478435,
+  "home_lcoe": 98.45920811218025,
+  "best_lcoe": 89.60960117093617,
+  "home_installed_MW": 1405.0,
+  "best_installed_MW": 861.0,
+  "home_mix": {
+   "Aero35": 14,
+   "Aero48": 6,
+   "CC": 1
+  },
+  "best_mix": {
+   "Aero35": 15,
+   "Aero48": 7
+  },
+  "best_LOLE": 0.0915,
+  "method": "mip gas-only"
+ }
+]

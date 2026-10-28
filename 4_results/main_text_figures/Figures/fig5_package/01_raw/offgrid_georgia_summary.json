@@ -1,0 +1,38 @@
+{
+ "region": "GeorgiaPower",
+ "year": 2030,
+ "gas": 5.688,
+ "land": 4670.0,
+ "solar_cf": null,
+ "wind_available": false,
+ "n_campuses": 31,
+ "fleet_MW": 12400.0,
+ "separate": {
+  "peak_MW": 12399.999999999998,
+  "installed_MW": 21452.0,
+  "cost": 7108524186.391973,
+  "energy": 72513167.84875064,
+  "lcoe": 98.03080457357855,
+  "wind_MW": 0.0,
+  "solar_MW": 0.0,
+  "batt_MW": 0.0
+ },
+ "pooled": {
+  "Georgia": {
+   "installed_MW": 13806.0,
+   "cost": 4402398566.788402,
+   "lcoe": 60.711712057195,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "ratio": 1.2940947202837847,
+   "mix": {
+    "FrameCT": 12,
+    "CC": 14
+   },
+   "peak_MW": 10668.461731280731,
+   "LOLE": 0.0875
+  }
+ },
+ "method": "mip gas-only (offgrid_mip.py, allow=(False,False,False), 2,000-rep confirmation)"
+}

@@ -1,0 +1,14 @@
+{
+ "energy_MWh": 222050855.77,
+ "offgrid_home_cost": 15051242605.734785,
+ "offgrid_home_lcoe": 67.7828624147472,
+ "offgrid_free_cost": 13712760177.712706,
+ "offgrid_free_lcoe": 61.75504314163223,
+ "saving_per_MWh": 6.027819273114972,
+ "saving_Byr": 1.3384824280220795,
+ "installed_MW_home": 63996.0,
+ "installed_MW_free": 63480.0,
+ "sites_moving": 15,
+ "free_zone": "FarWest",
+ "method": "mip gas-only (allow=(F,F,F)), every campus re-designed in Far West, the zone that is cheapest on both delivered gas and land and therefore dominates for a gas-only fleet"
+}

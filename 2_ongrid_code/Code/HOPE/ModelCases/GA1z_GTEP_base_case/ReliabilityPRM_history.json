@@ -1,0 +1,93 @@
+{
+ "iterations": [
+  {
+   "LOLE": 0.08333333333333333,
+   "PRM": 0.15099999999999997,
+   "accredited_margin": 0.15100000000000002,
+   "built_MW": 435.39558831527023,
+   "iter": 1,
+   "mc": {
+    "LOLE_days": 0.08333333333333333,
+    "case": "gabase",
+    "firm_MW": 20520.23558831527,
+    "firm_over_peak": 1.144783017479234,
+    "new_firm_MW": 435.39558831527023,
+    "new_vre_MW": 0.0,
+    "peak_MW": 17925.0,
+    "reps": 240,
+    "storage_MW": 65.0,
+    "storage_MWh": 260.0
+   },
+   "mix": {
+    "NGCC": 435.39558831527023
+   }
+  },
+  {
+   "LOLE": 0.175,
+   "PRM": 0.14099999999999996,
+   "accredited_margin": 0.14100000000000001,
+   "built_MW": 256.1455883152703,
+   "iter": 2,
+   "mc": {
+    "LOLE_days": 0.175,
+    "case": "gabase",
+    "firm_MW": 20340.98558831527,
+    "firm_over_peak": 1.1347830174792342,
+    "new_firm_MW": 256.1455883152703,
+    "new_vre_MW": 0.0,
+    "peak_MW": 17925.0,
+    "reps": 240,
+    "storage_MW": 65.0,
+    "storage_MWh": 260.0
+   },
+   "mix": {
+    "NGCC": 256.1455883152703
+   }
+  },
+  {
+   "LOLE": 0.12083333333333333,
+   "PRM": 0.14599999999999996,
+   "accredited_margin": 0.1459999999999999,
+   "built_MW": 345.7705883152703,
+   "iter": 3,
+   "mc": {
+    "LOLE_days": 0.12083333333333333,
+    "case": "gabase",
+    "firm_MW": 20430.61058831527,
+    "firm_over_peak": 1.139783017479234,
+    "new_firm_MW": 345.7705883152703,
+    "new_vre_MW": 0.0,
+    "peak_MW": 17925.0,
+    "reps": 240,
+    "storage_MW": 65.0,
+    "storage_MWh": 260.0
+   },
+   "mix": {
+    "NGCC": 345.7705883152703
+   }
+  },
+  {
+   "LOLE": 0.10416666666666667,
+   "PRM": 0.14849999999999997,
+   "accredited_margin": 0.14849999999999985,
+   "built_MW": 390.58308831526665,
+   "iter": 4,
+   "mc": {
+    "LOLE_days": 0.10416666666666667,
+    "case": "gabase",
+    "firm_MW": 20475.423088315267,
+    "firm_over_peak": 1.1422830174792338,
+    "new_firm_MW": 390.58308831526665,
+    "new_vre_MW": 0.0,
+    "peak_MW": 17925.0,
+    "reps": 240,
+    "storage_MW": 65.0,
+    "storage_MWh": 260.0
+   },
+   "mix": {
+    "NGCC": 390.58308831526665
+   }
+  }
+ ],
+ "status": "converged"
+}

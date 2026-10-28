@@ -1,0 +1,12 @@
+Feasib_Tol: 1.0e-05
+Optimal_Tol: 1.0e-05
+MIPGap: 1.0e-03
+Method: 2
+Crossover: 0
+BarConvTol: 1.0e-06
+Pre_Solve: 2
+PreDual: -1
+AggFill: 10
+NumericFocus: 0
+TimeLimit: 172800.0
+OutputFlag: 1

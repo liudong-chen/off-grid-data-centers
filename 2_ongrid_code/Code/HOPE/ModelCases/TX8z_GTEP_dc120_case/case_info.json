@@ -1,0 +1,51 @@
+{
+ "year": 2035,
+ "k": 3.0,
+ "growth": 1.207096081374614,
+ "gas": {
+  "FarWest": 5.1,
+  "North": 5.1,
+  "West": 5.1,
+  "South": 5.716,
+  "NorthCentral": 5.011,
+  "SouthCentral": 4.781,
+  "Coast": 5.346,
+  "East": 5.1
+ },
+ "peak_MW": 193881.67681397076,
+ "zone_peaks": {
+  "Coast": 31447.4,
+  "East": 9319.7,
+  "FarWest": 26523.0,
+  "North": 3297.9,
+  "NorthCentral": 70588.7,
+  "South": 20876.3,
+  "SouthCentral": 33800.8,
+  "West": 9958.5
+ },
+ "dc_peak_by_zone": {
+  "Coast": 4561.35,
+  "East": 5906.61,
+  "FarWest": 16868.88,
+  "North": 0.0,
+  "NorthCentral": 41484.36,
+  "South": 13589.099999999999,
+  "SouthCentral": 17009.31,
+  "West": 7684.32
+ },
+ "dc_coincident_peak": 97224.54,
+ "dc_energy_TWh": 666.15256731,
+ "ceiling": 60000.0,
+ "sto_ceiling": 30000.0,
+ "cand_cost": {
+  "NGCC": 113755,
+  "NGCT": 96576,
+  "WindOn": 149412,
+  "SolarPV": 108393,
+  "NuC": 706973
+ },
+ "batt_cost": 142528,
+ "prm": 0.13,
+ "derate_new_build": true,
+ "line_candidates": "open"
+}

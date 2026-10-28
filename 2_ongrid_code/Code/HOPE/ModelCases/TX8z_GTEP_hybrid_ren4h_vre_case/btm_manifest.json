@@ -1,0 +1,161 @@
+{
+ "case": "TX8z_GTEP_hybrid_ren4h_vre_case",
+ "data_dir": "Data_TX8z_GTEP_hybrid_ren4h_vre",
+ "design": "Code/OffGrid/scenario_renewable_only/renewable_only_4h_sites.json",
+ "n_existing_rows_before": 57,
+ "n_btm_rows": 14,
+ "n_candidate_rows": 40,
+ "wind_MW": 115802.4157984952,
+ "solar_MW": 107542.59257558241,
+ "batt_MW": 164284.6261544076,
+ "batt_MWh": 657138.5046176304,
+ "units": [
+  {
+   "row": 57,
+   "zone": "Coast",
+   "machine": "wind",
+   "MW": 3291.876,
+   "type": "WindOn"
+  },
+  {
+   "row": 58,
+   "zone": "Coast",
+   "machine": "solar",
+   "MW": 3783.023,
+   "type": "SolarPV"
+  },
+  {
+   "row": 59,
+   "zone": "East",
+   "machine": "wind",
+   "MW": 3378.124,
+   "type": "WindOn"
+  },
+  {
+   "row": 60,
+   "zone": "East",
+   "machine": "solar",
+   "MW": 9744.93,
+   "type": "SolarPV"
+  },
+  {
+   "row": 61,
+   "zone": "FarWest",
+   "machine": "wind",
+   "MW": 8521.044,
+   "type": "WindOn"
+  },
+  {
+   "row": 62,
+   "zone": "FarWest",
+   "machine": "solar",
+   "MW": 22019.096,
+   "type": "SolarPV"
+  },
+  {
+   "row": 63,
+   "zone": "NorthCentral",
+   "machine": "wind",
+   "MW": 59157.328,
+   "type": "WindOn"
+  },
+  {
+   "row": 64,
+   "zone": "NorthCentral",
+   "machine": "solar",
+   "MW": 36854.069,
+   "type": "SolarPV"
+  },
+  {
+   "row": 65,
+   "zone": "South",
+   "machine": "wind",
+   "MW": 10352.78,
+   "type": "WindOn"
+  },
+  {
+   "row": 66,
+   "zone": "South",
+   "machine": "solar",
+   "MW": 11500.584,
+   "type": "SolarPV"
+  },
+  {
+   "row": 67,
+   "zone": "SouthCentral",
+   "machine": "wind",
+   "MW": 23463.544,
+   "type": "WindOn"
+  },
+  {
+   "row": 68,
+   "zone": "SouthCentral",
+   "machine": "solar",
+   "MW": 15485.229,
+   "type": "SolarPV"
+  },
+  {
+   "row": 69,
+   "zone": "West",
+   "machine": "wind",
+   "MW": 7637.72,
+   "type": "WindOn"
+  },
+  {
+   "row": 70,
+   "zone": "West",
+   "machine": "solar",
+   "MW": 8155.662,
+   "type": "SolarPV"
+  },
+  {
+   "zone": "Coast",
+   "machine": "battery",
+   "MW": 8254.641265075417,
+   "MWh": 33018.56506030167,
+   "type": "Battery"
+  },
+  {
+   "zone": "East",
+   "machine": "battery",
+   "MW": 8185.4468792495645,
+   "MWh": 32741.787516998258,
+   "type": "Battery"
+  },
+  {
+   "zone": "FarWest",
+   "machine": "battery",
+   "MW": 23991.82683089865,
+   "MWh": 95967.3073235946,
+   "type": "Battery"
+  },
+  {
+   "zone": "NorthCentral",
+   "machine": "battery",
+   "MW": 56279.61128770416,
+   "MWh": 225118.44515081664,
+   "type": "Battery"
+  },
+  {
+   "zone": "South",
+   "machine": "battery",
+   "MW": 22412.425465364675,
+   "MWh": 89649.7018614587,
+   "type": "Battery"
+  },
+  {
+   "zone": "SouthCentral",
+   "machine": "battery",
+   "MW": 27789.034818871645,
+   "MWh": 111156.13927548658,
+   "type": "Battery"
+  },
+  {
+   "zone": "West",
+   "machine": "battery",
+   "MW": 17371.6396072435,
+   "MWh": 69486.558428974,
+   "type": "Battery"
+  }
+ ]
+}

@@ -1,0 +1,353 @@
+{
+ "stages": [
+  [
+   0,
+   0.25
+  ],
+  [
+   12,
+   0.625
+  ],
+  [
+   24,
+   1.0
+  ]
+ ],
+ "T_DSL": 12,
+ "T_GAS": 24,
+ "rate": 400000.0,
+ "cases": {
+  "x=0.0,T=36": {
+   "x": 0.0,
+   "queue_months": 36,
+   "ramp": {
+    "gas_GW": 15.999,
+    "diesel_GW": 0.0,
+    "routes": [
+     "gas",
+     "wait",
+     "wait"
+    ],
+    "value_vs_wait_B_per_yr": 1.332977182300708,
+    "extra_earnings_B_per_yr": 1.981080062032183,
+    "extra_cost_B_per_yr": 0.6481028797314791
+   },
+   "flat": {
+    "gas_GW": 63.996,
+    "diesel_GW": 0.0,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 5.33190872920282,
+    "extra_earnings_B_per_yr": 7.9243202481287325,
+    "extra_cost_B_per_yr": 2.5924115189259163
+   }
+  },
+  "x=0.0,T=50": {
+   "x": 0.0,
+   "queue_months": 50,
+   "ramp": {
+    "gas_GW": 63.996,
+    "diesel_GW": 0.0,
+    "routes": [
+     "gas",
+     "gas",
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 5.366761763231031,
+    "extra_earnings_B_per_yr": 7.717992373185112,
+    "extra_cost_B_per_yr": 2.351230609954097
+   },
+   "flat": {
+    "gas_GW": 63.996,
+    "diesel_GW": 0.0,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 13.380041238205312,
+    "extra_earnings_B_per_yr": 16.405112011090537,
+    "extra_cost_B_per_yr": 3.0250707728852326
+   }
+  },
+  "x=0.0,T=72": {
+   "x": 0.0,
+   "queue_months": 72,
+   "ramp": {
+    "gas_GW": 63.996,
+    "diesel_GW": 0.0,
+    "routes": [
+     "gas",
+     "gas",
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 16.594115512119437,
+    "extra_earnings_B_per_yr": 19.54891701153116,
+    "extra_cost_B_per_yr": 2.9548014994117144
+   },
+   "flat": {
+    "gas_GW": 63.996,
+    "diesel_GW": 0.0,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 24.607394987093734,
+    "extra_earnings_B_per_yr": 28.236036649436585,
+    "extra_cost_B_per_yr": 3.62864166234285
+   }
+  },
+  "x=0.0,bound": {
+   "ramp": 27.4,
+   "flat": 27.4,
+   "paper": 27.4
+  },
+  "x=0.3,T=36": {
+   "x": 0.3,
+   "queue_months": 36,
+   "ramp": {
+    "gas_GW": 12.27475,
+    "diesel_GW": 8.064375,
+    "routes": [
+     "gas",
+     "diesel_only",
+     "wait"
+    ],
+    "value_vs_wait_B_per_yr": 2.3808326141762084,
+    "extra_earnings_B_per_yr": 3.5162187089847783,
+    "extra_cost_B_per_yr": 1.1353860948085759
+   },
+   "flat": {
+    "gas_GW": 49.099,
+    "diesel_GW": 12.903,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 7.4598732702169555,
+    "extra_earnings_B_per_yr": 10.498930724281186,
+    "extra_cost_B_per_yr": 3.0390574540642374
+   }
+  },
+  "x=0.3,T=50": {
+   "x": 0.3,
+   "queue_months": 50,
+   "ramp": {
+    "gas_GW": 30.686875,
+    "diesel_GW": 12.903,
+    "routes": [
+     "gas",
+     "gas",
+     "diesel_only"
+    ],
+    "value_vs_wait_B_per_yr": 7.462651597846753,
+    "extra_earnings_B_per_yr": 9.77080263416911,
+    "extra_cost_B_per_yr": 2.308151036322373
+   },
+   "flat": {
+    "gas_GW": 49.099,
+    "diesel_GW": 12.903,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 15.4883170896907,
+    "extra_earnings_B_per_yr": 18.979722487242988,
+    "extra_cost_B_per_yr": 3.491405397552313
+   }
+  },
+  "x=0.3,T=72": {
+   "x": 0.3,
+   "queue_months": 72,
+   "ramp": {
+    "gas_GW": 49.099,
+    "diesel_GW": 12.903,
+    "routes": [
+     "gas",
+     "gas",
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 18.510073546844854,
+    "extra_earnings_B_per_yr": 21.907219494026414,
+    "extra_cost_B_per_yr": 3.3971459471815515
+   },
+   "flat": {
+    "gas_GW": 49.099,
+    "diesel_GW": 12.903,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 26.688204605643183,
+    "extra_earnings_B_per_yr": 30.810647125589036,
+    "extra_cost_B_per_yr": 4.122442519945853
+   }
+  },
+  "x=0.3,bound": {
+   "ramp": 14.9,
+   "flat": 14.9,
+   "paper": 24.1
+  },
+  "x=0.6,T=36": {
+   "x": 0.6,
+   "queue_months": 36,
+   "ramp": {
+    "gas_GW": 8.8865,
+    "diesel_GW": 15.965625,
+    "routes": [
+     "gas",
+     "diesel_only",
+     "wait"
+    ],
+    "value_vs_wait_B_per_yr": 3.4197932643652464,
+    "extra_earnings_B_per_yr": 5.051357355937375,
+    "extra_cost_B_per_yr": 1.6315640915721175
+   },
+   "flat": {
+    "gas_GW": 35.546,
+    "diesel_GW": 25.545,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 9.53814428635946,
+    "extra_earnings_B_per_yr": 13.073541200433638,
+    "extra_cost_B_per_yr": 3.535396914074181
+   }
+  },
+  "x=0.6,T=50": {
+   "x": 0.6,
+   "queue_months": 50,
+   "ramp": {
+    "gas_GW": 22.21625,
+    "diesel_GW": 25.545,
+    "routes": [
+     "gas",
+     "gas",
+     "diesel_only"
+    ],
+    "value_vs_wait_B_per_yr": 9.27618931799087,
+    "extra_earnings_B_per_yr": 12.26003035445491,
+    "extra_cost_B_per_yr": 2.983841036464046
+   },
+   "flat": {
+    "gas_GW": 35.546,
+    "diesel_GW": 25.545,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 17.541507874541626,
+    "extra_earnings_B_per_yr": 21.554332963395446,
+    "extra_cost_B_per_yr": 4.0128250888538215
+   }
+  },
+  "x=0.6,T=72": {
+   "x": 0.6,
+   "queue_months": 72,
+   "ramp": {
+    "gas_GW": 35.546,
+    "diesel_GW": 25.545,
+    "routes": [
+     "gas",
+     "gas",
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 20.37368388445369,
+    "extra_earnings_B_per_yr": 24.265521976521676,
+    "extra_cost_B_per_yr": 3.891838092067984
+   },
+   "flat": {
+    "gas_GW": 35.546,
+    "diesel_GW": 25.545,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 28.706407816855233,
+    "extra_earnings_B_per_yr": 33.385257601741486,
+    "extra_cost_B_per_yr": 4.678849784886255
+   }
+  },
+  "x=0.6,bound": {
+   "ramp": 14.9,
+   "flat": 14.9,
+   "paper": 17.8
+  },
+  "x=1.0,T=36": {
+   "x": 1.0,
+   "queue_months": 36,
+   "ramp": {
+    "gas_GW": 8.0745,
+    "diesel_GW": 26.50125,
+    "routes": [
+     "gas",
+     "diesel_only",
+     "wait"
+    ],
+    "value_vs_wait_B_per_yr": 4.656169912120056,
+    "extra_earnings_B_per_yr": 7.098208885207501,
+    "extra_cost_B_per_yr": 2.4420389730874565
+   },
+   "flat": {
+    "gas_GW": 32.298,
+    "diesel_GW": 42.402,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 11.713609509380737,
+    "extra_earnings_B_per_yr": 16.50635516863691,
+    "extra_cost_B_per_yr": 4.792745659256171
+   }
+  },
+  "x=1.0,T=50": {
+   "x": 1.0,
+   "queue_months": 50,
+   "ramp": {
+    "gas_GW": 20.18625,
+    "diesel_GW": 42.402,
+    "routes": [
+     "gas",
+     "gas",
+     "diesel_only"
+    ],
+    "value_vs_wait_B_per_yr": 11.345853476572168,
+    "extra_earnings_B_per_yr": 15.579000648169304,
+    "extra_cost_B_per_yr": 4.233147171597148
+   },
+   "flat": {
+    "gas_GW": 32.298,
+    "diesel_GW": 42.402,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 19.69124613619148,
+    "extra_earnings_B_per_yr": 24.987146931598716,
+    "extra_cost_B_per_yr": 5.295900795407241
+   }
+  },
+  "x=1.0,T=72": {
+   "x": 1.0,
+   "queue_months": 72,
+   "ramp": {
+    "gas_GW": 32.298,
+    "diesel_GW": 42.402,
+    "routes": [
+     "gas",
+     "gas",
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 22.33704618767448,
+    "extra_earnings_B_per_yr": 27.409925286515357,
+    "extra_cost_B_per_yr": 5.072879098840868
+   },
+   "flat": {
+    "gas_GW": 32.298,
+    "diesel_GW": 42.402,
+    "routes": [
+     "gas"
+    ],
+    "value_vs_wait_B_per_yr": 30.82025629961812,
+    "extra_earnings_B_per_yr": 36.81807156994476,
+    "extra_cost_B_per_yr": 5.997815270326635
+   }
+  },
+  "x=1.0,bound": {
+   "ramp": 14.9,
+   "flat": 14.9,
+   "paper": 16.2
+  }
+ }
+}

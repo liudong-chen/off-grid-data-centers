@@ -1,0 +1,42 @@
+{
+ "Georgia": {
+  "zone": "Georgia",
+  "peak_MW": 10668.461731280731,
+  "energy_MWh": 72513167.84875068,
+  "n": [
+   0,
+   0,
+   0,
+   12,
+   14
+  ],
+  "mix": {
+   "FrameCT": 12,
+   "CC": 14
+  },
+  "unit_count": 26,
+  "installed_MW": 13806.0,
+  "ratio": 1.2940947202837847,
+  "LOLE": 0.0875,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "gas": 5.688,
+  "fixed_cost": 1561314396.0,
+  "land_cost": 515792.16000000015,
+  "vre_cost": 0.0,
+  "fuel_cost": 2840568378.628402,
+  "cost": 4402398566.788402,
+  "lcoe": 60.711712057195,
+  "acres": 1380.6000000000004,
+  "n_minus_k": 3,
+  "n_cuts": 1,
+  "capacity_credits": {
+   "solar": 0.5601617633163477,
+   "wind": 0.0,
+   "battery": 0.1111111111111111
+  },
+  "seconds": 61.520678758621216,
+  "method": "mip, gas-only (allow solar/wind/battery = False)"
+ }
+}

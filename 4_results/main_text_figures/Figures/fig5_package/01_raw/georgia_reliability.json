@@ -1,0 +1,32 @@
+{
+ "reps": 280,
+ "target": 0.1,
+ "n_weather_years": 7,
+ "years": "2019-2025",
+ "new_unit": {
+  "mw": 419.0,
+  "FOR": 0.0476,
+  "mttr": 36.0
+ },
+ "cases": {
+  "base": {
+   "added_MW": 874.368896484375,
+   "lole": 0.1,
+   "peak_MW": 17925.0,
+   "prm": 0.1754894453650826,
+   "binding": 1.0
+  },
+  "dc": {
+   "added_MW": 10772.945725118927,
+   "lole": 0.1,
+   "peak_MW": 27668.66421500321,
+   "prm": 0.11928877000179616,
+   "binding": 1.0
+  }
+ },
+ "prm_in_case": {
+  "base": 0.26,
+  "dc": 0.1656
+ },
+ "note": "Derived by the same sequential Monte Carlo, the same two-state Markov outage model and the same 0.1 d/yr criterion as the ERCOT margins, on seven weather years of Southern Company demand from EIA-930 scaled to Georgia Power. The margin is expressed against each case's own annual peak, the denominator HOPE applies its reserve constraint to."
+}

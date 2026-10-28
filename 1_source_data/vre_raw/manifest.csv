@@ -1,0 +1,129 @@
+kind,zone,year,lat,lon,file,ok,note
+solar,Coast,2018,29.0,-95.5,vre_raw/solar/Coast_2018.csv,1,cached
+solar,Coast,2019,29.0,-95.5,vre_raw/solar/Coast_2019.csv,1,cached
+solar,Coast,2020,29.0,-95.5,vre_raw/solar/Coast_2020.csv,1,cached
+solar,Coast,2021,29.0,-95.5,vre_raw/solar/Coast_2021.csv,1,cached
+solar,Coast,2022,29.0,-95.5,vre_raw/solar/Coast_2022.csv,1,cached
+solar,Coast,2023,29.0,-95.5,vre_raw/solar/Coast_2023.csv,1,cached
+solar,Coast,2024,29.0,-95.5,vre_raw/solar/Coast_2024.csv,1,cached
+solar,Coast,2025,29.0,-95.5,vre_raw/solar/Coast_2025.csv,1,cached
+solar,East,2018,31.8,-94.8,vre_raw/solar/East_2018.csv,1,cached
+solar,East,2019,31.8,-94.8,vre_raw/solar/East_2019.csv,1,cached
+solar,East,2020,31.8,-94.8,vre_raw/solar/East_2020.csv,1,cached
+solar,East,2021,31.8,-94.8,vre_raw/solar/East_2021.csv,1,cached
+solar,East,2022,31.8,-94.8,vre_raw/solar/East_2022.csv,1,cached
+solar,East,2023,31.8,-94.8,vre_raw/solar/East_2023.csv,1,cached
+solar,East,2024,31.8,-94.8,vre_raw/solar/East_2024.csv,1,cached
+solar,East,2025,31.8,-94.8,vre_raw/solar/East_2025.csv,1,cached
+solar,FarWest,2018,31.4,-103.0,vre_raw/solar/FarWest_2018.csv,1,cached
+solar,FarWest,2019,31.4,-103.0,vre_raw/solar/FarWest_2019.csv,1,cached
+solar,FarWest,2020,31.4,-103.0,vre_raw/solar/FarWest_2020.csv,1,cached
+solar,FarWest,2021,31.4,-103.0,vre_raw/solar/FarWest_2021.csv,1,cached
+solar,FarWest,2022,31.4,-103.0,vre_raw/solar/FarWest_2022.csv,1,cached
+solar,FarWest,2023,31.4,-103.0,vre_raw/solar/FarWest_2023.csv,1,cached
+solar,FarWest,2024,31.4,-103.0,vre_raw/solar/FarWest_2024.csv,1,cached
+solar,FarWest,2025,31.4,-103.0,vre_raw/solar/FarWest_2025.csv,1,cached
+solar,North,2018,34.2,-101.7,vre_raw/solar/North_2018.csv,1,cached
+solar,North,2019,34.2,-101.7,vre_raw/solar/North_2019.csv,1,cached
+solar,North,2020,34.2,-101.7,vre_raw/solar/North_2020.csv,1,cached
+solar,North,2021,34.2,-101.7,vre_raw/solar/North_2021.csv,1,cached
+solar,North,2022,34.2,-101.7,vre_raw/solar/North_2022.csv,1,cached
+solar,North,2023,34.2,-101.7,vre_raw/solar/North_2023.csv,1,cached
+solar,North,2024,34.2,-101.7,vre_raw/solar/North_2024.csv,1,cached
+solar,North,2025,34.2,-101.7,vre_raw/solar/North_2025.csv,1,cached
+solar,NorthCentral,2018,32.8,-97.3,vre_raw/solar/NorthCentral_2018.csv,1,cached
+solar,NorthCentral,2019,32.8,-97.3,vre_raw/solar/NorthCentral_2019.csv,1,cached
+solar,NorthCentral,2020,32.8,-97.3,vre_raw/solar/NorthCentral_2020.csv,1,cached
+solar,NorthCentral,2021,32.8,-97.3,vre_raw/solar/NorthCentral_2021.csv,1,cached
+solar,NorthCentral,2022,32.8,-97.3,vre_raw/solar/NorthCentral_2022.csv,1,cached
+solar,NorthCentral,2023,32.8,-97.3,vre_raw/solar/NorthCentral_2023.csv,1,cached
+solar,NorthCentral,2024,32.8,-97.3,vre_raw/solar/NorthCentral_2024.csv,1,cached
+solar,NorthCentral,2025,32.8,-97.3,vre_raw/solar/NorthCentral_2025.csv,1,cached
+solar,South,2018,27.5,-98.5,vre_raw/solar/South_2018.csv,1,cached
+solar,South,2019,27.5,-98.5,vre_raw/solar/South_2019.csv,1,cached
+solar,South,2020,27.5,-98.5,vre_raw/solar/South_2020.csv,1,cached
+solar,South,2021,27.5,-98.5,vre_raw/solar/South_2021.csv,1,cached
+solar,South,2022,27.5,-98.5,vre_raw/solar/South_2022.csv,1,cached
+solar,South,2023,27.5,-98.5,vre_raw/solar/South_2023.csv,1,cached
+solar,South,2024,27.5,-98.5,vre_raw/solar/South_2024.csv,1,cached
+solar,South,2025,27.5,-98.5,vre_raw/solar/South_2025.csv,1,cached
+solar,SouthCentral,2018,29.4,-98.5,vre_raw/solar/SouthCentral_2018.csv,1,cached
+solar,SouthCentral,2019,29.4,-98.5,vre_raw/solar/SouthCentral_2019.csv,1,cached
+solar,SouthCentral,2020,29.4,-98.5,vre_raw/solar/SouthCentral_2020.csv,1,cached
+solar,SouthCentral,2021,29.4,-98.5,vre_raw/solar/SouthCentral_2021.csv,1,cached
+solar,SouthCentral,2022,29.4,-98.5,vre_raw/solar/SouthCentral_2022.csv,1,cached
+solar,SouthCentral,2023,29.4,-98.5,vre_raw/solar/SouthCentral_2023.csv,1,cached
+solar,SouthCentral,2024,29.4,-98.5,vre_raw/solar/SouthCentral_2024.csv,1,cached
+solar,SouthCentral,2025,29.4,-98.5,vre_raw/solar/SouthCentral_2025.csv,1,cached
+solar,West,2018,32.0,-100.5,vre_raw/solar/West_2018.csv,1,cached
+solar,West,2019,32.0,-100.5,vre_raw/solar/West_2019.csv,1,cached
+solar,West,2020,32.0,-100.5,vre_raw/solar/West_2020.csv,1,cached
+solar,West,2021,32.0,-100.5,vre_raw/solar/West_2021.csv,1,cached
+solar,West,2022,32.0,-100.5,vre_raw/solar/West_2022.csv,1,cached
+solar,West,2023,32.0,-100.5,vre_raw/solar/West_2023.csv,1,cached
+solar,West,2024,32.0,-100.5,vre_raw/solar/West_2024.csv,1,cached
+solar,West,2025,32.0,-100.5,vre_raw/solar/West_2025.csv,1,cached
+wind,Coast,2018,27.8,-97.4,vre_raw/wind/Coast_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,Coast,2019,27.8,-97.4,vre_raw/wind/Coast_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,Coast,2020,27.8,-97.4,vre_raw/wind/Coast_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,Coast,2021,27.8,-97.4,vre_raw/wind/Coast_2021.csv,1,cached
+wind,Coast,2022,27.8,-97.4,vre_raw/wind/Coast_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,Coast,2023,27.8,-97.4,vre_raw/wind/Coast_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,Coast,2024,27.8,-97.4,vre_raw/wind/Coast_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,Coast,2025,27.8,-97.4,vre_raw/wind/Coast_2025.csv,1,"0.7 MB, 8,762 lines"
+wind,East,2018,31.8,-94.8,vre_raw/wind/East_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,East,2019,31.8,-94.8,vre_raw/wind/East_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,East,2020,31.8,-94.8,vre_raw/wind/East_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,East,2021,31.8,-94.8,vre_raw/wind/East_2021.csv,1,cached
+wind,East,2022,31.8,-94.8,vre_raw/wind/East_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,East,2023,31.8,-94.8,vre_raw/wind/East_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,East,2024,31.8,-94.8,vre_raw/wind/East_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,East,2025,31.8,-94.8,vre_raw/wind/East_2025.csv,1,"0.7 MB, 8,762 lines"
+wind,FarWest,2018,31.4,-103.0,vre_raw/wind/FarWest_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,FarWest,2019,31.4,-103.0,vre_raw/wind/FarWest_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,FarWest,2020,31.4,-103.0,vre_raw/wind/FarWest_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,FarWest,2021,31.4,-103.0,vre_raw/wind/FarWest_2021.csv,1,cached
+wind,FarWest,2022,31.4,-103.0,vre_raw/wind/FarWest_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,FarWest,2023,31.4,-103.0,vre_raw/wind/FarWest_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,FarWest,2024,31.4,-103.0,vre_raw/wind/FarWest_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,FarWest,2025,31.4,-103.0,vre_raw/wind/FarWest_2025.csv,1,"0.7 MB, 8,762 lines"
+wind,North,2018,35.2,-101.8,vre_raw/wind/North_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,North,2019,35.2,-101.8,vre_raw/wind/North_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,North,2020,35.2,-101.8,vre_raw/wind/North_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,North,2021,35.2,-101.8,vre_raw/wind/North_2021.csv,1,cached
+wind,North,2022,35.2,-101.8,vre_raw/wind/North_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,North,2023,35.2,-101.8,vre_raw/wind/North_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,North,2024,35.2,-101.8,vre_raw/wind/North_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,North,2025,35.2,-101.8,vre_raw/wind/North_2025.csv,1,"0.7 MB, 8,762 lines"
+wind,NorthCentral,2018,32.4,-99.7,vre_raw/wind/NorthCentral_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,NorthCentral,2019,32.4,-99.7,vre_raw/wind/NorthCentral_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,NorthCentral,2020,32.4,-99.7,vre_raw/wind/NorthCentral_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,NorthCentral,2021,32.4,-99.7,vre_raw/wind/NorthCentral_2021.csv,1,cached
+wind,NorthCentral,2022,32.4,-99.7,vre_raw/wind/NorthCentral_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,NorthCentral,2023,32.4,-99.7,vre_raw/wind/NorthCentral_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,NorthCentral,2024,32.4,-99.7,vre_raw/wind/NorthCentral_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,NorthCentral,2025,32.4,-99.7,vre_raw/wind/NorthCentral_2025.csv,1,"0.7 MB, 8,762 lines"
+wind,South,2018,27.0,-98.2,vre_raw/wind/South_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,South,2019,27.0,-98.2,vre_raw/wind/South_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,South,2020,27.0,-98.2,vre_raw/wind/South_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,South,2021,27.0,-98.2,vre_raw/wind/South_2021.csv,1,cached
+wind,South,2022,27.0,-98.2,vre_raw/wind/South_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,South,2023,27.0,-98.2,vre_raw/wind/South_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,South,2024,27.0,-98.2,vre_raw/wind/South_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,South,2025,27.0,-98.2,vre_raw/wind/South_2025.csv,1,"0.7 MB, 8,762 lines"
+wind,SouthCentral,2018,28.9,-97.9,vre_raw/wind/SouthCentral_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,SouthCentral,2019,28.9,-97.9,vre_raw/wind/SouthCentral_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,SouthCentral,2020,28.9,-97.9,vre_raw/wind/SouthCentral_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,SouthCentral,2021,28.9,-97.9,vre_raw/wind/SouthCentral_2021.csv,1,cached
+wind,SouthCentral,2022,28.9,-97.9,vre_raw/wind/SouthCentral_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,SouthCentral,2023,28.9,-97.9,vre_raw/wind/SouthCentral_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,SouthCentral,2024,28.9,-97.9,vre_raw/wind/SouthCentral_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,SouthCentral,2025,28.9,-97.9,vre_raw/wind/SouthCentral_2025.csv,1,"0.7 MB, 8,762 lines"
+wind,West,2018,32.4,-100.4,vre_raw/wind/West_2018.csv,1,"0.7 MB, 8,762 lines"
+wind,West,2019,32.4,-100.4,vre_raw/wind/West_2019.csv,1,"0.7 MB, 8,762 lines"
+wind,West,2020,32.4,-100.4,vre_raw/wind/West_2020.csv,1,"0.7 MB, 8,762 lines"
+wind,West,2021,32.4,-100.4,vre_raw/wind/West_2021.csv,1,cached
+wind,West,2022,32.4,-100.4,vre_raw/wind/West_2022.csv,1,"0.7 MB, 8,762 lines"
+wind,West,2023,32.4,-100.4,vre_raw/wind/West_2023.csv,1,"0.7 MB, 8,762 lines"
+wind,West,2024,32.4,-100.4,vre_raw/wind/West_2024.csv,1,"0.7 MB, 8,762 lines"
+wind,West,2025,32.4,-100.4,vre_raw/wind/West_2025.csv,1,"0.7 MB, 8,762 lines"

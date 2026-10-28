@@ -1,0 +1,25 @@
+{
+ "iterations": [
+  {
+   "LOLE": 0.07291666666666667,
+   "PRM": 0.1344,
+   "accredited_margin": 0.11942821434615447,
+   "built_MW": 0.0,
+   "iter": 1,
+   "mc": {
+    "LOLE_days": 0.07291666666666667,
+    "case": "base",
+    "firm_MW": 77027.02999999998,
+    "firm_over_peak": 0.790023586953901,
+    "new_firm_MW": 0.0,
+    "new_vre_MW": 0.0,
+    "peak_MW": 97499.65858233879,
+    "reps": 96,
+    "storage_MW": 13504.42,
+    "storage_MWh": 21253.8
+   },
+   "mix": {}
+  }
+ ],
+ "status": "not_binding"
+}

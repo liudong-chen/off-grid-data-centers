@@ -1,0 +1,50 @@
+{
+ "case": "GA1z_GTEP_hyb_dsl100_case",
+ "scenario": "georgia",
+ "source_case": "GA1z_GTEP_dc_case",
+ "data_dir": "Data_GA1z_GTEP_hyb_dsl100",
+ "diesel_share": 1.0,
+ "diesel_mode": "backup",
+ "n_existing_rows_before": 9,
+ "n_btm_rows": 4,
+ "n_candidate_rows": 3,
+ "total_btm_MW": 27741.0,
+ "units": [
+  {
+   "row": 9,
+   "zone": "Georgia",
+   "machine": "Aero35",
+   "units": 40,
+   "MW": 1400.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 59.7366
+  },
+  {
+   "row": 10,
+   "zone": "Georgia",
+   "machine": "FrameCT",
+   "units": 8,
+   "MW": 3352.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 53.3054
+  },
+  {
+   "row": 11,
+   "zone": "Georgia",
+   "machine": "CC",
+   "units": 14,
+   "MW": 8778.0,
+   "type": "NGCC",
+   "var_cost_USD_MWh": 38.92
+  },
+  {
+   "row": 12,
+   "zone": "Georgia",
+   "machine": "Diesel",
+   "units": 4737,
+   "MW": 14211.0,
+   "type": "NGCT",
+   "var_cost_USD_MWh": 197.2
+  }
+ ]
+}

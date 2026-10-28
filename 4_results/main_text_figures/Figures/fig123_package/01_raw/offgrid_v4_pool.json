@@ -1,0 +1,42 @@
+{
+ "FarWest": {
+  "zone": "FarWest",
+  "peak_MW": 32408.18,
+  "energy_MWh": 222050855.76999998,
+  "n": [
+   0,
+   0,
+   0,
+   23,
+   45
+  ],
+  "mix": {
+   "FrameCT": 23,
+   "CC": 45
+  },
+  "unit_count": 68,
+  "installed_MW": 37852.0,
+  "ratio": 1.167976726863403,
+  "LOLE": 0.098,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "gas": 3.953,
+  "fixed_cost": 4344002084.0,
+  "land_cost": 216210.62400000007,
+  "vre_cost": 0.0,
+  "fuel_cost": 6253591244.466096,
+  "cost": 10597809539.090096,
+  "lcoe": 47.72694751542545,
+  "acres": 3785.2000000000007,
+  "n_minus_k": 3,
+  "n_cuts": 12,
+  "capacity_credits": {
+   "solar": 0.6598786,
+   "wind": 0.16728879999999996,
+   "battery": 0.1111111111111111
+  },
+  "seconds": 996.8905820846558,
+  "method": "mip, gas-only (allow solar/wind/battery = False)"
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "note": "HOPE dispatch of the Georgia data centers own gas after connection",
+ "cases": "GA1z_GTEP_hyb_dsl000_case, GA1z_GTEP_hyb_dsl030_case, GA1z_GTEP_hyb_dsl060_case, GA1z_GTEP_hyb_dsl100_case",
+ "table": {
+  "0.0": {
+   "gas_MWh": 65996629.57402,
+   "gas_MW": 21452.0,
+   "util": 0.3511962438708868,
+   "diesel_MW": 0.0,
+   "diesel_MWh": 0.0
+  },
+  "0.3": {
+   "gas_MWh": 60494711.44468239,
+   "gas_MW": 17537.0,
+   "util": 0.39378394125012656,
+   "diesel_MW": 4563.0,
+   "diesel_MWh": 0.0
+  },
+  "0.6": {
+   "gas_MWh": 70436226.85675153,
+   "gas_MW": 15080.0,
+   "util": 0.5332006078445515,
+   "diesel_MW": 8685.0,
+   "diesel_MWh": 0.0
+  },
+  "1.0": {
+   "gas_MWh": 80203721.84807447,
+   "gas_MW": 13530.0,
+   "util": 0.6766944575058509,
+   "diesel_MW": 14211.0,
+   "diesel_MWh": 0.0
+  }
+ }
+}

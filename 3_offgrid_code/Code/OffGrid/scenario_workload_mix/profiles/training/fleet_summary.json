@@ -1,0 +1,86 @@
+{
+ "year": 2025,
+ "n_sites": 17,
+ "announced_MW": 40425.0,
+ "draws": 20,
+ "seed": 20260824,
+ "parameters": {
+  "s_component": {
+   "train": 0.151,
+   "inference": 0.152,
+   "colo": 0.17
+  },
+  "M_0": {
+   "ai_training": 1.068,
+   "hyperscale_cloud": 1.123,
+   "developer_campus": 1.123,
+   "colo_enterprise": 1.408
+  },
+  "b": 0.0044,
+  "T_ref": 15.0,
+  "T_des": 40.0,
+  "p_shared_same_owner": 0.5,
+  "n_weeks": 53,
+  "archetype": {
+   "ai_training": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "hyperscale_cloud": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "developer_campus": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "colo_enterprise": [
+    1.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "fleet_coincident_peak_MW": {
+  "mean": 35055.736050248,
+  "p05": 34507.04770881822,
+  "p95": 35815.958476178064
+ },
+ "fleet_sum_of_site_peaks_MW": 39492.038123891376,
+ "fleet_coincidence_factor": {
+  "mean": 0.8876725462833328,
+  "p05": 0.8744095628212606,
+  "p95": 0.9083611464712905
+ },
+ "fleet_mean_MW": 29142.31394335313,
+ "fleet_load_factor": 0.831313708591977,
+ "fleet_energy_TWh": 255.28667014377336,
+ "IT_share_of_energy": 0.8438602882464784,
+ "cooling_share_of_energy": 0.1561397117535213,
+ "peak_month_by_draw": [
+  7,
+  9,
+  5,
+  5,
+  9,
+  9,
+  7,
+  9,
+  6,
+  8,
+  9,
+  6,
+  10,
+  8,
+  8,
+  7,
+  7,
+  9,
+  7,
+  5
+ ],
+ "peak_timestamp_draw0": "2025-07-18 12:00:00"
+}

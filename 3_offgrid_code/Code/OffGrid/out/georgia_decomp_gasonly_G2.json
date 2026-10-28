@@ -1,0 +1,481 @@
+{
+ "tag": "G2  + ERCOT cheapest gas",
+ "n_campus": 31,
+ "gas": 3.953,
+ "land": 4670.0,
+ "wind": false,
+ "installed_MW": 18738.0,
+ "peak_MW": 12399.999999999998,
+ "cost": 6141558038.021794,
+ "energy_MWh": 72513167.84875064,
+ "lcoe": 84.69576244182262,
+ "ratio": 1.5111290322580648,
+ "wind_MW": 0.0,
+ "solar_MW": 0.0,
+ "batt_MW": 0.0,
+ "sites": [
+  {
+   "site": "S08",
+   "peak_MW": 3200.0,
+   "mix": {
+    "FrameCT": 8,
+    "CC": 3
+   },
+   "installed_MW": 5233.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.061,
+   "cost": 1135991921.1588786,
+   "lcoe": 59.45724854997271
+  },
+  {
+   "site": "S08",
+   "peak_MW": 702.8355821646012,
+   "mix": {
+    "Aero35": 18,
+    "Aero48": 6
+   },
+   "installed_MW": 918.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0715,
+   "cost": 357283705.10125566,
+   "lcoe": 85.14105212251715
+  },
+  {
+   "site": "S09",
+   "peak_MW": 659.6449505210057,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 20,
+    "Aero48": 3
+   },
+   "installed_MW": 864.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0895,
+   "cost": 345725062.5306799,
+   "lcoe": 84.29136223254177
+  },
+  {
+   "site": "S09",
+   "peak_MW": 622.0207991415521,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 20,
+    "Aero48": 2
+   },
+   "installed_MW": 816.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0845,
+   "cost": 326807234.6367787,
+   "lcoe": 84.49854021673258
+  },
+  {
+   "site": "S05",
+   "peak_MW": 608.5180622400463,
+   "mix": {
+    "Recip": 2,
+    "Aero35": 22
+   },
+   "installed_MW": 810.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0845,
+   "cost": 320375958.3382837,
+   "lcoe": 86.85913261807254
+  },
+  {
+   "site": "S05",
+   "peak_MW": 581.9892297871426,
+   "mix": {
+    "Recip": 3,
+    "Aero35": 19,
+    "Aero48": 1
+   },
+   "installed_MW": 773.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.073,
+   "cost": 306971361.24358624,
+   "lcoe": 87.01857274088982
+  },
+  {
+   "site": "S03",
+   "peak_MW": 533.7502380819092,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 17,
+    "Aero48": 2
+   },
+   "installed_MW": 711.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0825,
+   "cost": 268254211.67459938,
+   "lcoe": 89.75633537035553
+  },
+  {
+   "site": "S03",
+   "peak_MW": 505.52154926722034,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 15,
+    "Aero48": 3
+   },
+   "installed_MW": 689.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.074,
+   "cost": 256543221.88098466,
+   "lcoe": 90.63115537318875
+  },
+  {
+   "site": "S06",
+   "peak_MW": 492.85642936739936,
+   "mix": {
+    "Aero35": 19
+   },
+   "installed_MW": 665.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0575,
+   "cost": 255370146.64817616,
+   "lcoe": 87.97583034441217
+  },
+  {
+   "site": "S06",
+   "peak_MW": 448.9292283228895,
+   "mix": {
+    "Recip": 2,
+    "Aero35": 16
+   },
+   "installed_MW": 600.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.096,
+   "cost": 234193734.55143896,
+   "lcoe": 88.57498047570748
+  },
+  {
+   "site": "S07",
+   "peak_MW": 394.58133356348344,
+   "mix": {
+    "Aero35": 16
+   },
+   "installed_MW": 560.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.058,
+   "cost": 211615303.90080926,
+   "lcoe": 89.47038181285514
+  },
+  {
+   "site": "A01",
+   "peak_MW": 331.0836516448024,
+   "mix": {
+    "Aero35": 11,
+    "Aero48": 2
+   },
+   "installed_MW": 481.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.081,
+   "cost": 168796028.38521132,
+   "lcoe": 95.96075857034651
+  },
+  {
+   "site": "A01",
+   "peak_MW": 274.01286208814355,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 11
+   },
+   "installed_MW": 405.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.082,
+   "cost": 143351183.39561474,
+   "lcoe": 98.46899799480929
+  },
+  {
+   "site": "S10",
+   "peak_MW": 266.2002197399679,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 11
+   },
+   "installed_MW": 405.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.049,
+   "cost": 144529070.85915896,
+   "lcoe": 97.45892587520592
+  },
+  {
+   "site": "S10",
+   "peak_MW": 259.95788086217397,
+   "mix": {
+    "Recip": 2,
+    "Aero35": 10
+   },
+   "installed_MW": 390.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0805,
+   "cost": 141449766.099726,
+   "lcoe": 97.6728960905528
+  },
+  {
+   "site": "S04",
+   "peak_MW": 257.17020961921935,
+   "mix": {
+    "Recip": 2,
+    "Aero35": 10
+   },
+   "installed_MW": 390.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.09,
+   "cost": 141484185.25905436,
+   "lcoe": 97.64312475919141
+  },
+  {
+   "site": "S04",
+   "peak_MW": 245.75237891082523,
+   "mix": {
+    "Aero35": 11
+   },
+   "installed_MW": 385.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.068,
+   "cost": 135021160.5654003,
+   "lcoe": 97.51210594151722
+  },
+  {
+   "site": "A03",
+   "peak_MW": 225.70438873699155,
+   "mix": {
+    "Aero35": 9,
+    "Aero48": 1
+   },
+   "installed_MW": 363.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.089,
+   "cost": 123003321.03786533,
+   "lcoe": 100.85649467016017
+  },
+  {
+   "site": "A03",
+   "peak_MW": 212.60593360167852,
+   "mix": {
+    "Aero35": 10
+   },
+   "installed_MW": 350.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0525,
+   "cost": 117979657.53674823,
+   "lcoe": 102.69724343060203
+  },
+  {
+   "site": "A02",
+   "peak_MW": 202.6663580293294,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 9
+   },
+   "installed_MW": 335.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0745,
+   "cost": 113006536.99268964,
+   "lcoe": 105.5796077026465
+  },
+  {
+   "site": "A02",
+   "peak_MW": 188.62731966622997,
+   "mix": {
+    "Recip": 2,
+    "Aero35": 8
+   },
+   "installed_MW": 320.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0495,
+   "cost": 108220736.22000718,
+   "lcoe": 108.63356481623522
+  },
+  {
+   "site": "S02",
+   "peak_MW": 174.10931019369198,
+   "mix": {
+    "Aero35": 9
+   },
+   "installed_MW": 315.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0655,
+   "cost": 108609123.12068182,
+   "lcoe": 99.64775231958167
+  },
+  {
+   "site": "S01",
+   "peak_MW": 161.19129720261185,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 8
+   },
+   "installed_MW": 300.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0535,
+   "cost": 103626078.31813373,
+   "lcoe": 102.47472125955909
+  },
+  {
+   "site": "S01",
+   "peak_MW": 142.7136561807153,
+   "mix": {
+    "Aero35": 8
+   },
+   "installed_MW": 280.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0505,
+   "cost": 93355016.27084683,
+   "lcoe": 104.2704864670495
+  },
+  {
+   "site": "A04",
+   "peak_MW": 107.55713106636911,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 6
+   },
+   "installed_MW": 230.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.073,
+   "cost": 71070657.52171561,
+   "lcoe": 123.6491284121513
+  },
+  {
+   "site": "A04",
+   "peak_MW": 100.00000000000001,
+   "mix": {
+    "Recip": 3,
+    "Aero35": 4
+   },
+   "installed_MW": 200.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0995,
+   "cost": 66328594.77328014,
+   "lcoe": 124.11970423527829
+  },
+  {
+   "site": "S11",
+   "peak_MW": 100.0,
+   "mix": {
+    "Recip": 3,
+    "Aero35": 4
+   },
+   "installed_MW": 200.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0925,
+   "cost": 66395189.524583794,
+   "lcoe": 123.83337565364116
+  },
+  {
+   "site": "S11",
+   "peak_MW": 100.0,
+   "mix": {
+    "Recip": 3,
+    "Aero35": 4
+   },
+   "installed_MW": 200.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0925,
+   "cost": 66395189.524583794,
+   "lcoe": 123.83337565364116
+  },
+  {
+   "site": "S13",
+   "peak_MW": 100.0,
+   "mix": {
+    "Recip": 8
+   },
+   "installed_MW": 160.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.057,
+   "cost": 67972810.68550655,
+   "lcoe": 127.94106978621849
+  },
+  {
+   "site": "S13",
+   "peak_MW": 100.0,
+   "mix": {
+    "Recip": 8
+   },
+   "installed_MW": 160.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.057,
+   "cost": 67972810.68550655,
+   "lcoe": 127.94106978621849
+  },
+  {
+   "site": "S12",
+   "peak_MW": 100.0,
+   "mix": {
+    "Recip": 1,
+    "Aero35": 6
+   },
+   "installed_MW": 230.0,
+   "wind_MW": 0.0,
+   "solar_MW": 0.0,
+   "batt_MW": 0.0,
+   "LOLE": 0.0735,
+   "cost": 73859059.58000848,
+   "lcoe": 115.5664506108927
+  }
+ ],
+ "method": "mip"
+}

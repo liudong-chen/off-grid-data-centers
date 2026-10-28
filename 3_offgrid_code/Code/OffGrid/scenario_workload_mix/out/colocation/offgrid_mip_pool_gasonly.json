@@ -1,0 +1,154 @@
+{
+ "FarWest": {
+  "zone": "FarWest",
+  "n": [
+   0,
+   0,
+   0,
+   46,
+   41
+  ],
+  "installed_MW": 44981.0,
+  "ratio": 1.1721256069615107,
+  "solar_MW": 0.0,
+  "wind_MW": 0.0,
+  "batt_MW": 0.0,
+  "LOLE": 0.0995,
+  "cost": 10655675282.193136,
+  "fixed_cost": 5042720218.0,
+  "land_cost": 256931.47200000004,
+  "vre_cost": 0.0,
+  "fuel_cost": 5612698132.721136,
+  "acres": 4498.1,
+  "gas": 3.953,
+  "lcoe": 54.3842152492467,
+  "energy_MWh": 195933236.01999998,
+  "peak_MW": 38375.579999999994,
+  "unit_count": 87,
+  "mix": {
+   "FrameCT": 46,
+   "CC": 41
+  },
+  "margin": 0.0,
+  "n_minus_k": 4,
+  "n_cuts": 2,
+  "n_sens_cuts": 2,
+  "credit_cap": 0.15,
+  "vre_cut_frac": 0.0,
+  "capacity_credits": {
+   "solar": 0.0921652,
+   "wind": 0.3904596,
+   "battery": 0.1111111111111111
+  },
+  "mip_log": [
+   {
+    "it": 0,
+    "k": 2,
+    "n": [
+     0,
+     0,
+     1,
+     35,
+     46
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 39517.971882191785,
+    "lole": 1.0125,
+    "cost": 10499279780.594353,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.013410050301092474,
+      0.02277932385582927,
+      0.03126979911118381,
+      0.264590607863863,
+      0.4046679884976729
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.5,
+     "evals": {
+      "Recip+513": 0.0,
+      "Aero35+302": 0.0,
+      "Aero48+220": 0.0,
+      "FrameCT+26": 0.0,
+      "CC+17": 0.0
+     }
+    }
+   },
+   {
+    "it": 1,
+    "k": 3,
+    "n": [
+     2,
+     0,
+     0,
+     26,
+     53
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 40095.55219109589,
+    "lole": 0.4875,
+    "cost": 10597572660.076168,
+    "feasible": false,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "sens": {
+     "gn": [
+      0.04229814394844264,
+      0.0714214561752392,
+      0.09247788077813207,
+      0.7936956557996261,
+      1.190543483699439
+     ],
+     "gs": 0.0,
+     "gw": 0.0,
+     "gb": 0.0,
+     "rhs": 2.1963248061399274,
+     "evals": {
+      "Recip+103": 0.00625,
+      "Aero35+61": 0.00625,
+      "Aero48+44": 0.008333333333333333,
+      "FrameCT+6": 0.004166666666666667,
+      "CC+4": 0.004166666666666667
+     }
+    }
+   },
+   {
+    "it": 2,
+    "k": 4,
+    "n": [
+     0,
+     0,
+     0,
+     46,
+     41
+    ],
+    "s": 0.0,
+    "w": 0.0,
+    "b": 0.0,
+    "firm_MW": 40787.93174452055,
+    "lole": 0.07916666666666666,
+    "cost": 10655675282.193136,
+    "feasible": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+   },
+   {
+    "it": 3,
+    "stage": "improve",
+    "status": "local optimum",
+    "cost": 10655675282.193136,
+    "tested": 300
+   }
+  ],
+  "seconds": 239.46514439582825,
+  "n_improvements": 0,
+  "confirm_reps": 2000,
+  "method": "mip+lazy-lole-cuts+mc-sensitivity+improve"
+ }
+}
