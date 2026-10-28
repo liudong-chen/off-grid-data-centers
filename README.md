@@ -47,8 +47,10 @@ running a case at its supplied margin.
 
 ## Off-grid and hybrid analyses
 
-The following files are in `3_offgrid_code/`. Set the shared inputs once, then run
-an analysis as `python 3_offgrid_code/<file> [arguments]` from the project root:
+Run the setup commands below once from the repository root, before running an
+analysis in the same terminal. They set the grid-case input folder, load-profile
+folder, reference design, use of Monte Carlo sensitivity cuts and number of
+numerical computing threads. The Python scripts read these settings by name.
 
 ```bash
 export OFFGRID_CASE="$PWD/2_ongrid_code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre"
@@ -58,24 +60,66 @@ export OFFGRID_SENS=1
 export OMP_NUM_THREADS=1
 ```
 
-| File | Analysis | Arguments, where required |
+Each command below is complete and can be copied as written. Run it from the
+repository root. Each row is a separate analysis.
+
+| Analysis | Command |
+|---|---|
+| ERCOT gas-only supply, separate plants for all campuses | `python 3_offgrid_code/run_offgrid_mip_gasonly.py all gasonly` |
+| ERCOT gas-only supply, one pooled plant | `python 3_offgrid_code/run_offgrid_mip_gasonly.py pool gasonly` |
+| Georgia gas-only supply | `python 3_offgrid_code/run_offgrid_mip_cases_gasonly.py georgia` |
+| ERCOT 2035 gas-only supply, 20 GW fleet | `python 3_offgrid_code/run_offgrid_mip_cases_gasonly.py 2035 0.5` |
+| ERCOT 2035 gas-only supply, 121 GW fleet | `python 3_offgrid_code/run_offgrid_mip_cases_gasonly.py 2035 3.0` |
+| Free-siting gas-only supply | `python 3_offgrid_code/run_free_siting.py` |
+| Georgia cost decomposition, all components | `python 3_offgrid_code/run_georgia_decomposition.py` |
+| ERCOT off-grid supply with renewables allowed | `python 3_offgrid_code/run_offgrid_mip.py all all` |
+| ERCOT diesel-bridge hybrid supply | `python 3_offgrid_code/run_hybrid_diesel_first.py all` |
+| Georgia diesel-bridge hybrid supply | `python 3_offgrid_code/run_hybrid_diesel_first_cases.py georgia` |
+| ERCOT 2035 diesel-bridge hybrids, 20 GW fleet | `python 3_offgrid_code/run_hybrid_diesel_first_cases.py 2035 0.5` |
+| ERCOT 2035 diesel-bridge hybrids, 121 GW fleet | `python 3_offgrid_code/run_hybrid_diesel_first_cases.py 2035 3.0` |
+| Connection-aware hybrid design, all campuses and diesel shares | `python 3_offgrid_code/run_hybrid_2phase.py all` |
+| Staged demand | `python 3_offgrid_code/scenario_ramp/ramp_hybrid.py` |
+| Off-grid and grid emissions | `python 3_offgrid_code/tools/emissions.py` |
+| Campus gas utilization after grid connection | `python 3_offgrid_code/tools/connected_util.py` |
+
+Words and numbers after the filename are inputs to that script. For example,
+`all` selects every campus, `pool` selects one plant serving the combined load,
+and `gasonly` labels the output files. In the 2035 commands, `0.5` and `3.0` are
+data-center demand multipliers corresponding to the 20 GW and 121 GW fleets.
+
+For the following scenarios, first change to the indicated directory with `cd`.
+The setup variables above contain absolute paths and remain available after
+changing directories.
+
+| Directory | Analysis | Command |
 |---|---|---|
-| `offgrid_model.py` | Generator catalogue, operating costs and Monte Carlo reliability functions | Library; direct execution runs its model checks |
-| `offgrid_mip.py` | Mixed-integer generation design | Optimizer used by the analysis scripts |
-| `run_offgrid_mip_gasonly.py` | ERCOT gas-only off-grid supply | `all gasonly` for campuses; `pool gasonly` for pooled supply |
-| `run_offgrid_mip_cases_gasonly.py` | Georgia and ERCOT 2035 gas-only supply | `georgia`, `2035 0.5` or `2035 3.0` |
-| `run_free_siting.py` | Free-siting gas-only supply | None |
-| `run_georgia_decomposition.py` | Georgia cost decomposition | None for all components; or `G1`, `G2`, `G4` |
-| `run_offgrid_mip.py` | Off-grid supply with renewables allowed | Campus selection and output tag |
-| `run_hybrid_diesel_first.py` | ERCOT diesel-bridge hybrid supply | `all` or a campus selection |
-| `run_hybrid_diesel_first_cases.py` | Georgia and ERCOT 2035 hybrids | Scenario selection |
-| `run_hybrid_2phase.py` | Connection-aware hybrid design | See the file's scenario options |
-| `scenario_renewable_only/run_renewable_only.py` | Pure-renewable supply | `OFFGRID_BATT_HOURS=4` selects four-hour batteries |
-| `scenario_two_unit_sizes/run_two_unit_sizes.py` | Two generation unit sizes | `sites` or `pool` |
-| `scenario_workload_mix/` | Training, inference and colocation workloads | Profile builder, case builder and summary scripts |
-| `scenario_ramp/ramp_hybrid.py` | Staged demand | None |
-| `tools/emissions.py` | Off-grid and grid emissions | None |
-| `tools/connected_util.py` | Campus gas utilization after grid connection | None |
+| `3_offgrid_code/scenario_renewable_only/` | Renewable-only supply, optimized battery duration | `python run_renewable_only.py` |
+| `3_offgrid_code/scenario_renewable_only/` | Renewable-only supply, four-hour batteries | `OFFGRID_BATT_HOURS=4 python run_renewable_only.py` |
+| `3_offgrid_code/scenario_two_unit_sizes/` | Two generation unit sizes, separate campus plants | `python run_two_unit_sizes.py sites` |
+| `3_offgrid_code/scenario_two_unit_sizes/` | Two generation unit sizes, one pooled plant | `python run_two_unit_sizes.py pool` |
+
+For the workload-mix analysis, run these commands from the repository root:
+
+```bash
+python 3_offgrid_code/scenario_workload_mix/build_profiles.py
+bash 3_offgrid_code/scenario_workload_mix/run_all.sh
+python 3_offgrid_code/scenario_workload_mix/build_hope_cases.py
+```
+
+These commands generate the workload profiles, run the off-grid designs and
+build the grid cases. Solve the generated `TX8z_GTEP_dc_wl_*_case` cases with
+HOPE, then collect the grid and off-grid results:
+
+```bash
+python 3_offgrid_code/scenario_workload_mix/summarize.py
+```
+
+The following files contain functions called by the analysis scripts:
+
+| File | Contents |
+|---|---|
+| `3_offgrid_code/offgrid_model.py` | Generator specifications, operating-cost calculations and Monte Carlo reliability functions. Running this file directly checks these functions; it does not run an analysis scenario. |
+| `3_offgrid_code/offgrid_mip.py` | Optimization routines that select generation capacity. Run the relevant analysis command above to use these routines. |
 
 Analysis scripts write to `3_offgrid_code/out/` or their scenario directories and
 may reuse completed results. Hybrid connected-phase results also require the
