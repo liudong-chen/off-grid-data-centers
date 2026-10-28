@@ -20,6 +20,20 @@ Dependencies are listed in `requirements.txt`. Grid optimization uses Julia and
 a licensed Gurobi installation; the included Julia environment specifies the
 versions used in the study.
 
+We tested Python installation and the supplied-data run below on macOS 14.4.1
+(Apple silicon, arm64), using Python 3.12.8. The installed Python dependencies were
+NumPy 2.5.4, pandas 3.1.0, SciPy 1.18.1, Matplotlib 3.11.2, Shapely 2.2.0,
+pvlib 0.16.1, openpyxl 3.1.5, xlrd 2.0.2, Requests 2.34.2, Numba 0.68.1,
+GeoPandas 1.2.0, highspy 1.15.1, Clarabel 0.11.1 and OR-Tools 9.15.6755.
+The bundled grid environment records HOPE 1.1.0, Julia 1.12.6, Gurobi.jl 1.9.2
+and Gurobi 13.0.2; its full dependency versions are in
+`2_ongrid_code/HOPE/Manifest.toml`.
+
+No GPU or other non-standard hardware is required. Python environment creation
+and dependency installation took approximately 30 seconds on the tested machine
+using prebuilt packages. Download speed and the package cache affect installation
+time; this measurement excludes Julia and Gurobi installation.
+
 From the repository root:
 
 ```bash
@@ -31,11 +45,30 @@ python -m pip install -r requirements.txt
 Run the commands below from the repository root. Source data and solved results
 are included; downloading new data is optional.
 
+To run the load-profile calculation on the supplied source data:
+
+```bash
+python 1_source_data/DC_Load/build_dc_load.py
+```
+
+This reads `1_source_data/DC_Load/raw_data/` and regenerates six hourly load CSVs,
+`site_parameters_and_results.csv` and `fleet_summary.json` in
+`1_source_data/DC_Load/load_profiles/`. The run took approximately 2 seconds in
+the environment above. Expected results include 17 campuses, 222.3 TWh of annual
+energy and an ensemble-mean coincident peak of 32,664 MW. These files are already
+included for comparison; rerunning the calculation overwrites them.
+
 ## Grid optimization
 
 Grid optimization uses [HOPE](https://github.com/HOPE-Model-Project/HOPE.jl).
-Refer to HOPE for installation and standard case execution. The supplied case
-inputs and settings are in `2_ongrid_code/HOPE/ModelCases/`; derived cases are generated
+Refer to HOPE for installation, Gurobi license configuration and standard case
+execution. Install the bundled Julia dependencies from the repository root with:
+
+```bash
+julia --project=2_ongrid_code/HOPE -e 'using Pkg; Pkg.instantiate()'
+```
+
+The supplied case inputs and settings are in `2_ongrid_code/HOPE/ModelCases/`; derived cases are generated
 by the builders in that directory. The included HOPE source and Julia environment
 preserve the version used for this study.
 
@@ -125,6 +158,25 @@ Analysis scripts write to `3_offgrid_code/out/` or their scenario directories an
 may reuse completed results. Hybrid connected-phase results also require the
 corresponding HOPE case to be solved. The `finalize_*` and `summarize_*` files
 assemble the designs and results for each hybrid analysis.
+
+## Using other input data
+
+For the ERCOT off-grid runs, copy the supplied load-profile directory and replace
+`dc_load_hourly_MW.csv` with your hourly demand in MW. Keep the first column as
+`timestamp_local_central`, with one column per campus and 8,760 hourly rows in the
+same time order as the case's renewable availability data. In
+`site_parameters_and_results.csv`, retain the column names and provide matching
+`site_id` values and an `ercot_weather_zone` for each campus. The scripts select
+campus columns by `site_id`; the `TOTAL_MW` column is not a campus.
+
+Set `OFFGRID_LOAD` to the absolute path of that directory and run the relevant
+command above. If changing grid inputs, copy a supplied HOPE case, retain its CSV
+and settings structure, and set `OFFGRID_CASE` to its `Data_*` directory. Keep
+zone names consistent across the campus metadata, generator data and renewable
+profiles. Hybrid runs also need an updated reference design through
+`OFFGRID_DESIGN`; the supplied design applies to the supplied campus inputs.
+Georgia and 2035 scenario scripts contain study-specific fleet sizes and scaling
+assumptions, which must also be updated when changing those scenarios.
 
 ## Figures
 
