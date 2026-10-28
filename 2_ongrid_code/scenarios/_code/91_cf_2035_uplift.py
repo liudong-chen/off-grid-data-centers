@@ -40,7 +40,7 @@ import os
 import numpy as np
 import pandas as pd
 
-U = 'Code/HOPE/ModelCases'
+U = '2_ongrid_code/HOPE/ModelCases'
 OUT = 'build/cf2035'
 UPLIFT = 1.03
 VRE = ('WindOn', 'SolarPV')

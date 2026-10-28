@@ -9,7 +9,7 @@ import json, os, sys
 import numpy as np, pandas as pd
 
 U = '.'
-PKG = 'grid_case_assembly'
+PKG = '2_ongrid_code/grid_case_assembly'
 HERE = os.path.dirname(os.path.abspath(__file__))
 ZONES = ['Coast', 'East', 'FarWest', 'North', 'NorthCentral', 'South', 'SouthCentral', 'West']
 DCMAP = {'North Central': 'NorthCentral', 'South Central': 'SouthCentral', 'Far West': 'FarWest'}
@@ -93,7 +93,7 @@ def build_case(year, k):
         VRE[y] = v
     dctot = np.zeros(H)
     if k:
-        d = pd.read_csv(f'{U}/DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv', index_col=0, parse_dates=True)
+        d = pd.read_csv(f'{U}/1_source_data/DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv', index_col=0, parse_dates=True)
         d = d.rename(columns={c: DCMAP.get(c, c) for c in d.columns})
         d = d[~((d.index.month == 2) & (d.index.day == 29))]
         dctot = d[[c for c in ZONES if c in d.columns]].sum(axis=1).values[:H]*k

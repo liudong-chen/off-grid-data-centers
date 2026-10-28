@@ -13,9 +13,9 @@ sum. Both are written out so the difference is visible.
 import os, re, json
 import numpy as np, pandas as pd
 
-RAWF = ('network/Texas2k/Texas2k_series2025/'
+RAWF = ('1_source_data/network/Texas2k/Texas2k_series2025/'
         'Texas2k_series25_case1_summerpeak/Texas2k_series25_case1_summerpeak.RAW')
-BUS  = 'network/Texas2k/tx2k_s25_bus_coords.csv'
+BUS  = '1_source_data/network/Texas2k/tx2k_s25_bus_coords.csv'
 OUT  = 'build/out'; os.makedirs(OUT, exist_ok=True)
 
 AREA2ZONE = {1:'FarWest', 2:'North', 3:'West', 4:'South',

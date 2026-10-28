@@ -2,15 +2,17 @@
 """Download NSRDB hourly data for the 8 ERCOT weather zones, plus an optional
 HRRR wind calibration set.
 
-Needs network access to developer.nrel.gov.
+Obtain an API key at https://developer.nlr.gov/signup/. Set NREL_API_KEY to
+your key and NREL_EMAIL to your contact email before requesting data.
+NSRDB documentation: https://developer.nlr.gov/docs/solar/nsrdb/.
 
     python3 download_vre.py --years 2020            # 1 year, smoke test
     python3 download_vre.py                         # 2018-2025 solar + wind calib
     python3 download_vre.py --solar-only            # solar only, no calibration
     python3 download_vre.py --wind-all              # real 100 m wind for every year
 
-Output: ./vre_raw/{solar,wind}/{Zone}_{year}.csv  + manifest.csv
-Run from the project root; output goes to ./vre_raw/.
+Output: ./1_source_data/vre_raw/{solar,wind}/{Zone}_{year}.csv  + manifest.csv
+Run from the project root; output goes to ./1_source_data/vre_raw/.
 
 Standard library only.
 """
@@ -121,13 +123,15 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--years", type=str, default=None,
                     help='"2020", "2018-2025", "2018,2021,2024". Default 2018-2025.')
-    ap.add_argument("--out", default="vre_raw")
+    ap.add_argument("--out", default="1_source_data/vre_raw")
     ap.add_argument("--solar-only", action="store_true",
                     help="skip the wind calibration download entirely")
     ap.add_argument("--wind-all", action="store_true",
                     help="download real 100 m wind for EVERY year, not just the calibration year")
     ap.add_argument("--sleep", type=float, default=1.1, help="seconds between calls (limit 1/s)")
     a = ap.parse_args()
+    if not API_KEY or not EMAIL:
+        ap.error("Set your own NREL_API_KEY and NREL_EMAIL; obtain a key at https://developer.nlr.gov/signup/.")
     years = parse_years(a.years)
 
     os.makedirs(f"{a.out}/solar", exist_ok=True)
@@ -153,7 +157,6 @@ def main() -> None:
         dest = f"{a.out}/{kind}/{zone}_{yr}.csv"
         common = dict(api_key=API_KEY, wkt=f"POINT({lon} {lat})", names=str(yr),
                       interval="60", utc="false", email=EMAIL,
-                      full_name="the authors Chen", affiliation="research",
                       reason="research", mailing_list="false")
         if kind == "solar":
             url, params, minimal = NSRDB, {**common, "attributes": SOLAR_ATTRS,

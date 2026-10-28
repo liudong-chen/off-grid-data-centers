@@ -29,7 +29,7 @@ import json, os
 import numpy as np
 import pandas as pd
 
-U = 'Code/HOPE/ModelCases'
+U = '2_ongrid_code/HOPE/ModelCases'
 B = 'build'
 OUT = f'{B}/out'
 TX = ['Coast', 'East', 'FarWest', 'North', 'NorthCentral', 'South', 'SouthCentral', 'West']

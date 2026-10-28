@@ -45,7 +45,7 @@ Each is a full copy of the case data directory, ready to point HOPE at.
 import os, shutil
 import numpy as np, pandas as pd
 
-SRC = ('Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
+SRC = ('2_ongrid_code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre')
 OUT = 'build/out/case_variants'
 
 GAS_OLD = {'FarWest': 3.891, 'North': 3.891, 'West': 3.891, 'South': 4.361,

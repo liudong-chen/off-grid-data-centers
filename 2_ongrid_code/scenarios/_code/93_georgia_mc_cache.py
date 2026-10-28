@@ -26,8 +26,8 @@ import numpy as np
 import pandas as pd
 
 B = 'build'
-SOCO_MULTI = 'parameter_setting/GPC_EIA930_demand_2019_2025.csv'
-SOCO_2025 = 'parameter_setting/SOCO_hourly_2025.csv'
+SOCO_MULTI = '1_source_data/parameter_setting/GPC_EIA930_demand_2019_2025.csv'
+SOCO_2025 = '1_source_data/parameter_setting/SOCO_hourly_2025.csv'
 GA = f'{B}/ga_hope'
 H = 8760
 

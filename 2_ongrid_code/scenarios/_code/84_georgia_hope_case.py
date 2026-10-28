@@ -45,10 +45,10 @@ import pandas as pd
 
 B = 'build'
 OUT = f'{B}/ga_hope'
-SRC_SETTINGS = 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Settings'
-SOCO = 'parameter_setting/SOCO_hourly_2025.csv'
+SRC_SETTINGS = '2_ongrid_code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Settings'
+SOCO = '1_source_data/parameter_setting/SOCO_hourly_2025.csv'
 CD = f'{B}/TX8z_GTEP_cases_vre/TX8z_GTEP_dc_case/Data_TX8z_GTEP_dc'
-R = 'DC_Load/load_profiles'
+R = '1_source_data/DC_Load/load_profiles'
 H, Z = 8760, 'Georgia'
 CC_OVERRIDE = None
 if '--cc' in sys.argv:
@@ -264,7 +264,7 @@ def write(tag, load, k):
     pd.DataFrame(columns=lc).to_csv(f'{dat}/linedata.csv', index=False)
     pd.DataFrame(columns=lc).to_csv(f'{dat}/linedata_candidate.csv', index=False)
     for f in ('carbonpolicies.csv', 'rpspolicies.csv'):
-        src_f = 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre/' + f
+        src_f = '2_ongrid_code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre/' + f
         if os.path.exists(src_f):
             t = pd.read_csv(src_f)
             t.to_csv(f'{dat}/{f}', index=False)

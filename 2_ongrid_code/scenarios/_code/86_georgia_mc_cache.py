@@ -25,7 +25,7 @@ where Georgia is most exposed: the binding event Georgia Power plans for is an e
 winter morning of the Elliott/January-2024 kind, which a single normal year does not
 contain.  The derived PRM should therefore be read as a LOWER BOUND.
 
-To fix it, drop more EIA-930 BALANCE files into parameter_setting and re-run: the script
+To fix it, drop more EIA-930 BALANCE files into 1_source_data/parameter_setting and re-run: the script
 picks up every year it finds and writes one column pair per year, and the Julia engine
 rotates through however many there are.
 
@@ -38,9 +38,9 @@ import pandas as pd
 
 B = 'build'
 OUT = f'{B}/ga_hope'
-PS = 'parameter_setting'
+PS = '1_source_data/parameter_setting'
 CD = f'{B}/TX8z_GTEP_cases_vre/TX8z_GTEP_dc_case/Data_TX8z_GTEP_dc'
-R = 'DC_Load/load_profiles'
+R = '1_source_data/DC_Load/load_profiles'
 H = 8760
 
 GP_PEAK_2025, GROWTH, DC_SHARE = 16284.0, 8205.0, 0.80
@@ -51,7 +51,7 @@ ETA = 0.922
 F = json.load(open(f'{B}/out/georgia_fleet.json'))
 
 # ------------------------------------------------------------------- weather years
-# every EIA-930 BALANCE pair in parameter_setting becomes one weather year
+# every EIA-930 BALANCE pair in 1_source_data/parameter_setting becomes one weather year
 years = {}
 for f in sorted(glob.glob(f'{PS}/EIA930_BALANCE_*.csv')):
     y = int(os.path.basename(f).split('_')[2])
@@ -129,4 +129,4 @@ for tag, add in (('gabase', np.zeros(H)), ('gadc', dc)):
           f'({fleet.mw.sum()/peak:.3f}x)  {len(SERIES)} weather year(s)')
 
 print(f'\nwritten {OUT}/mc_cache_ga*_{{fleet,series,meta}}.csv')
-print('copy them beside ReliabilityPRM_GA.jl in Code/HOPE/')
+print('copy them beside ReliabilityPRM_GA.jl in 2_ongrid_code/HOPE/')

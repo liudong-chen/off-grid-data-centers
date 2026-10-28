@@ -22,7 +22,7 @@ that does not change when the ceiling does.
 """
 import numpy as np, pandas as pd
 
-CASE = 'Code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre'
+CASE = '2_ongrid_code/HOPE/ModelCases/TX8z_GTEP_dc_vre_case/Data_TX8z_GTEP_dc_vre'
 OUT = 'build/out'
 UNIT, CRF, OLD_BLOCK, NEW_BLOCK = 1100.0, 0.0839, 3000.0, 30000.0
 

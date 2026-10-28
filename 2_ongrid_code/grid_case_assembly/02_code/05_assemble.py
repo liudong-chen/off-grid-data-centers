@@ -11,7 +11,7 @@ import numpy as np, pandas as pd
 
 U    = '.'
 OUTD = 'build/out'
-CASE = 'Code/HOPE/ModelCases'
+CASE = '2_ongrid_code/HOPE/ModelCases'
 
 ZONES = ['Coast','East','FarWest','North','NorthCentral','South','SouthCentral','West']
 ZMAP  = {'COAST':'Coast','EAST':'East','FWEST':'FarWest','NORTH':'North',
@@ -73,7 +73,7 @@ EF = {'NGCC':HEAT_RATE['NGCC']*CO2_GAS/1000, 'NGCT':HEAT_RATE['NGCT']*CO2_GAS/10
       'NGST':HEAT_RATE['NGST']*CO2_GAS/1000, 'Coal':HEAT_RATE['Coal']*CO2_COAL/1000,
       'Oil':0.75,'Biomass':0.0,'Nuclear':0.0,'Hydro':0.0,'WindOn':0.0,'SolarPV':0.0}
 
-# ---- candidate costs: parameter_setting workbook, Recommended_CEM_Base, 2030
+# ---- candidate costs: 1_source_data/parameter_setting workbook, Recommended_CEM_Base, 2030
 CAND = {   # Type    $/MW/yr   $/MWh                       unit MW (for the MC)
  'NGCC':   dict(inv=118650, op=VOM['NGCC']+HEAT_RATE['NGCC']*GAS_PRICE, unit=500),
  'NGCT':   dict(inv=103382, op=VOM['NGCT']+HEAT_RATE['NGCT']*GAS_PRICE, unit=200),
@@ -90,7 +90,7 @@ THERMAL = {'NGCC','NGCT','NGST','Coal','Oil','Biomass'}   # Flag_thermal = 1
 
 # ============================ load ============================
 def load_year(y):
-    f = f'{U}/parameter_setting/ERCOT_load/Native_Load_{y}.xlsx'
+    f = f'{U}/1_source_data/parameter_setting/ERCOT_load/Native_Load_{y}.xlsx'
     d = pd.read_excel(f)
     d = d.rename(columns={c: ZMAP.get(str(c).strip().upper(), str(c).strip())
                           for c in d.columns})
@@ -114,7 +114,7 @@ def build(name, add_dc):
 
     dc_added = {z: 0.0 for z in ZONES}
     if add_dc:
-        dc = pd.read_csv('DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv',
+        dc = pd.read_csv('1_source_data/DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv',
                          index_col=0, parse_dates=True)
         dc = dc.rename(columns={c: DCMAP.get(c, c) for c in dc.columns})
         dc = dc[~((dc.index.month == 2) & (dc.index.day == 29))].reset_index(drop=True)

@@ -32,7 +32,7 @@ STO_CC = 0.9329
 
 
 def load_year(y):
-    d = pd.read_excel(f'{U}/parameter_setting/ERCOT_load/Native_Load_{y}.xlsx')
+    d = pd.read_excel(f'{U}/1_source_data/parameter_setting/ERCOT_load/Native_Load_{y}.xlsx')
     d = d.rename(columns={c: ZMAP.get(str(c).strip().upper(), str(c).strip()) for c in d.columns})
     t = pd.to_datetime(d[d.columns[0]].astype(str).str.replace(' 24:00',' 00:00'),
                        format='%m/%d/%Y %H:%M', errors='coerce')
@@ -102,7 +102,7 @@ def build_case(dc):
         VRE[y] = v
     dctot = 0.0
     if dc:
-        d = pd.read_csv('DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv',
+        d = pd.read_csv('1_source_data/DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv',
                         index_col=0, parse_dates=True)
         d = d.rename(columns={c: DCMAP.get(c, c) for c in d.columns})
         d = d[~((d.index.month == 2) & (d.index.day == 29))]

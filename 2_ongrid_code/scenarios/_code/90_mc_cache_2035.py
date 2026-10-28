@@ -31,13 +31,13 @@ rebuilt differently, this fails rather than producing a plausible wrong number.
     python 90_mc_cache_2035.py
     -> ga_hope/../mc2035/mc_cache_{base2035,dc20,dc120}_{fleet,series,meta}.csv
 
-Copy the nine files beside ReliabilityPRM.jl in Code/HOPE/.
+Copy the nine files beside ReliabilityPRM.jl in 2_ongrid_code/HOPE/.
 """
 import os
 import numpy as np
 import pandas as pd
 
-H = 'Code/HOPE'
+H = '2_ongrid_code/HOPE'
 U = f'{H}/ModelCases'
 OUT = 'build/mc2035'
 TX = ['Coast', 'East', 'FarWest', 'North', 'NorthCentral', 'South', 'SouthCentral', 'West']
@@ -105,4 +105,4 @@ print(f'\nfirm fleet {fleet.mw.sum():,.0f} MW over {int(fleet.n_units.sum())} un
       f'identical in all three (no post-2029 retirements)')
 print(f'storage {mb["sto_p_MW"]:,.0f} MW / {mb["sto_e_MWh"]:,.0f} MWh, unchanged')
 print(f'\nwritten {OUT}/mc_cache_*_{{fleet,series,meta}}.csv')
-print('copy all nine beside ReliabilityPRM.jl in Code/HOPE/')
+print('copy all nine beside ReliabilityPRM.jl in 2_ongrid_code/HOPE/')

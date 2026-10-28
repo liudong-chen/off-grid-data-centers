@@ -11,7 +11,7 @@ import os, sys, json, argparse
 import numpy as np, pandas as pd
 
 U = '.'
-PKG = 'grid_case_assembly'
+PKG = '2_ongrid_code/grid_case_assembly'
 HERE = os.path.dirname(os.path.abspath(__file__))
 ZONES = ['Coast', 'East', 'FarWest', 'North', 'NorthCentral', 'South', 'SouthCentral', 'West']
 ZMAP = {'COAST': 'Coast', 'EAST': 'East', 'FWEST': 'FarWest', 'NORTH': 'North',
@@ -46,7 +46,7 @@ EF = {'NGCC': HEAT_RATE['NGCC']*CO2_GAS/1000, 'NGCT': HEAT_RATE['NGCT']*CO2_GAS/
 THERMAL = {'NGCC', 'NGCT', 'NGST', 'Coal', 'Oil', 'Biomass'}
 
 # ---------------------------------------------------------------- year-dependent inputs
-# Candidate fixed cost $/MW-yr: parameter_setting workbook, Recommended_CEM_Base,
+# Candidate fixed cost $/MW-yr: 1_source_data/parameter_setting workbook, Recommended_CEM_Base,
 # columns H (2030) and N (2035); CAPEX x CRF(7%, life) + FOM.  Verified to the cent.
 YEAR_PARAMS = {
     2030: dict(
@@ -65,7 +65,7 @@ UNIT_MW = {'NGCC': 350.877, 'NGCT': 60.06, 'WindOn': 200, 'SolarPV': 200, 'NuC':
 
 
 def load_year(y):
-    d = pd.read_excel(f'{U}/parameter_setting/ERCOT_load/Native_Load_{y}.xlsx')
+    d = pd.read_excel(f'{U}/1_source_data/parameter_setting/ERCOT_load/Native_Load_{y}.xlsx')
     d = d.rename(columns={c: ZMAP.get(str(c).strip().upper(), str(c).strip()) for c in d.columns})
     t = pd.to_datetime(d[d.columns[0]].astype(str).str.replace(' 24:00', ' 00:00'),
                        format='%m/%d/%Y %H:%M', errors='coerce')
@@ -79,7 +79,7 @@ def load_year(y):
 
 
 def dc_zone_load(k):
-    dc = pd.read_csv(f'{U}/DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv', index_col=0, parse_dates=True)
+    dc = pd.read_csv(f'{U}/1_source_data/DC_Load/load_profiles/dc_load_hourly_MW_by_weather_zone.csv', index_col=0, parse_dates=True)
     dc = dc.rename(columns={c: DCMAP.get(c, c) for c in dc.columns})
     dc = dc[~((dc.index.month == 2) & (dc.index.day == 29))].reset_index(drop=True)
     return {z: (dc[z].values[:8760]*k if z in dc.columns else np.zeros(8760)) for z in ZONES}
@@ -144,7 +144,7 @@ def build(year, k, dd, ceiling=20000.0, sto_ceiling=10000.0, prm=0.13, line_cand
                  ).to_csv(f'{dd}/storagedata_candidate.csv', index=False)
 
     # network: identical to the solved case
-    # network actually solved by HOPE (Code/HOPE/ModelCases/TX8z_GTEP_dc_case/Data_TX8z_GTEP_dc/linedata.csv):
+    # network actually solved by HOPE (2_ongrid_code/HOPE/ModelCases/TX8z_GTEP_dc_case/Data_TX8z_GTEP_dc/linedata.csv):
     # N-1-style de-rated corridor limits; the package copy in case_gasA_SOLVED is the as-is thermal sum
     pd.read_csv(f'{HERE}/linedata_solved.csv').to_csv(f'{dd}/linedata.csv', index=False)
     if line_cand == 'open':

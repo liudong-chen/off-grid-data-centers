@@ -33,9 +33,9 @@ import numpy as np, pandas as pd
 
 OUT = 'build/out'
 CASE = 'build/hope_update'
-RAWF = ('network/Texas2k/Texas2k_series2025/'
+RAWF = ('1_source_data/network/Texas2k/Texas2k_series2025/'
         'Texas2k_series25_case1_summerpeak/Texas2k_series25_case1_summerpeak.RAW')
-BUS = 'network/Texas2k/tx2k_s25_bus_coords.csv'
+BUS = '1_source_data/network/Texas2k/tx2k_s25_bus_coords.csv'
 AREA2ZONE = {1: 'FarWest', 2: 'North', 3: 'West', 4: 'South',
              5: 'NorthCentral', 6: 'SouthCentral', 7: 'Coast', 8: 'East'}
 BULK_KV = 345.0          # nominal bulk threshold; Texas2k's top class is 500 kV
